@@ -10,15 +10,23 @@
       type="image/png"
       href="./images/favicon/favicon.png"
     />
+
+    <!-- AOS styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-
     <!-- HEADER -->
     <include src="./partials/header.html"></include>
 
     <main>
-        
       <!-- HERO -->
       <include src="./partials/restaurant-page/hero-restaurant.html"></include>
 
@@ -27,7 +35,6 @@
 
       <!-- MENU -->
       <include src="./partials/restaurant-page/menu.html"></include>
-
     </main>
 
     <!-- FOOTER -->
@@ -36,5 +43,16 @@
     <!-- MODAL WINDOWS -->
     <include src="./partials/modal/book-table-modal.html"></include>
 
+    <!-- SWIPER CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- AOS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/aos-script.js"></script>
   </body>
 </html>
