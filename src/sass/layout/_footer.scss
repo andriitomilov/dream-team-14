@@ -1,0 +1,34 @@
+.footer {
+  padding: 40px 0px;
+  background-color: $color-bg-footer;
+
+  &.social-list {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+  }
+}
+
+.logo-link {
+  font-family: $film-font;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: $color-accent;
+}
+.footer-nav {
+  font-family: $montserrat-font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: $color-accent;
+}
+
+.social-link {
+  margin-bottom: 32px;
+  gap: 20px;
+
+  fill: $color-accent;
+  background-color: transparent;
+}
