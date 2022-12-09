@@ -18,6 +18,7 @@
     "url": "https://github.com/andriitomilov/dream-team-14/issues"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
