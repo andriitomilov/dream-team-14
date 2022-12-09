@@ -255,6 +255,12 @@ img {
   letter-spacing: 0.3em;
   color: #f3c653;
 }
+@media screen and (min-weight: 1024px) {
+  .logo-link {
+    font-size: 64px;
+    line-height: 1.078125;
+  }
+}
 
 .footer-nav {
   font-family: "Montserrat", "sans-serif";
@@ -270,6 +276,30 @@ img {
   gap: 20px;
   fill: #f3c653;
   background-color: transparent;
+}
+
+.social-title {
+  display: none;
+}
+@media screen and (min-weight: 1024px) {
+  .social-title {
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #f3c653;
+  }
+}
+
+.amenities__name {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .footer {
@@ -289,6 +319,12 @@ img {
   letter-spacing: 0.3em;
   color: #f3c653;
 }
+@media screen and (min-weight: 1024px) {
+  .logo-link {
+    font-size: 64px;
+    line-height: 1.078125;
+  }
+}
 
 .footer-nav {
   font-family: "Montserrat", "sans-serif";
@@ -304,4 +340,18 @@ img {
   gap: 20px;
   fill: #f3c653;
   background-color: transparent;
+}
+
+.social-title {
+  display: none;
+}
+@media screen and (min-weight: 1024px) {
+  .social-title {
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #f3c653;
+  }
 }/*# sourceMappingURL=index.css.map */
