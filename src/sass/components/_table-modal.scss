@@ -1,0 +1,134 @@
+.modal {
+    max-width: 414px;
+    height: 668px;
+    padding: 60px 15px 60px 15px ;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50%);
+
+    background: $color-bg-lemon;
+    border-radius: 2px;
+
+}
+
+.modal-title {
+    font-family: $times-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+
+    letter-spacing: 0.05em;
+
+
+    padding-bottom: 40px;
+    text-align: center;
+    
+    color: $color-black;
+}
+
+.modal-input {
+    width: 100%;
+    height: 54px;
+    margin-bottom: 8px;
+    padding: 17px 12px;
+
+    border: 1px solid $color-brown;
+    border-radius: 2px;
+
+    outline: none;
+
+    &::placeholder {
+        font-family: $times-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: calc(23 / 20);
+        letter-spacing: 0.05em;
+
+        color: $color-primary-text-modal;          
+}
+}
+
+.modal-select {
+    width: 100%;
+    padding: 16px 32px 16px 12px;
+
+    border: 1px solid $color-brown;
+    border-radius: 2px;
+
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    
+   
+}
+
+.select-wraper{
+    position: relative;
+
+    margin-bottom: 8px;
+    height: 54px;
+    
+}
+.modal-select__icon {
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    
+    transform: translateY(-50%);
+
+    fill: $color-brown;
+
+    pointer-events: none;
+}
+
+.modal-text {
+    font-family: $montserrat-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+
+    letter-spacing: 0.02em;
+
+    color: $color-brown;
+
+    cursor: pointer;
+}
+
+.modal-wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    margin-bottom: 40px;
+}
+
+.modal-button {
+    width: 100%;
+    height: 64px;
+
+    background: $color-black;
+    color: $color-white;
+
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+
+    cursor: pointer;
+}
+
+.modal-button-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    
+}
