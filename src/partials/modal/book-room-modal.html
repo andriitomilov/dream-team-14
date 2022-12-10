@@ -5,14 +5,19 @@
 <div class="modal-wraper">
     <div class="modal-field">
         <label class="modal-label">
-            <input class="modal-input" type="text" placeholder="Ваше ім’я">
+            <input 
+            class="modal-input" 
+            type="text" 
+            placeholder="Ваше ім’я"
+            name="name">
             <span class="modal-text" >На кого забронювати столик?</span>
         </label>
 </div>
 <div class="modal-field">
     <label class="modal-label">
         <input  class="modal-input"
-        type="tel" 
+        type="tel"
+        name="tel" 
         placeholder="+38 (___) ___-__-__"
         minlength="13"
         
@@ -25,9 +30,9 @@
     <label class="modal-label"  >
         <div class="select-wraper">
             <select class="modal-select" name="number"  >
-                <option class="modal-select__option"  value="">Двомісний номер люкс</option>
-                <option class="modal-select__option"  value="">Двомісний номер</option>
-                <option class="modal-select__option"  value="">Трьохмісний номер</option> 
+                <option class="modal-select__option"  value="Double room luxe">Двомісний номер люкс</option>
+                <option class="modal-select__option"  value="Double room">Двомісний номер</option>
+                <option class="modal-select__option"  value="triple room">Трьохмісний номер</option> 
             </select>
             <svg class="modal-select__icon" width="24" height="24">
                 <use href="/src/images/icons/icons.svg#icon-arrow-down_24_24"></use>
@@ -41,9 +46,9 @@
     <label class="modal-label" >
         <div class="select-wraper">
             <select  class="modal-select" name="date"  >
-                <option class="modal-select__option" value="">Сьогодні</option>
-                <option class="modal-select__option" value="">Завтра</option>
-                <option class="modal-select__option" value="">Післязавтра</option>  
+                <option class="modal-select__option" value="today">Сьогодні</option>
+                <option class="modal-select__option" value="tomorrow">Завтра</option>
+                <option class="modal-select__option" value="after tomorrow">Післязавтра</option>  
             </select>
             <svg class="modal-select__icon" width="24" height="24">
                 <use href="/src/images/icons/icons.svg#icon-arrow-down_24_24"></use>
@@ -57,9 +62,9 @@
     <label class="modal-label" >
         <div class="select-wraper">
             <select  class="modal-select" name="date"  >
-                <option class="modal-select__option" value="">Сьогодні</option>
-                <option class="modal-select__option" value="">Завтра</option>
-                <option class="modal-select__option" value="">Післязавтра</option>
+                <option class="modal-select__option" value="today">Сьогодні</option>
+                <option class="modal-select__option" value="tomorrow">Завтра</option>
+                <option class="modal-select__option" value="after tomorrow">Післязавтра</option>
             </select>
             <svg class="modal-select__icon" width="24" height="24">
                 <use href="/src/images/icons/icons.svg#icon-arrow-down_24_24"></use>
@@ -79,3 +84,5 @@
         </button>
     </div>
 </div>
+
+
