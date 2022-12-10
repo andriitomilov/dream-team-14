@@ -40,19 +40,20 @@
     font-size: 40px;
     line-height: calc(43 / 40);
   }
-  @include tablet() {
+  @include desktop() {
     margin-right: 81px;
   }
 }
-.nav {
-  display: flex;
-  align-items: center;
-}
+
 .nav__list {
   display: flex;
   align-items: center;
   @media screen and (max-width: 1023px) {
     flex-wrap: wrap;
+    gap: 20px;
+  }
+  @include tablet() {
+    gap: 72px;
   }
 }
 .nav__item {
@@ -65,21 +66,10 @@
     gap: 32px;
   }
 }
-.nav__item:nth-child(1) {
-  margin-right: 20px;
-  @include tablet() {
-    margin-right: 72px;
-  }
-}
-.nav__item:nth-child(2) {
-  @include desktop() {
-    margin-right: 59px;
-  }
-}
+
 .nav__link {
   font-style: normal;
   font-weight: 500;
-
   letter-spacing: 0.02em;
   color: $color-accent;
   display: block;
@@ -150,6 +140,7 @@
   @include desktop() {
     display: flex;
     gap: 20px;
+    margin-left: auto;
   }
 }
 .network__icon {
