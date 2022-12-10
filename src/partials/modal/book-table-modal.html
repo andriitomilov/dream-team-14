@@ -1,4 +1,4 @@
-<div class="backdrop">
+<div class="backdrop is-hidden">
     <div class="modal">
         <h2 class="modal-title" >ЗАБРОНЮВАТИ СТОЛИК</h2>
         <form class="modal-form">
@@ -11,7 +11,12 @@
 </div>
 <div class="modal-field">
     <label class="modal-label">
-        <input class="modal-input" type="text" placeholder="+38 (___) ___-__-__">
+        <input  class="modal-input"
+        type="tel" 
+        placeholder="+38 (___) ___-__-__"
+        minlength="13"
+        
+        title="+38 (___) ___-__-__">
         <span class="modal-text"> Номер телефону</span>
     </label>
 </div>
@@ -22,7 +27,10 @@
             <select class="modal-select" name="number"  >
                 <option value="">1</option>
                 <option value="">2</option>
-                <option value="">3`</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
             </select>
             <svg class="modal-select__icon" width="24" height="24">
                 <use href="/src/images/icons/icons.svg#icon-arrow-down_24_24"></use>
@@ -35,9 +43,10 @@
 <div class="modal-field">
     <label class="modal-label" >
         <div class="select-wraper">
-            <select class="modal-select" name="date"  >
+            <select  class="modal-select" name="date"  >
                 <option value="">Сьогодні</option>
                 <option value="">Завтра</option>
+                <option value="">Післязавтра</option>
             </select>
             <svg class="modal-select__icon" width="24" height="24">
                 <use href="/src/images/icons/icons.svg#icon-arrow-down_24_24"></use>

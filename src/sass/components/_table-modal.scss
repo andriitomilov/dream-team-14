@@ -1,6 +1,6 @@
 .modal {
     max-width: 414px;
-    height: 668px;
+    // height: 668px;
     padding: 60px 15px 60px 15px ;
 
     position: fixed;
@@ -54,7 +54,7 @@
 
 .modal-select {
     width: 100%;
-    padding: 16px 32px 16px 12px;
+    padding: 16px 42px 16px 12px;
 
     border: 1px solid $color-brown;
     border-radius: 2px;
@@ -63,6 +63,14 @@
     appearance: none;
     cursor: pointer;
     
+        font-family: $times-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: calc(23 / 20);
+        letter-spacing: 0.05em;
+
+        color: $color-primary-text-modal;
    
 }
 
@@ -131,4 +139,20 @@
 
     cursor: pointer;
     
+}
+
+.button-close__icon {
+    stroke: $color-button-close;
+}
+
+.modal-select__option {
+
+    font-family: $times-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    letter-spacing: 0.05em;
+
+    color: $color-primary-text-modal; 
 }
