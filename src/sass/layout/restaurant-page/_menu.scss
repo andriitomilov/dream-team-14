@@ -1,0 +1,150 @@
+
+section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #FFFDEE;
+}
+
+h1 {
+    margin-bottom: 32px;
+    margin-top: 0;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+h2 {
+    margin-bottom: 12px;
+    margin-top: 0;
+    text-align: left;
+
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    min-width: 384px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0px;
+    margin-bottom: 16px;
+}
+
+
+table,
+td,
+th {
+    /* border: 1px solid #595959; */
+}
+
+.menu-data {
+    min-width: 163px;
+    vertical-align: middle;
+}
+
+.menu-dish {
+    margin-bottom: 4px;
+    min-width: 221px;
+    padding-right: 20px;
+
+    font-family: 'Montserrat', sans-serif;
+    ;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+
+    letter-spacing: 0.02em;
+}
+
+.menu-description {
+    padding-right: 32px;
+    margin-bottom: 8px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.02em;
+}
+
+.menu-numbers {
+    min-width: 140px;
+
+    vertical-align: middle;
+    text-align: center;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 0.02em;
+}
+
+.menu-price {
+    display: inline-block;
+    margin-bottom: 11px;
+    margin-left: 32px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+
+    letter-spacing: 0.02em;
+}
+
+
+.menu-dessert {
+    margin-bottom: 11px;
+    min-width: 221px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 0.02em;
+
+}
+
+.menu-span-align {
+    text-align: left;
+}
+
+.menu-data-drink {
+    min-width: 140px;
+}
+
+.menu-button {
+    margin-top: 32px;
+    text-align: center;
+}
+
+button {}
+
+.menu-flex {
+    display: flex;
+}
