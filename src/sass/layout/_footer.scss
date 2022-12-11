@@ -1,5 +1,6 @@
 .footer {
   padding: 40px 0px;
+
   text-decoration: none;
   background-color: $color-bg-footer;
 
@@ -90,6 +91,7 @@
   }
 }
 
+
 .footer-nav {
   font-family: $montserrat-font;
   font-weight: 500;
@@ -97,6 +99,7 @@
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
   color: $color-accent;
+
   @media screen and (max-width: $phone) {
     font-size: 15px;
     line-height: calc(15 / 12);
@@ -164,5 +167,6 @@
     position: absolute;
     top: 7px;
     right: 12px;
+
   }
 }

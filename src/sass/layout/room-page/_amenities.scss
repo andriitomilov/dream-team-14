@@ -1,0 +1,65 @@
+.amenities{
+    background-color: $color-bg-lemon;
+}
+.amenities__sectionname{
+    
+    font-family: $times-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.16;
+    
+    text-transform: uppercase;
+    
+    
+    color: $color-black;
+}
+.amenities__name{
+   
+font-family: $times-font;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 1.17;
+
+text-transform: uppercase;
+
+
+color: $color-black;
+}
+.amenities__text{
+font-family: $montserrat-font;
+line-height: 1.25;
+
+color: $color-primary-text-menu;
+}
+.amenities__button{
+padding: 18px 38px;   
+background-color: $color-black;
+border: 1px solid $color-accent;
+border-radius: 25px;
+
+font-family: $montserrat-font;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 1.21;
+text-transform: uppercase;
+color: $color-white;
+
+cursor: pointer;
+
+transition:  background-color,  color;
+
+&:hover, &:focus {
+    background-color: $color-accent;
+    color: $color-black;
+  }
+}
+.amenities__link{
+font-family: $montserrat-font;
+line-height: 1.25;
+
+color: $color-brown;
+
+}
