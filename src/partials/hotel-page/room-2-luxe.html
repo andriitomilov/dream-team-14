@@ -5,47 +5,55 @@
       <a class="logo hotel-room__logo--brown" href="#">mimiho</a>
       <h1 class="hotel-room__title">Двомісний номер <span>люкс</span></h1>
       <p class="hotel-room__descript">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
+        Amet minim mollit non deserunt <br />
+        ullamco est sit aliqua dolor do amet <br />
+        sint. Velit officia consequat duis enim <br />
+        velit mollit. Exercitation veniam <br />
+        consequat sunt nostrud amet.
       </p>
-      <picture>
-        <source
-          srcset="
-            ./images/room-page/hotel-room-desk.jpg    1x,
-            ./images/room-page/hotel-room-desk-2x.jpg 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/room-page/hotel-room-tab.jpg    1x,
-            ./images/room-page/hotel-room-tab-2x.jpg 2x
-          "
-          media="(min-width: 1024px)"
-        />
-        <source
-          srcset="
-            ./images/room-page/hotel-room-mob.jpg    1x,
-            ./images/room-page/hotel-room-mob-2x.jpg 2x
-          "
-          media="(max-width: 1023px)"
-        />
-        <img
-          src="./images/room-page/hotel-room-desk.jpg"
-          alt="фото кімнати"
-          width="460"
-          height="574"
-        />
-      </picture>
     </div>
-    <div class="hotel-room__wrap">
+    <picture class="hotel-room__picture">
+      <source
+        srcset="
+          ./images/room-page/hotel-room-desk.jpg    1x,
+          ./images/room-page/hotel-room-desk-2x.jpg 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/room-page/hotel-room-tab.jpg    1x,
+          ./images/room-page/hotel-room-tab-2x.jpg 2x
+        "
+        media="(min-width: 1024px)"
+      />
+      <source
+        srcset="
+          ./images/room-page/hotel-room-mob.jpg    1x,
+          ./images/room-page/hotel-room-mob-2x.jpg 2x
+        "
+        media="(max-width: 1023px)"
+      />
+      <img
+        class="hotel-room__picture-img"
+        src="./images/room-page/hotel-room-desk.jpg"
+        alt="фото кімнати"
+      />
+    </picture>
+
+    <div class="hotel-room__container">
       <div class="hotel-room__slider">
-        <ul class="hotel-room__btns">
-          <li><a href="">Детальніше</a></li>
-          <li><a href="">Переглянути ціни</a></li>
-        </ul>
+        <div class="hotel-room__slider-img"></div>
+        <div class="hotel-room__slider-arrows"></div>
       </div>
+      <ul class="btn-list hotel-room__btn">
+        <li class="btn-list__item">
+          <a class="btn-list__link" href="">Детальніше</a>
+        </li>
+        <li class="btn-list__item">
+          <a class="btn-list__link" href="">Переглянути ціни</a>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

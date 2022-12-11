@@ -2,35 +2,92 @@
     padding-top: 32px;
     padding-bottom: 32px;
     background-color: $color-bg-lemon;
+
+    &__subtitle {
+        font-family: $times-font;
+        @include font(20px, 1.15, null, null);
+        color: $color-primary-subtitle-homepage;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        font-family: $times-font;
+        @include font(24px, 1.16, null, 0.05em);
+        text-transform: uppercase;
+        color: $color-black;
+        margin-bottom: 12px;
+
+        span {
+            text-transform: lowercase;
+        }
+    }
+
+    &__descript {
+        @include font(12px, 1.25, 600, null);
+        margin-bottom: 32px;
+    }
+
+    &__picture {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 32px;
+    }
+
+    &__picture-img {
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+    }
 }
 
+.btn-list {
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 
-// .hotel-rooms {
+    &__item {
+        width: 236;
+        height: 48px;
+        text-align: center;
+        background-color: $color-black;
+        border-radius: 25px;
+        padding: 14px 0;
 
-//     }
+    }
 
+    &__link {
+        display: inline-block;
+        @include font(null, 1.25, 700, null);
+        text-decoration: none;
+        color: $color-accent;
+    }
+}
 
+.logo {
+    display: block;
+    font-family: $film-font;
+    @include font(40px, 1, 700, 0.3em);
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
+.hotel-room__logo--brown {
+    color: $color-primary-title-hotel-page;
+    margin-bottom: 32px;
+}
 
-// .room-list {
+// заглушка для слайдера 
+.hotel-room__slider-img {
+    width: 284px;
+    height: 194px;
+    background-color: gray;
+    margin-bottom: 20px;
+}
 
-//     &__subtitle {
-//         font-family: $times-font;
-//         @include font(20px, 1.15, null, null);
-//         color: $color-primary-subtitle-homepage;
-//         margin-bottom: 8px;
-//     }
-
-//     &__title {
-//         font-family: $times-font;
-//         @include font(24px, 1.16, null, 0.05em);
-//         text-transform: uppercase;
-//         color: $color-black;
-//         margin-bottom: 12px;
-
-//         span {
-//             text-transform: lowercase;
-//         }
-//     }
-// }
+.hotel-room__slider-arrows {
+    width: 98px;
+    height: 32px;
+    background-color: gray;
+    margin-bottom: 20px;
+}
