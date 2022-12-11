@@ -1,0 +1,122 @@
+<section class="details-restaurant">
+  <div class="overlay">
+    <div class="container">
+      <!-- Text -->
+
+      <div class="details-restaurant__text">
+        <h2 class="details-restaurant__header" lang="en">mimino</h2>
+        <h3 class="details-restaurant__subtitle">Ресторан</h3>
+        <p class="details-restaurant__description" lang="en">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit.
+        </p>
+      </div>
+
+      <!-- Slider -->
+
+      <!-- <img src="./images/homepage/vine-backImg.jpg" alt="подача стейку" /> -->
+      <!-- 
+    <img src="./images/homepage/vine-backImg.jpg" alt="подача шашлику" />
+
+    <img src="./images/homepage/vine-backImg.jpg" alt="подача страви" /> -->
+
+      <!-- Buttons -->
+
+      <div class="for-slider">
+        <div class="details-restaurant__buttons">
+          <buttton
+            data-modal-open
+            type="button"
+            class="details-restaurant__booking"
+            >Забронювати столик</buttton
+          >
+          <buttton type="button" class="details-restaurant__demonstration"
+            ><a href="" class="details-restaurant__href"
+              >Переглянути меню</a
+            ></buttton
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+
+<div data-modal class="backdrop is-hidden">
+  <div class="modal">
+    <button data-modal-close class="modal__button">
+      <svg class="icon-close">
+        <use href="./images/icons/icons.svg#icon-arrow-down_24_24"></use>
+      </svg>
+    </button>
+    <form class="form">
+      <p class="main-header">забронювати столик</p>
+      <div class="gap">
+        <div class="form__field">
+          <label class="form__label" for="user-name"
+            >На кого забронювати столик?</label
+          ><input
+            type="text"
+            name="name"
+            id="user-name"
+            placeholder="Ваше ім’я"
+            required
+          />
+        </div>
+        <div class="form__field ordered">
+          <label class="form__label" for="user-name">Номер телефону</label
+          ><input
+            type="text"
+            name="name"
+            id="user-name"
+            placeholder="+38 (___) ___-__-__"
+            required
+          />
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="user-name"
+            >Столик на яку кількість осіб?</label
+          ><input
+            type="text"
+            name="name"
+            id="user-name"
+            placeholder="2"
+            required
+          />
+          <button class="arrow-down-button">
+            <svg class="icon-arrow-down">
+              <use href="./images/icons/icons.svg#icon-arrow-down_24_24"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="form__field ordered">
+          <label class="form__label" for="user-name"
+            >На яку дату бронювати?</label
+          ><input
+            type="text"
+            name="name"
+            id="user-name"
+            placeholder="Сьогодні"
+            required
+          />
+
+          <button class="arrow-down-button">
+            <svg class="icon-arrow-down">
+              <use href="./images/icons/icons.svg#icon-arrow-down_24_24"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="confirm-container">
+        <button type="" class="confirm-button">оформити бронювання</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 1. Кнопка закрытия модалки (крестик) -->
+<!-- сделать секцию -->
+<!-- запушить -->
+<!-- кубик и переменные, фото для каждого размера -->
+<!-- Сделать слайдеры -->
