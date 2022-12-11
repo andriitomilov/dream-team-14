@@ -1,0 +1,134 @@
+<section class="details-restaurant">
+  <div class="container">
+    <!-- Text -->
+
+    <div class="details-restaurant__text--hotel">
+      <h2 class="details-restaurant__header" lang="en">mimino</h2>
+      <h3 class="details-restaurant__subtitle">Готель</h3>
+      <p class="details-restaurant__description" lang="en">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit.
+      </p>
+    </div>
+
+    <!-- Slider -->
+
+    <!-- <img src="./images/homepage/vine-backImg.jpg" alt="подача стейку" /> -->
+    <!-- 
+    <img src="./images/homepage/vine-backImg.jpg" alt="подача шашлику" />
+
+    <img src="./images/homepage/vine-backImg.jpg" alt="подача страви" /> -->
+
+    <!-- Buttons -->
+
+    <div class="details-restaurant__buttons--hotel">
+      <buttton
+        data-modal-switchOn
+        type="button"
+        class="details-restaurant__booking"
+        >Забронювати номер</buttton
+      >
+      <buttton type="button" class="details-restaurant__demonstration"
+        ><a href="" class="details-restaurant__href"
+          >Переглянути ціни</a
+        ></buttton
+      >
+    </div>
+  </div>
+</section>
+
+<div data-modal-static class="backdrop is-hidden">
+  <div class="modal hotel">
+    <button data-modal-switchOff class="modal__button">
+      <svg class="icon-close">
+        <use href="./images/icons/icons.svg#icon-arrow-down_24_24"></use>
+      </svg>
+    </button>
+    <form class="form">
+      <p class="main-header">забронювати номер</p>
+      <div class="gap">
+        <div class="form__field">
+          <label class="form__label" for="user-name"
+            >На кого забронювати номер?</label
+          ><input
+            type="text"
+            name="name"
+            id="user-name"
+            placeholder="Ваше ім’я"
+            required
+          />
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="user-name">Номер телефону</label
+          ><input
+            type="text"
+            name="name"
+            id="user-name"
+            placeholder="+38 (___) ___-__-__"
+            required
+          />
+        </div>
+        <div class="form__field hidden">
+          <label class="form__label" for="user-name">NO</label
+          ><input
+            type="text"
+            name="name"
+            id="user-name"
+            placeholder="+38 (___) ___-__-__"
+            required
+          />
+        </div>
+        <div class="form__field options">
+          <label class="form__label" for="user-name">Категорія номеру</label
+          ><input
+            type="text"
+            name="name"
+            id="user-name"
+            placeholder="Двомісний люкс"
+            required
+          />
+          <button class="arrow-down-button">
+            <svg class="icon-arrow-down">
+              <use href="./images/icons/icons.svg#icon-arrow-down_24_24"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="user-name">Дата заїзду</label
+          ><input
+            type="text"
+            name="name"
+            id="user-name"
+            placeholder="Сьогодні"
+            required
+          />
+
+          <button class="arrow-down-button">
+            <svg class="icon-arrow-down">
+              <use href="./images/icons/icons.svg#icon-arrow-down_24_24"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="user-name">Дата виїзду</label
+          ><input
+            type="text"
+            name="name"
+            id="user-name"
+            placeholder="Сьогодні"
+            required
+          />
+
+          <button class="arrow-down-button">
+            <svg class="icon-arrow-down">
+              <use href="./images/icons/icons.svg#icon-arrow-down_24_24"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="confirm-container">
+        <button type="" class="confirm-button">оформити бронювання</button>
+      </div>
+    </form>
+  </div>
+</div>
