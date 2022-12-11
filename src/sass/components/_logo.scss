@@ -1,0 +1,45 @@
+.logo {
+    display: block;
+    font-family: $film-font;
+    @include font(40px, 1, 700, 0.3em);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+// logo mobile-darknes
+
+// .logo--brown {
+//     color: $color-primary-title-hotel-page;
+// @include tablet {
+//     font-size: 69px;
+// }
+// }
+
+// logo mobile-white
+
+// .logo--white {
+//     color: $color-white;
+// @include tablet {
+//     font-size: 69px;
+// }
+// }
+
+// logo mobile-footer 
+
+// .logo--footer {
+//     color: $color-accent;
+// @include tablet {
+//     font-size: 69px;
+// }
+
+// }
+
+// logo mobile-header 
+
+// .logo-header {
+//     font-size: 96px;
+//     color: $color-white;
+// @include tablet {
+//     font-size: 128px;
+// }
+// }
