@@ -8,19 +8,27 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        margin-left: auto;
     }
 
     &__descript--side {
-        padding-right: 59px;
+        margin-right: 43px;
     }
 
     &__picture--side {
         justify-content: flex-start;
+
+        @include tablet {
+            left: 112px;
+        }
     }
 
     &__slider--side {
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        justify-content: flex-end;
+
+        @include tablet {
+            order: 1;
+        }
     }
 }
