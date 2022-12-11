@@ -1,217 +1,195 @@
-
 .menu-section {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    background-color: #F0ECD6;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #f0ecd6;
 
-    @media screen and (min-width:1024px) {
-            padding-bottom: 40px;
-            padding-top: 58px;
-        }
-    @media screen and (min-width:1279px) {
-        padding-bottom: 60px;
-        padding-top: 58px;
-    }
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 40px;
+    padding-top: 58px;
+  }
+  @media screen and (min-width: 1279px) {
+    padding-bottom: 60px;
+    padding-top: 58px;
+  }
 }
 
-
-
 .menu-main-heading {
-    margin-bottom: 32px;
-    font-family: 'Times New Roman';
-    font-size: 32px;
-    line-height: 1.16;
-    color: #000000;
+  margin-bottom: 32px;
+  font-family: $times-font;
+  font-size: 32px;
+  line-height: 1.16;
+  color: $color-black;
 }
 
 .menu-heading {
-    margin-bottom: 12px;
-    margin-top: 0;
-    text-align: left;
+  margin-bottom: 12px;
+  text-align: left;
 
-    font-family: 'Times New Roman';
-    font-size: 20px;
-    line-height: 1.15;
-    color: #000000;
+  font-family: $times-font;
+  font-size: 20px;
+  line-height: 1.15;
+  color: $color-black;
 }
 
 td {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: middle;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: 0px;
-    margin-bottom: 16px;
-    color: #000000;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0px;
+  margin-bottom: 16px;
+  color: $color-black;
 }
 
-
 .menu-data {
-    vertical-align: middle; 
+  vertical-align: middle;
 }
 
 .menu-dish {
-    margin-bottom: 4px;
-    padding-right: 20px;
+  margin-bottom: 4px;
 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.21;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
 
-    letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 
-    @media screen and (min-width:1279px) {
-        font-size: 16px;
-    }
+  @media screen and (min-width: 1279px) {
+    font-size: 16px;
+  }
 
-    @media screen and (max-width:413px) {
-              max-width: 225px;
-          }
+  @media screen and (max-width: 413px) {
+    max-width: 225px;
+  }
 }
 
 .menu-description {
-    margin-bottom: 8px;
-   
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    
-    @media screen and (min-width: 1024px) {
-        padding-right: 18px;
-        min-width: 230px;
-    }
-    
-    @media screen and (min-width: 1279px) {
-        margin-bottom: 12px;
-        padding-right: 55px;
-    }
+  margin-bottom: 8px;
 
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 1024px) {
+    padding-right: 18px;
+    min-width: 230px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    margin-bottom: 12px;
+    padding-right: 55px;
+  }
 }
 
 .menu-description-last {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 
-    @media screen and (min-width: 1024px) {
-            padding-right: 18px;
-            min-width: 230px;
-        }
-    
-    @media screen and (min-width: 1279px) {
-            padding-right: 55px;
-        }
+  @media screen and (min-width: 1024px) {
+    padding-right: 18px;
+    min-width: 230px;
+  }
 
+  @media screen and (min-width: 1279px) {
+    padding-right: 55px;
+  }
 }
 
 .menu-numbers {
-    min-width: 175px;
+  min-width: 163px;
 
-    vertical-align: middle;
-    text-align: right;
+  vertical-align: middle;
+  text-align: right;
 
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 1,2;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
 
-    letter-spacing: 0.02em;
-
-@media screen and (max-width:413px) {
-        max-width: 175px;
-    }
-
+  letter-spacing: 0.02em;
 }
 
 .menu-price {
-    display: inline-block;
-    margin-bottom: 11px;
-    margin-left: 32px;
+  display: inline-block;
+  margin-bottom: 11px;
+  margin-left: 32px;
 
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.21;
+  letter-spacing: 0.02em;
 
-    letter-spacing: 0.02em;
-
-@media screen and (min-width:1024px) {
+  @media screen and (min-width: 1024px) {
     margin-left: 51px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    font-size: 16px;
+    margin-left: 59px;
+  }
 }
-
-@media screen and (min-width:1279px) {
-            font-size: 16px;
-            margin-left: 59px;
-        }
-
-}
-
 
 .menu-dessert {
-    margin-bottom: 11px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
+  margin-bottom: 11px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
 
-    letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 
-    @media screen and (min-width:1279px) {
-             font-size: 16px;
-         }
-   
+  @media screen and (min-width: 1279px) {
+    font-size: 16px;
+  }
 }
-
-
 
 .menu-button {
-    margin-top: 32px;
-    text-align: center;
-@media screen and (min-width:1240px) {
-        text-align: end;
-    }
+  margin-top: 32px;
+  text-align: center;
+  @media screen and (min-width: 1240px) {
+    text-align: end;
+  }
 }
-    
 
 .menu_btn {
-    display: inline-block;
-    width: 236px;
-    height: 49px;
-    background-color: #000000;
-    border: 2px solid #FFFDEE;
-    border-radius: 25px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: #F3C653;
+  display: inline-block;
+  width: 236px;
+  height: 49px;
+  background-color: $color-black;
+  border: 2px solid $color-bg-lemon;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $color-accent;
+  cursor: pointer;
+
+  transition: $main-transition-duration;
 }
 
-
-.menu_btn:hover, .menu_btn:focus {
-    cursor: pointer;
+.menu_btn:hover,
+.menu_btn:focus {
+  background-color: $color-accent;
+  color: $color-black;
 }
 
+.menu-flex {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    gap: 88px;
+  }
 
-.menu-flex  {
-    @media screen and (min-width:1024px) {
-        display: flex;
-        gap: 88px;
-    }
-    
-    @media screen and (min-width:1279px) {
-            display: flex;
-            gap: 140px;
-        }
+  @media screen and (min-width: 1279px) {
+    display: flex;
+    gap: 140px;
+  }
 }
