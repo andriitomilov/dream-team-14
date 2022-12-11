@@ -2,7 +2,11 @@
 
 // Section
 
-.details-restaurant {
+.overlay {
+  margin: 0 auto;
+  max-width: 414px;
+  height: 735px;
+
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.65),
@@ -21,6 +25,15 @@
         rgba(0, 0, 0, 0.65)
       ),
       url(../images/homepage/vine-backImg@2x.jpg);
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+    height: 620px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    height: 620px;
   }
 }
 
@@ -45,8 +58,10 @@
 .details-restaurant__text {
   padding-top: 24px;
   padding-left: 140px;
+  margin-bottom: 48px;
 
   @media screen and (min-width: 1024px) {
+    margin-bottom: 40px;
     padding-top: 48px;
     padding-left: 278px;
   }
