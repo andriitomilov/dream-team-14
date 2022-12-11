@@ -183,29 +183,7 @@ table {
          }
 }
 
-.menu-dessert-last {
-    margin-bottom: 0px;
 
-    min-width: 221px;
-    
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    
-    letter-spacing: 0.02em;
-
-    
-    @media screen and (min-width:1024px) {
-            padding-right: 50px;
-        }
-    
-    @media screen and (min-width:1279px) {
-            font-size: 16px;
-        }
-
-}
 
 .menu-button {
     margin-top: 32px;
@@ -215,7 +193,6 @@ table {
     }
 }
     
-
 
 .menu_btn {
     display: inline-block;
