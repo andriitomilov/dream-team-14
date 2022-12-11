@@ -1,6 +1,4 @@
 .footer {
-  height: 100%;
-  width: 100%;
   padding: 40px 0px;
   text-decoration: none;
   background-color: $color-bg-footer;
@@ -17,30 +15,36 @@
   width: 100%;
   display: flex;
   align-items: center;
-
   justify-content: center;
   align-content: center;
+  @media screen and (min-width: $phone) {
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
 }
 .footer-logo {
   display: flex;
-  justify-content: space-between;
 }
 
 .logo-link {
   font-family: $film-font;
   text-transform: uppercase;
-
-  line-height: calc(43 / 40);
+  line-height: calc(43 / 40) px;
   letter-spacing: 0.3em;
   color: $color-accent;
-  font-size: 20px;
-  @media screen and (min-weight: $phone) {
-    font-size: 40px;
-  }
+  font-size: 40px;
 
-  @media screen and (min-weight: $tablet) {
+  @media screen and (min-width: $phone) {
+    // min-width: 264px;
     font-size: 64px;
-    line-height: calc(69 / 64);
+    line-height: calc(69 / 64) px;
+    letter-spacing: 0em;
+    padding-left: 59px;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-left: 154px;
   }
 }
 .social-list {
@@ -54,15 +58,24 @@
   margin-left: auto;
   width: 150px;
   padding-right: 150px;
-  display: flex;
-  flex-direction: column;
+
   padding-left: 7px;
+  @media screen and (min-width: $phone) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .footer-link {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  @media screen and (min-width: $phone) {
+    // min-width: 300px;
+    justify-content: center;
+
+    padding-left: 8px;
+  }
 }
 
 .footer-nav {
@@ -79,6 +92,14 @@
   flex-direction: row;
   margin-top: 32px;
   gap: 20px;
+  @media screen and (min-width: $phone) {
+    margin: 0;
+
+    // min-width: 274px;
+    flex-direction: column;
+    align-self: flex-start;
+    padding-left: 8px;
+  }
 }
 
 .social-link {
@@ -86,15 +107,20 @@
 
   fill: $color-accent;
   background-color: transparent;
+  @media screen and (min-width: $phone) {
+    border: 0.5px solid $color-accent;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .social-title {
   display: none;
 
-  @media screen and (min-weight: $tablet) {
+  @media screen and (min-weight: $phone) {
     font-size: 16px;
-    line-height: calc(20 / 16);
-    display: flex;
-    align-items: center;
+    line-height: calc(20 / 16) px;
     letter-spacing: 0.02em;
     color: $color-accent;
   }
