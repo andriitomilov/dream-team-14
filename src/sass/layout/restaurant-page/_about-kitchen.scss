@@ -1,0 +1,150 @@
+.about-kitchen {
+    background: $color-bg-lemon;
+  
+    &__container {
+      padding-top: 16px;
+      padding-bottom: 20px;
+      position: relative;
+  
+      @include tablet {
+        padding-top: 129px;
+        padding-bottom: 72px;
+      }
+  
+      @include desktop {
+        padding-top: 120px;
+        padding-bottom: 0px;
+      }
+    }
+  
+    &__subtitle {
+      font-family: 'Times New Roman';
+      font-size: 20px;
+      line-height: 1.15;
+      color: $color-primary-subtitle-homepage;
+      margin-bottom: 12px;
+  
+      @include tablet {
+        font-size: 32px;
+        line-height: 1.6;
+        margin-bottom: 4px;
+      }
+    }
+  
+    &__name {
+      color: $color-primary-title-hotel-page;
+      text-transform: uppercase;
+      font-family: $film-font;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.075;
+      letter-spacing: 0.3em;
+
+      margin-bottom: 12px;
+  
+      @include tablet {
+        font-size: 64px;
+        line-height: 1.078;
+        margin-bottom: 24px;
+      }
+  
+      @include desktop {
+        color: $color-primary-title-homepage;
+      }
+    }
+  
+    &__description {
+      max-width: 258px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      color: $color-primary-text-homepage;
+      margin-bottom: 28px;
+  
+      @include tablet {
+        max-width: 439px;
+        font-size: 16px;
+        line-height: 1.25;
+        margin-bottom: 142px;
+      }
+  
+      @include desktop {
+        margin-bottom: 162px;
+        max-width: 518px;
+      }
+    }
+  
+    &__img {
+      margin-left: auto;
+      width: 59vw;
+      max-width: 244px;
+      box-shadow: $box-shadow-secondary;
+  
+      @include tablet {
+        width: 400px;
+        max-width: 400px;
+        position: absolute;
+        top: -33px;
+        right: 112px;
+        box-shadow: $box-shadow-primary;
+      }
+  
+      @include desktop {
+        width: 460px;
+        max-width: 460px;
+        right: 180px;
+      }
+    }
+  
+    &__picture {
+      width: 48vw;
+      max-width: 200px;
+      box-shadow: $box-shadow-secondary;
+  
+      @include tablet {
+        width: 350px;
+        max-width: 350px;
+        box-shadow: $box-shadow-primary;
+      }
+  
+      @include desktop {
+        width: 460px;
+        max-width: 460px;
+      }
+    }
+  
+    &__text {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      color: $color-brown;
+      max-width: 163px;
+  
+      @include tablet {
+        max-width: 312px;
+        font-size: 16px;
+        line-height: 1.25;
+      }
+    }
+  
+    &__box {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  
+      @include tablet {
+        margin-top: 0;
+        gap: 48px;
+        margin-bottom: 0;
+      }
+  
+      @include desktop {
+        gap: 32px;
+      }
+    }
+  }
