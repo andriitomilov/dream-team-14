@@ -6,12 +6,12 @@
   &.social-list {
     justify-content: center;
   }
+  *:any-link {
+    text-decoration-line: none;
+  }
 }
 
-*:any-link {
-  text-decoration-line: none;
-}
-.container {
+.footer-container {
   width: 100%;
   display: flex;
   align-items: center;
@@ -41,18 +41,11 @@
 .logo-link {
   font-family: $film-font;
   text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 0.3em;
   line-height: calc(43 / 40);
   color: $color-accent;
 
-  @media screen and (max-width: 413px) {
-    font-size: 28px;
-    letter-spacing: 0em;
-  }
-
-  @media screen and (min-width: $phone) {
-    letter-spacing: 0.3em;
-    font-size: 40px;
-  }
   @media screen and (min-width: $tablet) {
     font-size: 64px;
     line-height: calc(69 / 64);
