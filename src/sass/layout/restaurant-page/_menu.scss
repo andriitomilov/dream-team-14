@@ -1,5 +1,5 @@
 
-section {
+.menu-section {
     padding-top: 32px;
     padding-bottom: 32px;
     background-color: #F0ECD6;
@@ -14,14 +14,13 @@ section {
     }
 }
 
+
+
 .menu-main-heading {
     margin-bottom: 32px;
-    margin-top: 0;
     font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
     font-size: 32px;
-    line-height: 1,16;
+    line-height: 1.16;
     color: #000000;
 }
 
@@ -31,8 +30,6 @@ section {
     text-align: left;
 
     font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     color: #000000;
@@ -52,36 +49,31 @@ table {
     border: 0px;
     margin-bottom: 16px;
     color: #000000;
-
-    @media screen and (max-width:414px) {
-        min-width: 384px;
-    }
 }
 
-.menu-data {
-    min-width: 163px;
-    vertical-align: middle;
 
-    @media screen and (min-width:1024px) {
-        min-width: 219px;
-    }
+.menu-data {
+    vertical-align: middle; 
 }
 
 .menu-dish {
     margin-bottom: 4px;
-    min-width: 225px;
     padding-right: 20px;
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,21;
+    line-height: 1.21;
 
     letter-spacing: 0.02em;
 
     @media screen and (min-width:1279px) {
         font-size: 16px;
     }
+
+    @media screen and (max-width:413px) {
+              max-width: 225px;
+          }
 }
 
 .menu-description {
@@ -102,6 +94,7 @@ table {
         margin-bottom: 12px;
         padding-right: 55px;
     }
+
 }
 
 .menu-description-last {
@@ -118,9 +111,10 @@ table {
             min-width: 230px;
         }
     
-        @media screen and (min-width: 1279px) {
+    @media screen and (min-width: 1279px) {
             padding-right: 55px;
         }
+
 }
 
 .menu-numbers {
@@ -129,13 +123,15 @@ table {
     vertical-align: middle;
     text-align: right;
 
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 1,2;
 
     letter-spacing: 0.02em;
+
+@media screen and (max-width:413px) {
+        max-width: 175px;
+    }
 
 }
 
@@ -144,8 +140,7 @@ table {
     margin-bottom: 11px;
     margin-left: 32px;
 
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.21;
@@ -160,15 +155,12 @@ table {
             font-size: 16px;
             margin-left: 59px;
         }
+
 }
 
 
 .menu-dessert {
     margin-bottom: 11px;
-    min-width: 221px;
-
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
@@ -178,6 +170,7 @@ table {
     @media screen and (min-width:1279px) {
              font-size: 16px;
          }
+   
 }
 
 
@@ -198,16 +191,12 @@ table {
     background-color: #000000;
     border: 2px solid #FFFDEE;
     border-radius: 25px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: #F3C653;
-
-   
-    }
+}
 
 
 .menu_btn:hover, .menu_btn:focus {
@@ -226,4 +215,3 @@ table {
             gap: 140px;
         }
 }
-
