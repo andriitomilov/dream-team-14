@@ -1,0 +1,14 @@
+.modal-wraper__select-room {
+    @media screen and (max-width:1023px) {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @media screen and (min-width:1024px){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-left: auto;
+    }
+}

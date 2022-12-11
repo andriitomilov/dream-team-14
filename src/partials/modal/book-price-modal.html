@@ -1,4 +1,6 @@
-<div class="backdrop">
+<!-- Двомісний люкс -->
+
+<div class="backdrop is-hidden">
     <div class="modal">
         <h2 class="modal-title" >ЦІНИ НА НОМЕР</h2>
         <div class="modal-pre-wraper">
@@ -10,19 +12,22 @@
 <div class="modal-wraper">
     <div class="modal-field">
         <label class="modal-label">
-            <input class="modal-input" type="text" placeholder="Ваше ім’я">
-            <span class="modal-text" >На кого забронювати столик?</span>
+            <input 
+            class="modal-input" 
+            type="text"
+            name="number"
+            placeholder="Введіть кількість ночей">
+            <span class="modal-text" >Кількість ночей</span>
         </label>
     </div>
 <div class="modal-field">
     <label class="modal-label">
-        <input  class="modal-input"
-        type="tel" 
-        placeholder="+38 (___) ___-__-__"
-        minlength="13"
-        
-        title="+38 (___) ___-__-__">
-        <span class="modal-text"> Номер телефону</span>
+        <input  
+        class="modal-input"
+        type="text"
+        value="1000"
+        name="price" >
+        <span class="modal-text"> грн</span>
     </label>
 </div>
 </div>
@@ -35,3 +40,4 @@
         </button>
     </div>
 </div>
+
