@@ -1,8 +1,21 @@
 .amenities{
     background-color: $color-bg-lemon;
-}
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include tablet{
+        padding-top: 48px;
+    padding-bottom: 40px;
+    }
+    @include desktop{
+        padding-top: 48px;
+    padding-bottom: 48px;
+    }
+    }
+    .amenities__title{
+        margin-bottom: 32px;
+    }
 .amenities__sectionname{
-    
+    margin-bottom: 16px;
     font-family: $times-font;
     font-style: normal;
     font-weight: 400;
@@ -11,11 +24,16 @@
     
     text-transform: uppercase;
     
-    
     color: $color-black;
+    
+}
+.amenities__item {
+   &:not(:last-child){
+     margin-bottom: 32px;
+   }
 }
 .amenities__name{
-   
+    margin-bottom: 16px;
 font-family: $times-font;
 font-style: normal;
 font-weight: 700;
@@ -34,19 +52,33 @@ line-height: 1.25;
 color: $color-primary-text-menu;
 }
 .amenities__button{
-padding: 18px 38px;   
+   
 background-color: $color-black;
 border: 1px solid $color-accent;
 border-radius: 25px;
+margin-top: 32px;
+margin-bottom: 20px;
+
+@include tablet{
+    margin-top: 40px;
+margin-bottom: 32px;
+}
+@include desktop{
+    margin-top: 40px;
+margin-bottom: 32px;
+}
 
 font-family: $montserrat-font;
 font-style: normal;
 font-weight: 500;
-font-size: 24px;
-line-height: 1.21;
+font-size: 20px;
+line-height: 1.2;
 text-transform: uppercase;
 color: $color-white;
 
+width: 384px;
+height: 64px;
+   
 cursor: pointer;
 
 transition:  background-color,  color;
@@ -57,9 +89,26 @@ transition:  background-color,  color;
   }
 }
 .amenities__link{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+
 font-family: $montserrat-font;
 line-height: 1.25;
 
 color: $color-brown;
+@include tablet{
+    justify-content: flex-end;
+}
+@include desktop{
+    justify-content: flex-end;
+}
+&:hover, &:focus {
+    color: $color-accent;
+    fill: $color-accent;
+}
+}
+.amenities__icon{
+fill: currentColor;
 
 }
