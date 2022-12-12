@@ -17,7 +17,6 @@
 .amenities__sectionname{
     margin-bottom: 16px;
     font-family: $times-font;
-    font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 1.16;
@@ -33,15 +32,17 @@
    }
 }
 .amenities__sectionname__text{
-    font-family: $montserrat-font;
+    font-weight: 700;
     line-height: 1.25;
     
     color: $color-primary-text-menu; 
+    @include tablet{
+        width: 757px;
+    }
 }
 .amenities__name{
-    margin-bottom: 16px;
+margin-bottom: 16px;
 font-family: $times-font;
-font-style: normal;
 font-weight: 700;
 font-size: 24px;
 line-height: 1.17;
@@ -52,7 +53,7 @@ text-transform: uppercase;
 color: $color-black;
 }
 .amenities__text{
-font-family: $montserrat-font;
+    font-weight: 700;
 line-height: 1.25;
 
 color: $color-primary-text-menu;
@@ -103,8 +104,7 @@ align-items: center;
 justify-content: center;
 }
 
-font-family: $montserrat-font;
-font-style: normal;
+
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -128,7 +128,7 @@ transition:  background-color,  color;
      align-items: center;
      justify-content: center;
 
-font-family: $montserrat-font;
+
 line-height: 1.25;
 
 color: $color-brown;
