@@ -1,41 +1,27 @@
 .footer {
   padding: 40px 0px;
 
-  text-decoration: none;
   background-color: $color-bg-footer;
-
-  &.social-list {
-    justify-content: center;
-  }
-  *:any-link {
-    text-decoration-line: none;
+  @include tablet {
+    padding: 80px 0px;
   }
 }
 
 .footer-container {
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  align-content: center;
-}
+  justify-content: space-between;
+  @include mobile {
+    gap: 66px;
+    justify-content: center;
+  }
 
-.footer-logo {
-  width: 127px;
-  height: 43px;
-  margin-left: auto;
-  @media screen and (max-width: 413px) {
-    margin-right: 20px;
+  @include tablet {
+    gap: 143px;
   }
-  @media screen and (min-width: $phone) {
-    margin-left: 59px;
-  }
-  @media screen and (min-width: $tablet) {
-    margin-left: 154px;
-    margin-right: 155px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-right: 223px;
+
+  @include desktop {
+    gap: 211px;
   }
 }
 
@@ -47,114 +33,78 @@
   line-height: calc(43 / 40);
   color: $color-accent;
 
-  @media screen and (min-width: $tablet) {
+  @include tablet {
     font-size: 64px;
     line-height: calc(69 / 64);
   }
-}
-.social-list {
-  display: flex;
-  flex-direction: row;
-  margin-top: 32px;
-  gap: 20px;
 }
 
 .subscribe {
   padding-left: 7px;
 
-  @media screen and (max-width: 413px) {
-    margin-left: 30px;
-  }
-  @media screen and (min-width: $phone) {
-    margin-left: 78px;
-  }
-  @media screen and (min-width: $tablet) {
+  @include tablet {
     display: flex;
-    flex-direction: row;
-    margin-left: 155px;
+    align-items: start;
+    gap: 129px;
+  }
+
+  @include desktop {
+    gap: 191px;
   }
 }
 
-.footer-link {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  @media screen and (min-width: $phone) {
-    justify-content: center;
-    padding-left: 8px;
+.footer__list {
+  & .footer__item:not(:last-child) {
+    margin-bottom: 16px;
   }
-  @media screen and (min-width: $tablet) {
-    margin-right: 129px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-right: 191px;
+
+  @include max-tablet {
+    margin-bottom: 32px;
   }
 }
-
 
 .footer-nav {
-  font-family: $montserrat-font;
   font-weight: 500;
-  font-size: 20px;
-  line-height: calc(24 / 20);
-  letter-spacing: 0.02em;
+  font-size: 15px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.01em;
   color: $color-accent;
 
-  @media screen and (max-width: $phone) {
-    font-size: 15px;
-    line-height: calc(15 / 12);
-    letter-spacing: 0.01em;
-  }
-  @media screen and (min-width: $phone) {
-    gap: 16px;
+  @include mobile {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
   }
 }
 
 .social-list {
   display: flex;
-  flex-direction: row;
-  margin-top: 32px;
   gap: 20px;
-  position: relative;
 
-  @media screen and (min-width: $tablet) {
-    margin-top: 0;
+  @include tablet {
     flex-direction: column;
+    gap: 12px;
     align-self: flex-start;
     padding-left: 8px;
   }
 }
 
 .social-link {
-  position: relative;
-  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  fill: $color-accent;
-
-  background-color: transparent;
-  @media screen and (max-width: $phone) {
-    gap: 15px;
-  }
-  @media screen and (min-width: $phone) {
-    padding-left: 8px;
-  }
-  @media screen and (min-width: $tablet) {
-    width: 143px;
-    height: 40px;
-    gap: 12px;
-
+  @include tablet {
+    min-width: 143px;
+    padding: 10px 12px;
+    justify-content: space-between;
     border: 0.5px solid $color-accent;
     border-radius: 2px;
-    padding: 10px 12px;
-    display: flex;
-    align-content: center;
   }
 }
 .social-title {
   color: $color-accent;
-  display: flex;
 
-  flex-direction: row;
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
@@ -163,10 +113,4 @@
   }
 }
 .social-icon {
-  @media screen and (min-width: $tablet) {
-    position: absolute;
-    top: 7px;
-    right: 12px;
-
-  }
 }
