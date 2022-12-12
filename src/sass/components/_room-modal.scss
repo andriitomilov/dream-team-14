@@ -5,3 +5,11 @@
         
     }
 }
+ 
+ .modal.active,
+ .overlay.active{
+    opacity: 1;
+    visibility: visible;
+    
+ }
+ 
