@@ -80,6 +80,8 @@
     }
   
     &__img {
+      margin-bottom: 32px;
+
       box-shadow: $box-shadow-secondary;
   
       @include tablet {
@@ -121,8 +123,6 @@
     }
   
     &__box {
-      margin-top: 32px;
-      margin-bottom: 32px;
       display: flex;
       align-items: center;
       gap: 20px;
