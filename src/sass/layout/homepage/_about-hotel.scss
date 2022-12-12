@@ -80,14 +80,15 @@
     }
   
     &__img {
-      width: 59vw;
+      // width: 59vw;
       max-width: 244px;
+      margin-bottom: 32px;
       box-shadow: $box-shadow-secondary;
   
       @include tablet {
-        width: 400px;
+        // width: 400px;
         max-width: 400px;
-        height: 524px;
+        // height: 524px;
         position: absolute;
         top: -15px;
         margin-left: 60px;
@@ -106,14 +107,14 @@
     }
   
     &__picture {
-      width: 48vw;
+      // width: 48vw;
       max-width: 200px;
       box-shadow: $box-shadow-secondary;
   
       @include tablet {
-        width: 350px;
+        // width: 350px;
         max-width: 350px;
-        height: 500px;
+        // height: 500px;
         box-shadow: $box-shadow-primary;
       }
   
@@ -140,8 +141,6 @@
     }
   
     &__box {
-      margin-top: 32px;
-      margin-bottom: 32px;
       display: flex;
       align-items: center;
       gap: 20px;
