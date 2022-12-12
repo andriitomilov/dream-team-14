@@ -71,9 +71,9 @@
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: $color-accent;
+  color: $color-brown;
   display: block;
-
+  transition: color $main-transition-duration;
   @media screen and (max-width: 1023px) {
     font-size: 16px;
     line-height: calc(20 / 16);
@@ -86,6 +86,10 @@
     font-size: 20px;
     line-height: calc(24 / 20);
   }
+}
+.nav__link:hover,
+.nav__link:focus {
+  color: $color-accent;
 }
 .contact__link {
   @media screen and (max-width: 1023px) {
@@ -107,7 +111,16 @@
 .contact__icon {
   width: 24px;
   height: 24px;
+  fill: $color-brown;
+  transition: fill $main-transition-duration;
+}
+.contact__link:hover .contact__icon,
+.contact__link:focus .contact__icon {
   fill: $color-accent;
+}
+.contact__link:hover .contact__icon + .contact__phone,
+.contact__link:focus .contact__icon + .contact__phone {
+  color: $color-primary-subtitle-homepage;
 }
 
 .contact__phone {
@@ -121,7 +134,12 @@
     line-height: calc(17 / 14);
     letter-spacing: 0.02em;
     color: $color-white;
+    transition: color $main-transition-duration;
   }
+}
+.contact__link--second:focus .contact__phone,
+.contact__link--second:hover .contact__phone {
+  color: $color-primary-subtitle-homepage;
 }
 .wrap {
   @include tablet() {
@@ -147,5 +165,10 @@
 .network__icon {
   width: 24px;
   height: 24px;
+  fill: rgba(199, 144, 2, 0.7);
+  transition: fill $main-transition-duration;
+}
+.network__icon:hover,
+.network__icon:focus {
   fill: rgba(243, 198, 83, 0.7);
 }
