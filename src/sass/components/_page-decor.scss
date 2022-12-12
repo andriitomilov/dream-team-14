@@ -18,18 +18,18 @@
     border-right: 1px solid rgba(186, 186, 186, 0.4);
 
     @include tablet {
-      width: 233px;
+      width: 468px;
     }
     @include desktop {
-      width: 603px;
+      width: 604px;
     }
   }
 
   &:after {
-    @include max-desktop {
+    @include max-tablet {
       display: none;
     }
-    @include desktop {
+    @include tablet {
       width: 1px;
       background-color: rgba(186, 186, 186, 0.4);
     }
