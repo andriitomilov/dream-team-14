@@ -129,14 +129,16 @@
     align-items: center;
     gap: 16px;
 
-    &__item {
-        width: 236;
+
+    &__btn {
+        width: 236px;
         height: 48px;
-        text-align: center;
+        @include font(null, 1.25, 700, null);
+        color: $color-accent;
         background-color: $color-black;
+        outline: transparent;
         border: 2px solid $color-white;
         border-radius: 25px;
-        padding: 14px 0;
         cursor: pointer;
         transition: $main-transition-duration;
 
@@ -152,10 +154,9 @@
         @include font(null, 1.25, 700, null);
         text-decoration: none;
         color: $color-accent;
+        padding: 14px 65px;
     }
 }
-
-
 
 // заглушка для слайдера 
 .hotel-room__slider-img {
