@@ -1,0 +1,171 @@
+.header {
+  padding-top: 16px;
+  padding-bottom: 9px;
+
+  @include tablet() {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+
+  @include max-desktop() {
+    justify-content: space-between;
+  }
+}
+
+.nav__logo {
+  font-size: 26px;
+  line-height: 1.075;
+  font-family: $film-font;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: $color-white;
+  display: block;
+
+  @include mobile() {
+    font-size: 36px;
+    line-height: calc(39 / 36);
+  }
+  @include tablet() {
+    font-size: 40px;
+    line-height: calc(43 / 40);
+  }
+  @include desktop() {
+    margin-right: 81px;
+  }
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  @include max-tablet() {
+    flex-wrap: wrap;
+  }
+  @include mobile() {
+    gap: 20px;
+  }
+  @include tablet() {
+    gap: 72px;
+  }
+}
+.nav__item {
+  display: flex;
+  align-items: center;
+
+  @include max-tablet() {
+    gap: 6px;
+  }
+  @include tablet() {
+    gap: 32px;
+  }
+}
+
+.nav__link {
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: $color-accent;
+  display: block;
+  transition: color $main-transition-duration;
+
+  @include mobile() {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+
+  @include tablet() {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+}
+.nav__link:hover,
+.nav__link:focus {
+  color: $color-brown;
+}
+.contact__link {
+  color: $color-accent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  transition: color $main-transition-duration;
+
+  &:hover,
+  &:focus {
+    color: $color-brown;
+  }
+}
+.contact__link--second {
+  @include max-tablet() {
+    display: none;
+  }
+}
+.contact__icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.contact__link:hover .contact__icon + .contact__phone,
+.contact__link:focus .contact__icon + .contact__phone {
+  color: $color-primary-subtitle-homepage;
+}
+
+.contact__phone {
+  @include max-tablet() {
+    display: none;
+  }
+  @include tablet() {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    letter-spacing: 0.02em;
+    color: $color-white;
+    transition: color $main-transition-duration;
+  }
+}
+.contact__link--second:focus .contact__phone,
+.contact__link--second:hover .contact__phone {
+  color: $color-primary-subtitle-homepage;
+}
+.wrap {
+  @include tablet() {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.network__list {
+  @include max-desktop() {
+    display: none;
+  }
+  @include desktop() {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+  }
+}
+.network__icon {
+  width: 24px;
+  height: 24px;
+  fill: rgba(243, 198, 83, 0.7);
+  transition: fill $main-transition-duration;
+
+  &:hover,
+  &:focus {
+    fill: rgba(199, 144, 2, 0.7);
+  }
+}

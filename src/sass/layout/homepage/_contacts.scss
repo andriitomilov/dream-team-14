@@ -1,0 +1,229 @@
+.list {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+}
+.contacts {
+  background: $color-bg-lemon;
+}
+.contacts__container {
+  @media screen and (max-width: 1023px) {
+    padding-top: 36px;
+    padding-bottom: 32px;
+  }
+  @include tablet() {
+    padding-top: 56px;
+    padding-bottom: 40px;
+    display: flex;
+    gap: 101px;
+  }
+  @include desktop() {
+    padding-top: 56px;
+    padding-bottom: 73px;
+    gap: 108px;
+  }
+}
+.contacts__logo {
+  font-family: $film-font;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: $color-primary-title-hotel-page;
+  display: block;
+  @media screen and (max-width: 1023px) {
+    font-size: 40px;
+    line-height: calc(43 / 40);
+    margin-bottom: 12px;
+  }
+  @include tablet() {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    margin-bottom: 8px;
+  }
+  @include desktop() {
+    color: $color-secondary-address-homepage;
+    margin-bottom: 16px;
+  }
+}
+.contacts__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: $color-primary-text-homepage;
+  margin-bottom: 16px;
+  @media screen and (max-width: 323px) {
+    font-size: 15px;
+  }
+  @include tablet() {
+    margin-bottom: 52px;
+  }
+  @include desktop() {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    margin-bottom: 40px;
+  }
+}
+.contacts__list {
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  @include tablet() {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.contacts__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: $color-brown;
+  @include tablet() {
+    margin-bottom: 8px;
+  }
+}
+.contacts__wrap {
+  background: #ffffff;
+  border: 0.5px solid $color-accent;
+  border-radius: 2px;
+  padding: 9px 8px 7px 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  @media screen and (max-width: 413px) {
+    gap: 0;
+  }
+  @include tablet() {
+    gap: 16px;
+  }
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.contacts__link--second {
+  @media screen and (max-width: 413px) {
+    margin-left: 32px;
+  }
+}
+.contacts__item {
+  z-index: 1;
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    align-items: center;
+  }
+  @include tablet() {
+    display: block;
+  }
+}
+.contacts__item:nth-child(1) {
+  @media screen and (max-width: 1023px) {
+    gap: 21px;
+  }
+  @include tablet() {
+    margin-bottom: 24px;
+  }
+}
+.contacts__item:nth-child(2) {
+  @media screen and (max-width: 1023px) {
+    gap: 53px;
+  }
+  @include tablet() {
+    margin-bottom: 48px;
+  }
+}
+.contacts__item:nth-child(3) {
+  @media screen and (max-width: 1023px) {
+    margin-left: 123px;
+    margin-bottom: 32px;
+  }
+}
+.contacts__icon,
+.address__icon {
+  width: 24px;
+  height: 24px;
+  fill: $color-brown;
+  transition: fill $main-transition-duration;
+}
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon,
+.address__link:hover .address__icon,
+.address__link:focus .address__icon {
+  fill: $color-accent;
+}
+.contacts__phone {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: 0.02em;
+  color: $color-primary-title-hotel-page;
+  transition: color $main-transition-duration;
+  @include desktop() {
+    color: $color-secondary-address-homepage;
+  }
+}
+.contacts__link:hover .contacts__icon + .contacts__phone,
+.contacts__link:focus .contacts__icon + .contacts__phone {
+  color: $color-primary-subtitle-homepage;
+}
+.contacts__link--second:focus .contacts__phone,
+.contacts__link--second:hover .contacts__phone {
+  color: $color-primary-subtitle-homepage;
+}
+.address__wrap {
+  background: #ffffff;
+  border: 0.5px solid $color-accent;
+  border-radius: 2px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.address__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.address__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: $color-primary-title-hotel-page;
+  transition: color $main-transition-duration;
+  @include desktop() {
+    color: $color-secondary-address-homepage;
+  }
+}
+.address__link:hover .address__icon + .address__text,
+.address__link:focus .address__icon + .address__text {
+  color: $color-primary-subtitle-homepage;
+}
+.picture-box {
+  z-index: 1;
+  @include tablet() {
+    position: relative;
+    transform: translateY(13px);
+    width: 535px;
+  }
+  @include desktop() {
+    position: relative;
+    transform: translateY(8px);
+    width: 634px;
+  }
+}

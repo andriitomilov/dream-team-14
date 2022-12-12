@@ -8,6 +8,10 @@ $phone: 414px;
 $tablet: 1024px;
 $desktop: 1280px;
 
+$max-phone: 413px;
+$max-tablet: 1023px;
+$max-desktop: 1279px;
+
 // transition
 $main-transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -20,16 +24,16 @@ $color-brown: #c79002;
 
 $color-bg-lemon: #fffdee;
 $color-bg-dark-lemon: #f0ecd6;
-$color-bg-footer: #0E0C07;
+$color-bg-footer: #0e0c07;
 
 // homepage colors
 $color-primary-title-homepage: #828282;
-$color-primary-subtitle-homepage: #B4B4B4;
+$color-primary-subtitle-homepage: #b4b4b4;
 
 $color-primary-text-homepage: #5f5f5f;
-$color-secondary-text-homepage: #BABABA;
+$color-secondary-text-homepage: #bababa;
 
-$color-primary-address-homepage: #E5E5E5;
+$color-primary-address-homepage: #e5e5e5;
 $color-secondary-address-homepage: #828282;
 
 // hotel-page
@@ -43,6 +47,3 @@ $color-button-close:rgba(0, 0, 0, 1);
 // box-shadow
 $box-shadow-primary: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
 $box-shadow-secondary: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-
-
-

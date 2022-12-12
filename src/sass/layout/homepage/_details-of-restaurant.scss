@@ -1,0 +1,374 @@
+// Section
+
+.overlay {
+  margin: 0 auto;
+
+  max-width: 414px;
+  height: 735px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/homepage/homepage-mob/mob-main-restaurant-details-1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/homepage/homepage-mob/mob-main-restaurant-details-2x.jpg);
+  }
+
+  @include tablet {
+    max-width: 1024px;
+    height: 620px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/homepage/homepage-tab/tab-main-restaurant-details-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/homepage/homepage-tab/tab-main-restaurant-details-2x.jpg);
+    }
+  }
+  @include desktop {
+    max-width: 1280px;
+    height: 620px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/homepage/homepage-desk/desk-main-restaurant-details-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/homepage/homepage-desk/desk-main-restaurant-details-2x.jpg);
+    }
+  }
+}
+
+.overlay-hotel {
+  margin: 0 auto;
+
+  max-width: 414px;
+  height: 735px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/homepage/homepage-mob/mob-main-hotel-details-1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30% 100%;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/homepage/homepage-mob/mob-main-hotel-details-2x.jpg);
+  }
+
+  @include tablet {
+    max-width: 1024px;
+    height: 620px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/homepage/homepage-tab/tab-main-hotel-details-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/homepage/homepage-tab/tab-main-hotel-details-2x.jpg);
+    }
+  }
+  @include desktop {
+    max-width: 1280px;
+    height: 620px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/homepage/homepage-desk/desk-main-hotel-details-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/homepage/homepage-desk/desk-main-hotel-details-2x.jpg);
+    }
+  }
+}
+
+.details-restaurant,
+.details-restaurant-hotel {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 40px;
+
+  @include tablet {
+    padding-top: 48px;
+    padding-bottom: 47px;
+  }
+}
+
+// Slider
+
+.slider {
+  margin-left: 40px;
+  margin-right: 100px;
+  max-width: 274px;
+  height: 270px;
+
+  background-color: grey;
+
+  @include tablet {
+    margin: 0;
+    margin-left: 312px;
+  }
+}
+
+.slider-hotel {
+  margin-left: 100px;
+  margin-right: 40px;
+  max-width: 274px;
+  height: 270px;
+
+  background-color: grey;
+
+  @include tablet {
+    margin-right: 0;
+  }
+}
+
+// Logo
+
+.details-restaurant__header {
+  margin-bottom: 12px;
+
+  font-family: $film-font;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+
+  color: $color-white;
+
+  @include tablet {
+    font-size: 64px;
+    line-height: 1.08;
+  }
+}
+
+// Text
+
+.details-restaurant__text {
+  margin-left: 125px;
+  margin-bottom: 48px;
+
+  @include tablet {
+    margin-bottom: 40px;
+    margin-left: 263px;
+  }
+}
+
+.details-restaurant__text--hotel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 124px;
+  margin-bottom: 48px;
+
+  @include tablet {
+    margin-right: 197px;
+    margin-bottom: 40px;
+  }
+  @include desktop {
+    margin-right: 338px;
+  }
+}
+
+.details-restaurant__subtitle {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: $color-white;
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
+.details-restaurant__description {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+
+  @include tablet {
+    width: 610px;
+
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.description-hotel {
+  @include tablet {
+    width: 549px;
+  }
+  @include tablet {
+    width: 595px;
+  }
+}
+
+// Buttons
+
+.for-slider {
+  margin-top: 80px;
+
+  @include tablet {
+    margin: 0;
+    position: absolute;
+    left: 47px;
+    top: 412px;
+  }
+  @include desktop {
+    left: 85px;
+    top: 414px;
+  }
+}
+
+.for-slider-hotel {
+  margin-top: 80px;
+
+  @include tablet {
+    margin: 0;
+    position: absolute;
+    right: 47px;
+    top: 412px;
+  }
+  @include desktop {
+    right: 87px;
+    top: 414px;
+  }
+}
+
+.details-restaurant__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 0 auto;
+  row-gap: 16px;
+
+  @include tablet {
+    align-items: flex-start;
+  }
+  @include desktop {
+  }
+}
+
+.details-restaurant__buttons--hotel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  // margin: 0 auto;
+  row-gap: 16px;
+}
+
+.details-restaurant__href {
+  color: $color-accent;
+}
+
+.details-restaurant__booking,
+.details-restaurant__demonstration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 236px;
+  height: 48px;
+
+  font-weight: 700;
+  line-height: 1.25;
+
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid $color-white;
+  border-radius: 25px;
+
+  color: $color-accent;
+  transition: background-color $main-transition-duration;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+
+    color: $color-accent;
+    background-color: $color-white;
+    border: 2px solid $color-accent;
+  }
+}
+
+.multiple-items {
+  margin-left: 240px;
+}

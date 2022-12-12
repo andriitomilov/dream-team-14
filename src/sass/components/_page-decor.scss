@@ -1,0 +1,37 @@
+.page-decor {
+  position: relative;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    height: 100%;
+    top: 0;
+  }
+  &:before {
+    
+    width: 134px;
+    border-left: 1px solid rgba(186, 186, 186, 0.4);
+    border-right: 1px solid rgba(186, 186, 186, 0.4);
+
+    @include tablet {
+      width: 468px;
+    }
+    @include desktop {
+      width: 604px;
+    }
+  }
+
+  &:after {
+    @include max-tablet {
+      display: none;
+    }
+    @include tablet {
+      width: 1px;
+      background-color: rgba(186, 186, 186, 0.4);
+    }
+  }
+}

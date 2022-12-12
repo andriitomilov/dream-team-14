@@ -4,6 +4,14 @@ body {
   letter-spacing: 0.02em;
 
   color: $color-primary-text-menu;
+  background-color: #212121;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  padding: 0;
 }
 
 h1,
@@ -46,4 +54,7 @@ img {
 
     padding: 0 85px;
   }
+}
+.link {
+  text-decoration: none;
 }
