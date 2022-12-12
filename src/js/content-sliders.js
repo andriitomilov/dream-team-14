@@ -74,13 +74,15 @@ var swiper = new Swiper ('.dishes-slider', {
         onlyInViewport: true,
     },
 
+    slidesPerView: 'auto',
+
     // Брейк поінти (адаптив)
     // Ширина єкрану
     // slidesPerView - кількість слайдів на екрані
     // spaceBetween - відступ між слайдами
     breakpoints: {
         320: {
-            slidesPerView: 1.3159,
+            slidesPerView: 2,
             spaceBetween: 20,
         },
         1024: {
@@ -92,6 +94,9 @@ var swiper = new Swiper ('.dishes-slider', {
             spaceBetween: 86,
         }
     },
+    
+    // стартовий слайд
+    //initialSlide: 0,
 
     // Відключення функціоналу, якщо слайдів меньше ніж треба
     watchOverflow: true,

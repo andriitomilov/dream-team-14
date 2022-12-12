@@ -1,37 +1,37 @@
 .dishes-slider-container {
-    transform: translateX(20px);
+    @media screen and (max-width: 1023px) {
+        transform: translateX(25px);
+    }
 }
 
 .dishes-slider {
     position: static;
     width: 374px;
     height: 270px;
+    margin-left: 0;
+    margin-right: 0;
     
-    @media screen and (max-width: 1023px) {
-        right: 0;
-        bottom: 232px;
-    }
-
     @include tablet {
         width: 662px;
     }
 
     @include desktop {
-        width: 548px;
+        width: 877px;
     }
 
-
     /*автоширина*/
-    /*&__slide {
+    &__slide {
+        min-width: fit-content;
         object-fit: cover;
-    }*/
+        flex-shrink: 1;
+    }
 }
 
 .dishes-slider-nav {
     display: flex;
     gap: 32px;
     justify-content: flex-start;
-    margin-top: 15px;
+    margin-top: 40px;
     margin-bottom: 32px;
 
     @include tablet {
