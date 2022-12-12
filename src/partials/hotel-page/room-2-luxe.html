@@ -1,57 +1,62 @@
 <section class="hotel-room">
-  <div class="container hotel-room__container">
-    <div class="hotel-room__wrap">
-      <p class="hotel-room__subtitle">Amet minim mollit non</p>
-      <a class="logo hotel-room__logo--brown" href="#">mimiho</a>
-      <h1 class="hotel-room__title">Двомісний номер <span>люкс</span></h1>
-      <p class="hotel-room__descript">
-        Amet minim mollit non deserunt <br />
-        ullamco est sit aliqua dolor do amet <br />
-        sint. Velit officia consequat duis enim <br />
-        velit mollit. Exercitation veniam <br />
-        consequat sunt nostrud amet.
-      </p>
-    </div>
-    <picture class="hotel-room__picture" data-aos="fade-left">
-      <source
-        srcset="
-          ./images/room-page/hotel-room-desk.jpg    1x,
-          ./images/room-page/hotel-room-desk-2x.jpg 2x
-        "
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="
-          ./images/room-page/hotel-room-tab.jpg    1x,
-          ./images/room-page/hotel-room-tab-2x.jpg 2x
-        "
-        media="(min-width: 1024px)"
-      />
-      <source
-        srcset="
-          ./images/room-page/hotel-room-mob.jpg    1x,
-          ./images/room-page/hotel-room-mob-2x.jpg 2x
-        "
-        media="(max-width: 1023px)"
-      />
-      <img
-        class="hotel-room__picture-img"
-        src="./images/room-page/hotel-room-desk.jpg"
-        alt="фото кімнати"
-      />
-    </picture>
+
+  <div class="container">
+
 
     <div class="hotel-room__container">
+      <div class="hotel-room__wrap">
+        <p class="hotel-room__subtitle">Amet minim mollit non</p>
+        <a class="logo hotel-room__logo--brown" href="./index.html">mimiho</a>
+        <h1 class="hotel-room__title">Двомісний номер <span>люкс</span></h1>
+        <p class="hotel-room__descript">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <picture class="hotel-room__picture">
+        <source
+          srcset="
+            ./images/hotel-page/hotel-desk/desk-hotel-room-1x.jpg 1x,
+            ./images/hotel-page/hotel-desk/desk-hotel-room-2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/hotel-page/hotel-tab/tab-hotel-room-1x.jpg 1x,
+            ./images/hotel-page/hotel-tab/tab-hotel-room-2x.jpg 2x
+          "
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ./images/hotel-page/hotel-mob/mob-hotel-room-1x.jpg 1x,
+            ./images/hotel-page/hotel-mob/mob-hotel-room-2x.jpg 2x
+          "
+          media="(max-width: 1023px)"
+        />
+        <img
+          class="hotel-room__picture-img"
+          src="./images/hotel-page/hotel-desk/desk-hotel-room-1x.jpg"
+          alt="фото кімнати"
+        />
+      </picture>
+    </div>
+    <div class="hotel-room__wrapper">
+      <!-- заглушка слайдер -->
       <div class="hotel-room__slider">
         <div class="hotel-room__slider-img"></div>
-        <div class="hotel-room__slider-arrows"></div>
       </div>
+
       <ul class="btn-list hotel-room__btn">
         <li class="btn-list__item">
-          <a class="btn-list__link" href="">Детальніше</a>
+          <button class="btn-list__btn" type="button">
+            <a class="btn-list__link" href="./room-page.html">Детальніше</a>
+          </button>
         </li>
         <li class="btn-list__item">
-          <a class="btn-list__link" href="">Переглянути ціни</a>
+          <button class="btn-list__btn" type="button">Переглянути ціни</button>
         </li>
       </ul>
     </div>

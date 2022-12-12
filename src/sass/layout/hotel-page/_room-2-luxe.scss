@@ -1,13 +1,43 @@
 .hotel-room {
+    position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
     background-color: $color-bg-lemon;
+
+
+    @include tablet {
+        padding-top: 62px;
+        padding-bottom: 104px;
+    }
+
+    @include desktop {
+        padding-top: 72px;
+        padding-bottom: 112px;
+    }
+
+    &__container {
+        @include tablet {
+            display: flex;
+            gap: 26px;
+            margin-bottom: 176px;
+        }
+
+        @include desktop {
+            gap: 48px;
+            margin-bottom: 188px;
+        }
+    }
 
     &__subtitle {
         font-family: $times-font;
         @include font(20px, 1.15, null, null);
         color: $color-primary-subtitle-homepage;
         margin-bottom: 8px;
+
+        @include tablet {
+            @include font(32px, 1.16, null, null);
+            margin-bottom: 4px;
+        }
     }
 
     &__title {
@@ -17,6 +47,16 @@
         color: $color-black;
         margin-bottom: 12px;
 
+        @include tablet {
+            @include font(30px, 1.13, null, 0.05em);
+            margin-bottom: 16px;
+        }
+
+        @include desktop {
+            @include font(36px, 1.15, null, 0.05em);
+            margin-bottom: 24px;
+        }
+
         span {
             text-transform: lowercase;
         }
@@ -24,36 +64,89 @@
 
     &__descript {
         @include font(12px, 1.25, 600, null);
+        width: 258px;
         margin-bottom: 32px;
+
+        @include tablet {
+            @include font(16px, 1.21, null, null);
+            width: 439px;
+            margin-bottom: 0;
+        }
+
+        @include desktop {
+            width: 400px;
+        }
     }
 
     &__picture {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 32px;
+
+        @include tablet {
+            position: absolute;
+            top: -32px;
+            right: 112px;
+            margin-bottom: 0;
+        }
+
+        @include desktop {
+            right: 180px;
+        }
     }
 
     &__picture-img {
-        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        box-shadow: $box-shadow-secondary;
         border-radius: 2px;
+    }
+
+    &__logo--brown {
+        color: $color-primary-title-hotel-page;
+        margin-bottom: 32px;
+
+        @include tablet {
+            @include font(64px, 1.1, null, null);
+            margin-bottom: 62px;
+        }
+
+        @include desktop {
+            margin-bottom: 72px;
+        }
+    }
+
+    &__wrapper {
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }
 
 .btn-list {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
 
-    &__item {
-        width: 236;
-        height: 48px;
-        text-align: center;
-        background-color: $color-black;
-        border-radius: 25px;
-        padding: 14px 0;
 
+    &__btn {
+        width: 236px;
+        height: 48px;
+        @include font(null, 1.25, 700, null);
+        color: $color-accent;
+        background-color: $color-black;
+        outline: transparent;
+        border: 2px solid $color-white;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: $main-transition-duration;
+
+        &:hover,
+        &:focus {
+            background-color: $color-white;
+            border-color: $color-accent;
+        }
     }
 
     &__link {
@@ -61,20 +154,8 @@
         @include font(null, 1.25, 700, null);
         text-decoration: none;
         color: $color-accent;
+        padding: 14px 65px;
     }
-}
-
-.logo {
-    display: block;
-    font-family: $film-font;
-    @include font(40px, 1, 700, 0.3em);
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.hotel-room__logo--brown {
-    color: $color-primary-title-hotel-page;
-    margin-bottom: 32px;
 }
 
 // заглушка для слайдера 
@@ -82,12 +163,15 @@
     width: 284px;
     height: 194px;
     background-color: gray;
-    margin-bottom: 20px;
-}
+    margin-bottom: 72px;
 
-.hotel-room__slider-arrows {
-    width: 98px;
-    height: 32px;
-    background-color: gray;
-    margin-bottom: 20px;
+    @include tablet {
+        width: 428px;
+        margin-bottom: 0;
+    }
+
+    @include desktop {
+        width: 548px;
+        height: 254px;
+    }
 }
