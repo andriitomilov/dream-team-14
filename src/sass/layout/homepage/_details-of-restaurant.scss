@@ -152,6 +152,47 @@
   }
 }
 
+.details-restaurant,
+.details-restaurant-hotel {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 40px;
+
+  @include tablet {
+    padding-top: 48px;
+    padding-bottom: 47px;
+  }
+}
+
+// Slider
+
+.slider {
+  margin-left: 40px;
+  margin-right: 100px;
+  max-width: 274px;
+  height: 270px;
+
+  background-color: grey;
+
+  @include tablet {
+    margin: 0;
+    margin-left: 312px;
+  }
+}
+
+.slider-hotel {
+  margin-left: 100px;
+  margin-right: 40px;
+  max-width: 274px;
+  height: 270px;
+
+  background-color: grey;
+
+  @include tablet {
+    margin-right: 0;
+  }
+}
+
 // Logo
 
 .details-restaurant__header {
@@ -173,23 +214,30 @@
 
 // Text
 
-.details-restaurant,
-.details-restaurant-hotel {
-  padding-top: 24px;
-  padding-bottom: 54px;
-
-  @include tablet {
-    padding-top: 48px;
-    padding-bottom: 47px;
-  }
-}
-
-.details-restaurant__text,
-.details-restaurant__text--hotel {
+.details-restaurant__text {
+  margin-left: 140px;
   margin-bottom: 48px;
 
   @include tablet {
     margin-bottom: 40px;
+    margin-left: 278px;
+  }
+}
+
+.details-restaurant__text--hotel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  margin-right: 139px;
+  margin-bottom: 48px;
+
+  @include tablet {
+    margin-right: 197px;
+    margin-bottom: 40px;
+  }
+  @include desktop {
+    margin-right: 338px;
   }
 }
 
@@ -223,6 +271,36 @@
 
 // Buttons
 
+.for-slider {
+  margin-top: 80px;
+
+  @include tablet {
+    margin: 0;
+    position: absolute;
+    left: 47px;
+    top: 412px;
+  }
+  @include desktop {
+    left: 85px;
+    top: 414px;
+  }
+}
+
+.for-slider-hotel {
+  margin-top: 80px;
+
+  @include tablet {
+    margin: 0;
+    position: absolute;
+    right: 47px;
+    top: 412px;
+  }
+  @include desktop {
+    right: 87px;
+    top: 414px;
+  }
+}
+
 .details-restaurant__buttons {
   display: flex;
   align-items: center;
@@ -231,17 +309,11 @@
 
   margin: 0 auto;
   row-gap: 16px;
-  padding-bottom: 40px;
 
   @include tablet {
     align-items: flex-start;
-
-    padding-left: 47px;
-    padding-bottom: 96px;
   }
   @include desktop {
-    padding-left: 85px;
-    padding-bottom: 94px;
   }
 }
 
@@ -253,16 +325,6 @@
 
   // margin: 0 auto;
   row-gap: 16px;
-  padding-bottom: 40px;
-
-  @include tablet {
-    padding-left: 741px;
-    padding-bottom: 100px;
-  }
-  @include desktop {
-    padding-left: 958px;
-    padding-bottom: 95px;
-  }
 }
 
 .details-restaurant__href {
