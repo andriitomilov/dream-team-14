@@ -1,0 +1,26 @@
+.hotel-room {
+
+    &__darker-bg {
+        background-color: $color-bg-dark-lemon;
+    }
+
+    &__wrap--side {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__descript--side {
+        padding-right: 59px;
+    }
+
+    &__picture--side {
+        justify-content: flex-start;
+    }
+
+    &__slider--side {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}

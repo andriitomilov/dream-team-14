@@ -18,11 +18,12 @@
     "url": "https://github.com/andriitomilov/dream-team-14/issues"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
-    "parcel": "^2.6.0",
+    "parcel": "^2.8.1",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },

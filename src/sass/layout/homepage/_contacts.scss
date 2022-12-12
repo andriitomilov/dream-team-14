@@ -117,6 +117,7 @@
   }
 }
 .contacts__item {
+  z-index: 1;
   @media screen and (max-width: 1023px) {
     display: flex;
     align-items: center;
@@ -152,6 +153,13 @@
   width: 24px;
   height: 24px;
   fill: $color-brown;
+  transition: fill $main-transition-duration;
+}
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon,
+.address__link:hover .address__icon,
+.address__link:focus .address__icon {
+  fill: $color-accent;
 }
 .contacts__phone {
   font-style: normal;
@@ -160,9 +168,18 @@
   line-height: calc(17 / 14);
   letter-spacing: 0.02em;
   color: $color-primary-title-hotel-page;
+  transition: color $main-transition-duration;
   @include desktop() {
     color: $color-secondary-address-homepage;
   }
+}
+.contacts__link:hover .contacts__icon + .contacts__phone,
+.contacts__link:focus .contacts__icon + .contacts__phone {
+  color: $color-primary-subtitle-homepage;
+}
+.contacts__link--second:focus .contacts__phone,
+.contacts__link--second:hover .contacts__phone {
+  color: $color-primary-subtitle-homepage;
 }
 .address__wrap {
   background: #ffffff;
@@ -188,11 +205,17 @@
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
   color: $color-primary-title-hotel-page;
+  transition: color $main-transition-duration;
   @include desktop() {
     color: $color-secondary-address-homepage;
   }
 }
+.address__link:hover .address__icon + .address__text,
+.address__link:focus .address__icon + .address__text {
+  color: $color-primary-subtitle-homepage;
+}
 .picture-box {
+  z-index: 1;
   @include tablet() {
     position: relative;
     transform: translateY(13px);

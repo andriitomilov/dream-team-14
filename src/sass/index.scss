@@ -1,26 +1,12 @@
 // utils
 @import './utils/module';
-@import './utils/vars';
-@import './utils/fonts';
-@import './utils/modern-normalize';
-@import './utils/mixins';
 
 // base
-@import './base/common';
 @import './base/module';
 
 // components
 
 @import './components/module';
-@import './components/visually-hidden';
 
 // layout
-
-@import './layout/header';
-@import './layout/homepage/contacts';
-@import './layout/homepage/about-restaurant';
-@import './layout/restaurant-page/about-kitchen';
-@import './layout/footer';
-@import './layout/homepage/details-of-restaurant';
-@import './layout/homepage/modal-details-of-restaurant';
 @import './layout/module';
