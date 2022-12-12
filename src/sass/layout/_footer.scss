@@ -1,51 +1,116 @@
 .footer {
   padding: 40px 0px;
-  background-color: $color-bg-footer;
 
-  &.social-list {
-    display: flex;
-    margin: 0;
+  background-color: $color-bg-footer;
+  @include tablet {
+    padding: 80px 0px;
+  }
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include mobile {
+    gap: 66px;
     justify-content: center;
+  }
+
+  @include tablet {
+    gap: 143px;
+  }
+
+  @include desktop {
+    gap: 211px;
   }
 }
 
 .logo-link {
   font-family: $film-font;
+  text-transform: uppercase;
   font-size: 40px;
-  line-height: calc(43 / 40);
   letter-spacing: 0.3em;
+  line-height: calc(43 / 40);
   color: $color-accent;
-  @media screen and (min-weight: $tablet) {
+
+  @include tablet {
     font-size: 64px;
     line-height: calc(69 / 64);
   }
 }
 
+.subscribe {
+  padding-left: 7px;
+
+  @include tablet {
+    display: flex;
+    align-items: start;
+    gap: 129px;
+  }
+
+  @include desktop {
+    gap: 191px;
+  }
+}
+
+.footer__list {
+  & .footer__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @include max-tablet {
+    margin-bottom: 32px;
+  }
+}
+
 .footer-nav {
-  font-family: $montserrat-font;
   font-weight: 500;
-  font-size: 20px;
-  line-height: calc(24 / 20);
-  letter-spacing: 0.02em;
+  font-size: 15px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.01em;
   color: $color-accent;
+
+  @include mobile {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
+  }
+}
+
+.social-list {
+  display: flex;
+  gap: 20px;
+
+  @include tablet {
+    flex-direction: column;
+    gap: 12px;
+    align-self: flex-start;
+    padding-left: 8px;
+  }
 }
 
 .social-link {
-  margin-bottom: 32px;
-  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  fill: $color-accent;
-  background-color: transparent;
+  @include tablet {
+    min-width: 143px;
+    padding: 10px 12px;
+    justify-content: space-between;
+    border: 0.5px solid $color-accent;
+    border-radius: 2px;
+  }
 }
 .social-title {
-  display: none;
+  color: $color-accent;
 
-  @media screen and (min-weight: $tablet) {
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.02em;
-    color: $color-accent;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  @media screen and (max-width: $tablet) {
+    display: none;
   }
+}
+.social-icon {
 }
