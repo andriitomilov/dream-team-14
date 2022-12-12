@@ -1,42 +1,31 @@
-<section class="details-restaurant">
-  <div class="overlay">
-    <div class="container">
-      <!-- Text -->
+<section class="details-restaurant overlay container">
+  <!-- Text -->
 
-      <div class="details-restaurant__text">
-        <h2 class="details-restaurant__header" lang="en">mimino</h2>
-        <h3 class="details-restaurant__subtitle">Ресторан</h3>
-        <p class="details-restaurant__description" lang="en">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit.
-        </p>
-      </div>
+  <div class="details-restaurant__text">
+    <h2 class="details-restaurant__header" lang="en">mimiho</h2>
+    <h3 class="details-restaurant__subtitle">Ресторан</h3>
+    <p class="details-restaurant__description" lang="en">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit.
+    </p>
+  </div>
 
-      <!-- Slider -->
+  <!-- Slider -->
 
-      <!-- <img src="./images/homepage/vine-backImg.jpg" alt="подача стейку" /> -->
-      <!-- 
-    <img src="./images/homepage/vine-backImg.jpg" alt="подача шашлику" />
+  <div class="slider"></div>
 
-    <img src="./images/homepage/vine-backImg.jpg" alt="подача страви" /> -->
+  <!-- Buttons -->
 
-      <!-- Buttons -->
-
-      <div class="for-slider">
-        <div class="details-restaurant__buttons">
-          <buttton
-            data-modal-open
-            type="button"
-            class="details-restaurant__booking"
-            >Забронювати столик</buttton
-          >
-          <buttton type="button" class="details-restaurant__demonstration"
-            ><a href="" class="details-restaurant__href"
-              >Переглянути меню</a
-            ></buttton
-          >
-        </div>
-      </div>
+  <div class="for-slider">
+    <div class="details-restaurant__buttons">
+      <buttton data-modal-open type="button" class="details-restaurant__booking"
+        >Забронювати столик</buttton
+      >
+      <buttton type="button" class="details-restaurant__demonstration"
+        ><a href="" class="details-restaurant__href"
+          >Переглянути меню</a
+        ></buttton
+      >
     </div>
   </div>
 </section>
@@ -77,13 +66,11 @@
         <div class="form__field">
           <label class="form__label" for="user-name"
             >Столик на яку кількість осіб?</label
-          ><input
-            type="text"
-            name="name"
-            id="user-name"
-            placeholder="2"
-            required
-          />
+          ><select type="number" name="value" id="value" required>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
           <button class="arrow-down-button">
             <svg class="icon-arrow-down">
               <use href="./images/icons/icons.svg#icon-arrow-down_24_24"></use>
@@ -93,14 +80,10 @@
         <div class="form__field ordered">
           <label class="form__label" for="user-name"
             >На яку дату бронювати?</label
-          ><input
-            type="text"
-            name="name"
-            id="user-name"
-            placeholder="Сьогодні"
-            required
-          />
-
+          ><select type="text" name="date" required>
+            <option value="today" selected>Сьогодні</option>
+            <option value="tommorow">Завтра</option>
+          </select>
           <button class="arrow-down-button">
             <svg class="icon-arrow-down">
               <use href="./images/icons/icons.svg#icon-arrow-down_24_24"></use>
@@ -115,8 +98,5 @@
   </div>
 </div>
 
-<!-- 1. Кнопка закрытия модалки (крестик) -->
-<!-- сделать секцию -->
-<!-- запушить -->
-<!-- кубик и переменные, фото для каждого размера -->
-<!-- Сделать слайдеры -->
+<!-- картинка на весь экран  -->
+<!-- прижать текст -->
