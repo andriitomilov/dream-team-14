@@ -1,0 +1,67 @@
+.dishes-slider-container {
+    transform: translateX(20px);
+}
+
+.dishes-slider {
+    position: static;
+    width: 374px;
+    height: 270px;
+    
+    @media screen and (max-width: 1023px) {
+        right: 0;
+        bottom: 232px;
+    }
+
+    @include tablet {
+        width: 662px;
+    }
+
+    @include desktop {
+        width: 548px;
+    }
+
+
+    /*автоширина*/
+    /*&__slide {
+        object-fit: cover;
+    }*/
+}
+
+.dishes-slider-nav {
+    display: flex;
+    gap: 32px;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-bottom: 32px;
+
+    @include tablet {
+        right: 62px;
+        bottom: 32px;
+    }
+
+    @include desktop {
+        right: 93px;
+        bottom: 50px;
+    }
+}
+
+.slider-nav__btn-prev,
+.slider-nav__btn-next {
+    position: static;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+
+    &::after {
+        display: none;
+    }
+
+    &:hover .slider-nav--white,
+    &:focus .slider-nav--white {
+        fill: $color-accent;
+    }
+}
+
+.slider-nav--white {
+    fill: $color-white;
+}
