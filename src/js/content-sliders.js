@@ -19,14 +19,14 @@ var swiper = new Swiper ('.rest-slider', {
             // Вмикання/вимикання, коли слайдер у вьюпорті
             onlyInViewport: true,
         },
-    
+                 
         // Брейк поінти (адаптив)
         // Ширина єкрану
         // slidesPerView - кількість слайдів на екрані
         // spaceBetween - відступ між слайдами
         breakpoints: {
             320: {
-                slidesPerView: 2,
+                slidesPerView: 'auto',
                 spaceBetween: 24,
             },
             1024: {
@@ -74,15 +74,13 @@ var swiper = new Swiper ('.dishes-slider', {
         onlyInViewport: true,
     },
 
-    slidesPerView: 'auto',
-
     // Брейк поінти (адаптив)
     // Ширина єкрану
     // slidesPerView - кількість слайдів на екрані
     // spaceBetween - відступ між слайдами
     breakpoints: {
         320: {
-            slidesPerView: 2,
+            slidesPerView: 'auto',
             spaceBetween: 20,
         },
         1024: {
