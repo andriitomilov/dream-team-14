@@ -32,6 +32,12 @@
      margin-bottom: 32px;
    }
 }
+.amenities__sectionname__text{
+    font-family: $montserrat-font;
+    line-height: 1.25;
+    
+    color: $color-primary-text-menu; 
+}
 .amenities__name{
     margin-bottom: 16px;
 font-family: $times-font;
@@ -50,6 +56,20 @@ font-family: $montserrat-font;
 line-height: 1.25;
 
 color: $color-primary-text-menu;
+@include tablet {
+    width: 400px;
+}
+
+}
+.amenities__group{
+@include tablet {
+    display: flex;
+    gap: 80px;
+}
+@include desktop {
+    display: flex;
+    gap: 159px;
+}
 }
 .amenities__button{
    
@@ -58,14 +78,29 @@ border: 1px solid $color-accent;
 border-radius: 25px;
 margin-top: 32px;
 margin-bottom: 20px;
-
+@media screen and (max-width: 413px) {
+    max-width: 384px;  
+    width: auto;
+}
 @include tablet{
     margin-top: 40px;
 margin-bottom: 32px;
+width: 434px;
+
+display: flex;
+margin-left: auto;
+align-items: center;
+justify-content: center;
 }
 @include desktop{
     margin-top: 40px;
 margin-bottom: 32px;
+width: 434px;
+
+display: flex;
+margin-left: auto;
+align-items: center;
+justify-content: center;
 }
 
 font-family: $montserrat-font;
