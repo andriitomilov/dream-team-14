@@ -20,9 +20,11 @@
     }
 
     /*автоширина*/
-    /*&__slide {
+    &__slide {
+        min-width: fit-content;
         object-fit: cover;
-    }*/
+        flex-shrink: 1;
+    }
 }
 
 .slider-nav {

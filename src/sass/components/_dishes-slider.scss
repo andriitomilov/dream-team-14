@@ -1,6 +1,6 @@
 .dishes-slider-container {
     @media screen and (max-width: 1023px) {
-        transform: translateX(25px);
+        transform: translateX(26px);
     }
 }
 
@@ -37,11 +37,13 @@
     @include tablet {
         right: 62px;
         bottom: 32px;
+        margin-bottom: 0;
     }
 
     @include desktop {
         right: 93px;
         bottom: 50px;
+        margin-top: 48px;
     }
 }
 

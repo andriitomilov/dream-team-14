@@ -26,7 +26,7 @@ var swiper = new Swiper ('.rest-slider', {
         // spaceBetween - відступ між слайдами
         breakpoints: {
             320: {
-                slidesPerView: 1.3159,
+                slidesPerView: 2,
                 spaceBetween: 24,
             },
             1024: {

@@ -106,8 +106,17 @@
   }
 }
 
-// Buttons
+.flex-wrap-restaurant {
 
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 29px;
+    align-items: center;
+  }
+  
+}
+// Buttons
 .details-restaurant__buttons {
   display: flex;
   margin: 0 auto;
@@ -115,16 +124,13 @@
   justify-content: center;
   flex-direction: column;
   row-gap: 16px;
-  padding-bottom: 40px;
 
-  @media screen and (min-width: 1024px) {
-    padding-left: 47px;
-    align-items: flex-start;
-    padding-bottom: 96px;
+  @include tablet {
+    margin-bottom: 50px;
+    align-self: flex-end;
   }
-  @media screen and (min-width: 1280px) {
-    padding-left: 85px;
-    padding-bottom: 94px;
+  @include desktop {
+    margin-bottom: 56px;
   }
 }
 
