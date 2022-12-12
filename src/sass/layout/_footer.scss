@@ -37,6 +37,13 @@
     font-size: 64px;
     line-height: calc(69 / 64);
   }
+
+  transition: color $main-transition-duration;
+
+  &:hover,
+  &:focus {
+    color: $color-brown;
+  }
 }
 
 .subscribe {
@@ -70,10 +77,17 @@
   letter-spacing: 0.01em;
   color: $color-accent;
 
+  transition: color $main-transition-duration;
+
   @include mobile {
     font-size: 20px;
     line-height: calc(24 / 20);
     letter-spacing: 0.02em;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-brown;
   }
 }
 
@@ -94,6 +108,10 @@
   align-items: center;
   justify-content: center;
 
+  color: $color-accent;
+  transition: color $main-transition-duration,
+    border-color $main-transition-duration;
+
   @include tablet {
     min-width: 143px;
     padding: 10px 12px;
@@ -101,10 +119,15 @@
     border: 0.5px solid $color-accent;
     border-radius: 2px;
   }
-}
-.social-title {
-  color: $color-accent;
 
+  &:hover,
+  &:focus {
+    color: $color-brown;
+    border-color: $color-brown;
+  }
+}
+
+.social-title {
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
@@ -113,4 +136,5 @@
   }
 }
 .social-icon {
+  fill: currentColor;
 }
