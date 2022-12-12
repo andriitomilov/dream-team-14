@@ -10,6 +10,10 @@
     height: 270px;
     margin-left: 0;
     margin-right: 0;
+
+    @media screen and (max-width: 413px) {
+        width: 100%;
+    }
     
     @include tablet {
         width: 662px;
@@ -27,9 +31,7 @@
     }
 }
 
-.dishes-slider-nav {
-    display: flex;
-    gap: 32px;
+.slider-nav.dishes {
     justify-content: flex-start;
     margin-top: 40px;
     margin-bottom: 32px;
@@ -45,25 +47,4 @@
         bottom: 50px;
         margin-top: 48px;
     }
-}
-
-.slider-nav__btn-prev,
-.slider-nav__btn-next {
-    position: static;
-    background-color: transparent;
-    width: 32px;
-    height: 32px;
-
-    &::after {
-        display: none;
-    }
-
-    &:hover .slider-nav--white,
-    &:focus .slider-nav--white {
-        fill: $color-accent;
-    }
-}
-
-.slider-nav--white {
-    fill: $color-white;
 }

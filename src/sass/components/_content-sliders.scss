@@ -1,69 +1,54 @@
+.rest-slider-container {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+
+    @include tablet {
+        right: 60px;
+        bottom: 32px;
+    }
+
+    @include desktop {
+        right: 85px;
+        bottom: 50px;
+    }
+}
+
 .rest-slider {
     width: 330px;
     height: 245px;
-    position: absolute;
-    right: 0;
-    bottom: 72px;
-
+    
+    
     @include tablet {
         width: 428px;
         height: 194px;
-        right: 60px;
-        bottom: 96px;
     }
 
     @include desktop {
         width: 548px;
         height: 254px;
-        right: 85px;
-        bottom: 118px;
     }
 
     /*автоширина*/
     &__slide {
         min-width: fit-content;
         object-fit: cover;
-        flex-shrink: 1;
+        flex-shrink: 1;       
     }
 }
 
-.slider-nav {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    gap: 32px;
+.slider-nav.restaurant {
     justify-content: flex-end;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-right: 17px;
 
     @include tablet {
-        right: 62px;
-        bottom: 32px;
+        margin-top: 52px;
+        margin-right: 0;
     }
 
     @include desktop {
-        right: 93px;
-        bottom: 50px;
+        margin-top: 56px;
+        margin-right: 0;
     }
-}
-
-.slider-nav__btn-prev,
-.slider-nav__btn-next {
-    position: static;
-    background-color: transparent;
-    width: 32px;
-    height: 32px;
-
-    &::after {
-        display: none;
-    }
-
-    &:hover .slider-nav--black,
-    &:focus .slider-nav--black {
-        fill: $color-accent;
-    }
-}
-
-.slider-nav--black {
-    fill: $color-black;
 }
