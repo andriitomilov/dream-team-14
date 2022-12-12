@@ -1,0 +1,177 @@
+// цвета можно вынести в переменную
+
+// Section
+
+.overlay {
+  margin: 0 auto;
+  max-width: 414px;
+  height: 735px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/homepage/vine-backImg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/homepage/vine-backImg@2x.jpg);
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+    height: 620px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    height: 620px;
+  }
+}
+
+// Logo
+
+.details-restaurant__header {
+  margin-bottom: 12px;
+  font-family: FilmP3, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+    line-height: 1.08;
+  }
+}
+
+// Text
+.details-restaurant__text {
+  padding-top: 24px;
+  padding-left: 140px;
+  margin-bottom: 48px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 40px;
+    padding-top: 48px;
+    padding-left: 278px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 338px;
+  }
+}
+
+.details-restaurant__text--hotel {
+  padding-top: 24px;
+  padding-right: 140px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 48px;
+    padding-right: 278px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-right: 338px;
+  }
+}
+
+.details-restaurant__subtitle {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+.details-restaurant__description {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+
+  @media screen and (min-width: 1024px) {
+    width: 610px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+// Buttons
+
+.details-restaurant__buttons {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 16px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 1024px) {
+    padding-left: 47px;
+    align-items: flex-start;
+    padding-bottom: 96px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 85px;
+    padding-bottom: 94px;
+  }
+}
+
+.details-restaurant__buttons--hotel {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 16px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 1024px) {
+    padding-left: 741px;
+    align-items: flex-start;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 958px;
+    padding-bottom: 95px;
+  }
+}
+
+.details-restaurant__href {
+  color: #f3c653;
+}
+
+.details-restaurant__booking,
+.details-restaurant__demonstration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 236px;
+  height: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  color: #f3c653;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: #f3c653;
+    background: #ffffff;
+    border: 2px solid #f3c653;
+  }
+}
