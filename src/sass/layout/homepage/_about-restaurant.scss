@@ -5,15 +5,18 @@
       padding-top: 16px;
       padding-bottom: 20px;
       position: relative;
+      height: 1191px;
   
       @include tablet {
         padding-top: 129px;
         padding-bottom: 72px;
+        height: 1238px;
       }
   
       @include desktop {
         padding-top: 120px;
-        padding-bottom: 0px;
+        padding-bottom: 50px;
+        height: 1275px;
       }
     }
   
@@ -78,13 +81,9 @@
   
     &__img {
       margin-left: auto;
-      width: 59vw;
-      max-width: 244px;
       box-shadow: $box-shadow-secondary;
   
       @include tablet {
-        width: 400px;
-        max-width: 400px;
         position: absolute;
         top: -33px;
         right: 112px;
@@ -92,26 +91,15 @@
       }
   
       @include desktop {
-        width: 460px;
-        max-width: 460px;
         right: 180px;
       }
     }
   
     &__picture {
-      width: 48vw;
-      max-width: 200px;
       box-shadow: $box-shadow-secondary;
   
       @include tablet {
-        width: 350px;
-        max-width: 350px;
         box-shadow: $box-shadow-primary;
-      }
-  
-      @include desktop {
-        width: 460px;
-        max-width: 460px;
       }
     }
   
