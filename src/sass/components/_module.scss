@@ -1,6 +1,16 @@
 // visually-hidden
 @import './visually-hidden';
 
+
+// backdrop
+@import './overlay';
+// price-modal
+@import './price-modal';
+// room-modal
+@import './room-modal';
+// table-modal
+@import './table-modal';
+
 //logo
 @import './logo';
 
@@ -9,3 +19,4 @@
 
 // decor for main
 @import './page-decor';
+
