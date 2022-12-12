@@ -1,21 +1,12 @@
 // utils
 @import './utils/module';
-@import './utils/vars';
-@import './utils/fonts';
-@import './utils/modern-normalize';
-@import './utils/mixins';
 
 // base
-@import './base/common';
 @import './base/module';
 
 // components
 
 @import './components/module';
-@import './components/visually-hidden';
 
 // layout
-
-@import './layout/header';
-@import './layout/footer';
 @import './layout/module';

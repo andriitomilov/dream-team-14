@@ -80,47 +80,30 @@
     }
   
     &__img {
-      width: 59vw;
-      max-width: 244px;
+      margin-bottom: 32px;
+
       box-shadow: $box-shadow-secondary;
   
       @include tablet {
-        width: 400px;
-        max-width: 400px;
-        height: 524px;
         position: absolute;
         top: -15px;
-        margin-left: 60px;
+        margin-left: 65px;
         box-shadow: $box-shadow-primary;
       }
   
       @include desktop {
-        width: 460px;
-        max-width: 460px;
-        height: 574px;
         position: absolute;
         top: -15px;
-        margin-left: 100px;
+        margin-left: 95px;
         box-shadow: $box-shadow-primary;
       }
     }
   
     &__picture {
-      width: 48vw;
-      max-width: 200px;
       box-shadow: $box-shadow-secondary;
   
       @include tablet {
-        width: 350px;
-        max-width: 350px;
-        height: 500px;
         box-shadow: $box-shadow-primary;
-      }
-  
-      @include desktop {
-        width: 460px;
-        max-width: 460px;
-        height: 574px;
       }
     }
   
@@ -140,8 +123,6 @@
     }
   
     &__box {
-      margin-top: 32px;
-      margin-bottom: 32px;
       display: flex;
       align-items: center;
       gap: 20px;
