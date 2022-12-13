@@ -1,5 +1,13 @@
 .hero-room__container{
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
   position: relative;
+
+  height: 740px;
   padding-top: 483px;
   padding-bottom: 14px;
 
@@ -8,6 +16,8 @@
   @include tablet {
     padding-top: 468px;
     padding-bottom: 20px;
+
+    height: 720px;
   }
   @include desktop {
     padding-top: 524px;
@@ -17,7 +27,6 @@
 
 .hero-room__title {
   margin-bottom: 14px;
-
   font-family: $times-font;
   @include font(28px, calc(32 / 28), null, 0.05em);
 
@@ -96,4 +105,8 @@
   @include desktop {
     right: 85px;
   }
+}
+
+.z-10{
+    z-index: 10;
 }
