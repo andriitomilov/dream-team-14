@@ -149,7 +149,7 @@ var swiper = new Swiper ('.hotel-slider', {
             },
             1280: {
                 slidesPerView: 2,
-                spaceBetween: 60,
+                spaceBetween: 65,
             }
         },
     
