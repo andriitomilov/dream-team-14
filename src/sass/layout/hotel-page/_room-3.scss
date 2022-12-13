@@ -1,0 +1,46 @@
+.hotel-room {
+
+    &__darker-bg {
+        background-color: $color-bg-dark-lemon;
+    }
+
+    &__wrap--side {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: auto;
+    }
+
+    &__container--side {
+        gap: 45px;
+    }
+
+    &__descript--side {
+
+        @include tablet {
+            width: 400px;
+        }
+    }
+
+    &__picture--side {
+        justify-content: flex-start;
+
+        @include tablet {
+            left: 112px;
+        }
+
+        @include desktop {
+            left: 180px;
+        }
+    }
+
+    // заглушка слайдер
+    &__slider--side {
+        display: flex;
+        justify-content: flex-end;
+
+        @include tablet {
+            order: 1;
+        }
+    }
+}

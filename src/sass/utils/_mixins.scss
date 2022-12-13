@@ -46,16 +46,19 @@
 
 // для ретіна зображень
 @mixin retina2x {
+
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     @content;
   }
 }
+
 @mixin retina3x {
+
   @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
     @content;
   }
 }
@@ -72,3 +75,4 @@
   justify-content: $content;
   align-items: $items;
 }
+
