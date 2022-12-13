@@ -1,13 +1,13 @@
 .hero-room {
   position: relative;
-  padding-top: 483px;
-  padding-bottom: 14px;
+  //padding-top: 483px;
+  //padding-bottom: 14px;
 
   color: $color-white;
 
   @include tablet {
-    padding-top: 468px;
-    padding-bottom: 20px;
+    //padding-top: 468px;
+    //padding-bottom: 20px;
   }
 }
 
@@ -49,6 +49,7 @@
 }
 
 .hero-room__address {
+  z-index: 1001;
   background-color: transparent;
   @include max-tablet {
     position: absolute;

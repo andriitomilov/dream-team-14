@@ -1,0 +1,12 @@
+.hero-slider {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    /*автоширина*/
+    &__slide {
+        min-width: fit-content;
+        object-fit: cover;
+        flex-shrink: 1;
+    }
+}
