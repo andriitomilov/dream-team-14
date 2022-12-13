@@ -36,3 +36,48 @@
         fill: $color-accent;
     }
 }
+
+// Стилі стрілок hero слайдерів
+.hero-slider__btn-prev,
+.hero-slider__btn-next {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 40px;
+    height: 40px;
+
+    @include desktop {
+        top: 432px;
+    }
+
+    &::after,
+    &::after {
+        display: none;
+    }
+}
+
+.hero-slider__btn-prev {
+    left: 15px;
+
+    @include tablet {
+        left: 47px;
+    }
+
+    @include desktop {
+        left: 85px;
+    }
+
+}
+.hero-slider__btn-next {
+    right: 15px;
+
+    @include tablet {
+        right: 47px;
+    }
+
+    @include desktop {
+        right: 85px;
+    }
+}
+
+.hero-slider__icon {
+    fill: $color-accent;
+}

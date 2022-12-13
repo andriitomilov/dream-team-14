@@ -14,6 +14,10 @@
 
 @import './logo';
 
+
+//button
+@import './btn';
+
 //content-sliders arrows
 @import './slider-arrows';
 
@@ -27,11 +31,11 @@
 @import './page-decor';
 
 
-// slider-arrows
-@import './slider-arrows';
+// hero-slider
+@import './hero-slider';
 
-// hotel-slider
-@import './hotel-slider';
+// hero-slider
+@import './_hotel-slider';
 
 // rooms-slider
 @import './rooms-slider';
