@@ -1,7 +1,7 @@
 // Контейнер-обгортка для слайдеру з винесеними стрілками
 .rooms-slider-container {
     @media screen and (max-width: 1023px) {
-        transform: translateX(-11px);
+        transform: translateX(-22px);
     }
 }
 // Контейнер слайдеру Swiper, за класом якого ініціалізован слайдер

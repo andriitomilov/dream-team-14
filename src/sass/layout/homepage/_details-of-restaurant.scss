@@ -153,7 +153,7 @@
 
 .details-restaurant__header {
   margin-bottom: 12px;
-  width: 202px;
+  width: 127px;
   font-family: $film-font;
   font-weight: 700;
   font-size: 40px;
@@ -165,6 +165,7 @@
   @include tablet {
     font-size: 64px;
     line-height: 1.08;
+    width: 202px;
   }
 }
 
@@ -216,7 +217,7 @@
   font-size: 12px;
   line-height: 1.25;
   color: $color-secondary-text-homepage;
-
+  width: 244px;
   @include tablet {
     width: 610px;
 
