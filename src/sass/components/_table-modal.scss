@@ -73,7 +73,22 @@
 
     outline: none;
 
-       
+    transition: $main-transition-duration;
+
+    &:hover ,
+    &:focus {
+        color: $color-black;
+        border: 1px solid $color-accent;
+}  
+
+    &::placeholder {
+        transition: $main-transition-duration;
+    }
+
+    &:hover::placeholder ,
+    &:focus::placeholder {
+         color: $color-black;
+} 
 }
 
 .modal-select {
@@ -87,6 +102,8 @@
     outline: none;
     appearance: none;
     cursor: pointer;
+
+    transition: $main-transition-duration;
     
         font-family: $times-font;
         font-style: normal;
@@ -96,7 +113,17 @@
         letter-spacing: 0.05em;
 
         color: $color-primary-text-modal;
-   
+        &:hover ,
+        &:focus {
+            color: $color-black;
+            border: 1px solid $color-accent;
+        }
+}
+
+.modal-select:hover  + .modal-select__icon ,
+.modal-select:focus  + .modal-select__icon {
+    fill: $color-accent;
+    
 }
 
 .select-wraper{
@@ -156,6 +183,9 @@
     fill: $color-brown;
 
     pointer-events: none;
+
+    transition: $main-transition-duration;
+
 }
 
 .modal-text {
