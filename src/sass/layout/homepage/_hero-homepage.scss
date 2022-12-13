@@ -1,5 +1,5 @@
 .hero__container {
-  // border: 1px solid red;
+  border: 1px solid red;
 
   position: relative;
   padding-top: 9px;
@@ -57,7 +57,7 @@
 
 .hero__address-text::before {
   content: '';
-  // border: 1px solid red;
+  border: 1px solid red;
 
   width: 20px;
   height: 20px;
@@ -71,7 +71,7 @@
 }
 
 .hero__title {
-  // border: 1px solid red;
+  border: 1px solid red;
 
   margin-bottom: 25px;
 
@@ -97,7 +97,7 @@
 }
 
 .hero__subtitle {
-  // border: 1px solid red;
+  border: 1px solid red;
 
   margin-bottom: 40px;
 
@@ -112,7 +112,7 @@
 }
 
 .hero__slogan {
-  // border: 1px solid red;
+  border: 1px solid red;
 
   margin-bottom: 110px;
 
@@ -127,19 +127,15 @@
 }
 
 .hero__buttons {
-  // border: 1px solid red;
-
-  // display: flex;
-  // flex-direction: column;
-  // gap: 25px;
-  // margin-bottom: 60px;
-  padding-bottom: 0;
+  border: 1px solid red;
+  margin-bottom: 0;
+  padding-bottom: 58px;
 }
 
 // social ----------------------------
 
 .hero__network {
-  // border: 1px solid red;
+  border: 1px solid red;
 }
 
 .list {
