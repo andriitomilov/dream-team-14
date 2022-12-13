@@ -1,8 +1,39 @@
 // visually-hidden
 @import './visually-hidden';
 
+// backdrop
+@import './overlay';
+// price-modal
+@import './price-modal';
+// room-modal
+@import './room-modal';
+// table-modal
+@import './table-modal';
+
 //logo
+
 @import './logo';
+
 
 //button
 @import './btn'
+
+//content-sliders arrows
+@import './slider-arrows';
+
+// rest-slider - section "About our restaurant"
+@import './content-sliders';
+
+// dishes-slider - section "Details of our restaurant
+@import './dishes-slider';
+
+// decor for main
+@import './page-decor';
+
+
+// hero-slider
+@import './hero-slider';
+
+// hero-slider
+@import './_hotel-slider';
+

@@ -6,8 +6,8 @@
     text-decoration: none;
 }
 
+// // logo mobile-darknes
 
-// logo mobile-darknes
 
 .logo--brown {
     color: $color-primary-title-hotel-page;
@@ -18,7 +18,13 @@
 }
 
 
-// logo mobile-white
+//     @include tablet {
+//         font-size: 69px;
+//     }
+// }
+
+// // logo mobile-white
+
 
 .logo--white {
     color: $color-white;
@@ -28,8 +34,12 @@
     }
 }
 
+//     @include tablet {
+//         font-size: 69px;
+//     }
+// }
 
-// logo mobile-footer 
+// // logo mobile-footer 
 
 .logo--footer {
     color: $color-accent;
@@ -41,7 +51,9 @@
 
 
 
-// logo mobile-header 
+// }
+
+// // logo mobile-header 
 
 .logo-header {
     font-size: 96px;
@@ -51,3 +63,4 @@
         font-size: 128px;
     }
 }
+
