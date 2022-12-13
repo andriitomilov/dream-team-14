@@ -1,3 +1,4 @@
+// Контейнер-обгортка для слайдеру з винесеними стрілками
 .rest-slider-container {
     position: absolute;
     right: 0;
@@ -13,7 +14,7 @@
         bottom: 50px;
     }
 }
-
+// Контейнер слайдеру Swiper, за класом якого ініціалізован слайдер
 .rest-slider {
     width: 330px;
     height: 245px;
@@ -29,14 +30,14 @@
         height: 254px;
     }
 
-    /*автоширина*/
+    // автоширина слайду
     &__slide {
         min-width: fit-content;
         object-fit: cover;
         flex-shrink: 1;       
     }
 }
-
+// Навігація окремого слайдеру, контейнер для стрілок
 .slider-nav.restaurant {
     justify-content: flex-end;
     margin-top: 40px;

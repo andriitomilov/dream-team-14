@@ -105,15 +105,14 @@
     line-height: 1.25;
   }
 }
-
+// Flex-обгортка для позиціонування слайдеру та Buttons
 .flex-wrap-restaurant {
   @media screen and (min-width: 1024px) {
     display: flex;
     flex-direction: row-reverse;
     gap: 29px;
     align-items: center;
-  }
-  
+  } 
 }
 // Buttons
 .details-restaurant__buttons {

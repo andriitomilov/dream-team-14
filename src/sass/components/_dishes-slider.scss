@@ -1,9 +1,10 @@
+// Контейнер-обгортка для слайдеру з винесеними стрілками
 .dishes-slider-container {
     @media screen and (max-width: 1023px) {
         transform: translateX(26px);
     }
 }
-
+// Контейнер слайдеру Swiper, за класом якого ініціалізован слайдер
 .dishes-slider {
     position: static;
     width: 374px;
@@ -23,14 +24,14 @@
         width: 877px;
     }
 
-    /*автоширина*/
+    // автоширина слайду
     &__slide {
         min-width: fit-content;
         object-fit: cover;
         flex-shrink: 1;
     }
 }
-
+// Навігація окремого слайдеру, контейнер для стрілок
 .slider-nav.dishes {
     justify-content: flex-start;
     margin-top: 40px;

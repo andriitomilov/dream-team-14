@@ -1,3 +1,4 @@
+// Контейнер для стрілок із стилями для всіх слайдеріві
 .slider-nav {
     display: flex;
     gap: 32px;
@@ -9,9 +10,8 @@
     &--white {
         fill: $color-white;
     }
-
 }
-
+// Стилі стрілок для всіх слайдерів
 .slider-nav__btn-prev,
 .slider-nav__btn-next {
     position: static;
