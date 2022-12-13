@@ -1,23 +1,8 @@
 // Section
-
-
-.container__details{
-  position: relative;
+.details-restaurant {
   padding-top: 24px;
   padding-bottom: 40px;
-
-  @include tablet {
-    padding-top: 48px;
-    padding-bottom: 47px;
-  }
-}
-.overlay-restaurant {
-
   margin: 0 auto;
-
-  max-width: 414px;
-  height: 735px;
-
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.65),
@@ -41,7 +26,8 @@
   @include tablet {
     max-width: 1024px;
     height: 620px;
-
+    padding-top: 48px;
+    padding-bottom: 40px;
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -88,12 +74,10 @@
   }
 }
 
-.overlay-hotel {
+.details-restaurant-hotel{
   margin: 0 auto;
-
-  max-width: 414px;
-  height: 735px;
-
+  padding-top: 48px;
+  padding-bottom: 40px;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.65),
@@ -165,42 +149,11 @@
   }
 }
 
-
-
-// Slider
-
-.slider {
-  margin-left: 40px;
-  margin-right: 100px;
-  max-width: 274px;
-  height: 270px;
-
-  background-color: grey;
-
-  @include tablet {
-    margin: 0;
-    margin-left: 312px;
-  }
-}
-
-.slider-hotel {
-  margin-left: 100px;
-  margin-right: 40px;
-  max-width: 274px;
-  height: 270px;
-
-  background-color: grey;
-
-  @include tablet {
-    margin-right: 0;
-  }
-}
-
 // Logo
 
 .details-restaurant__header {
   margin-bottom: 12px;
-
+  width: 202px;
   font-family: $film-font;
   font-weight: 700;
   font-size: 40px;
@@ -223,7 +176,7 @@
 
   @include tablet {
     margin-bottom: 40px;
-    margin-left: 263px;
+    margin-left: 231px;
   }
 }
 
@@ -235,11 +188,11 @@
   margin-bottom: 48px;
 
   @include tablet {
-    margin-right: 197px;
+    margin-right: 231px;
     margin-bottom: 40px;
   }
   @include desktop {
-    margin-right: 338px;
+    margin-right: 253px;
   }
 }
 
@@ -272,13 +225,22 @@
   }
 }
 
-// Flex-обгортка для позиціонування слайдеру та Buttons
+// Flex-обгортка для позиціонування слайдеру dishes-slider та Buttons
 .flex-wrap-restaurant {
   @media screen and (min-width: 1024px) {
     display: flex;
     flex-direction: row-reverse;
     gap: 29px;
-    align-items: center;
+    align-items: flex-end;
+  } 
+}
+
+// Flex-обгортка для позиціонування слайдеру dishes-slider та Buttons
+.flex-wrap-rooms {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    gap: 32px;
+    align-items: flex-end;
   } 
 }
 // Buttons
@@ -295,8 +257,6 @@
 
 // Buttons
 
-
-
 .details-restaurant__buttons {
   display: flex;
   align-items: center;
@@ -307,13 +267,8 @@
   row-gap: 16px;
 
   @include tablet {
-
-    margin-bottom: 50px;
-    align-self: flex-end;
-  }
-  @include desktop {
     margin-bottom: 56px;
-
+    align-self: flex-end;
   }
 }
 
@@ -325,6 +280,11 @@
 
   // margin: 0 auto;
   row-gap: 16px;
+
+  @include tablet {
+    margin-bottom: 56px;
+    align-self: flex-end;
+  }
 }
 
 .details-restaurant__href {
