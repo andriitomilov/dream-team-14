@@ -1,0 +1,15 @@
+
+.modal-field {
+    @include tablet {
+        width: 288px;
+        
+    }
+}
+ 
+ .modal.active,
+ .overlay.active{
+    opacity: 1;
+    visibility: visible;
+    
+ }
+ 

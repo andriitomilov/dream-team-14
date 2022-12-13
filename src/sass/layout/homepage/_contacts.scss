@@ -117,6 +117,7 @@
   }
 }
 .contacts__item {
+  z-index: 1;
   @media screen and (max-width: 1023px) {
     display: flex;
     align-items: center;
@@ -214,6 +215,7 @@
   color: $color-primary-subtitle-homepage;
 }
 .picture-box {
+  z-index: 1;
   @include tablet() {
     position: relative;
     transform: translateY(13px);

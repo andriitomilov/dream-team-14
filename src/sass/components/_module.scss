@@ -1,8 +1,20 @@
 // visually-hidden
 @import './visually-hidden';
 
+
+// backdrop
+@import './overlay';
+// price-modal
+@import './price-modal';
+// room-modal
+@import './room-modal';
+// table-modal
+@import './table-modal';
+
 //logo
+
 @import './logo';
+
 
 //content-sliders arrows
 @import './slider-arrows';
@@ -12,3 +24,10 @@
 
 // dishes-slider - section "Details of our restaurant
 @import './dishes-slider'
+
+
+// decor for main
+@import './page-decor';
+
+
+

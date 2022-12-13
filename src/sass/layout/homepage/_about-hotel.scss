@@ -87,14 +87,14 @@
       @include tablet {
         position: absolute;
         top: -15px;
-        margin-left: 60px;
+        margin-left: 65px;
         box-shadow: $box-shadow-primary;
       }
   
       @include desktop {
         position: absolute;
         top: -15px;
-        margin-left: 100px;
+        margin-left: 95px;
         box-shadow: $box-shadow-primary;
       }
     }

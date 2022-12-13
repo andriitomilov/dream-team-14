@@ -10,6 +10,7 @@
       type="image/png"
       href="./images/favicon/favicon.png"
     />
+
     <!-- AOS styles -->
     <link
       rel="stylesheet"
@@ -25,7 +26,7 @@
     <!-- HEADER -->
     <include src="./partials/header.html"></include>
 
-    <main>
+    <main class="page-decor">
       <!-- HERO -->
       <include src="./partials/homepage/hero-homepage.html"></include>
 
@@ -49,8 +50,9 @@
     <include src="./partials/footer.html"></include>
 
     <!-- MODAL WINDOWS -->
-    <include src="./partials/modal/book-table-modal.html"></include>
-    <include src="./partials/modal/book-room-modal.html"></include>
+    <!-- <include src="./partials/modal/book-table-modal.html"></include> -->
+    <!-- <include src="./partials/modal/book-room-modal.html"></include> -->
+    <include src="./partials/modal/modals.html"></include>
 
     <!-- SWIPER CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -62,9 +64,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./js/aos-script.js"></script>
-    <script src="./js/modal-restaurant.js" type="module"></script>
-    <script src="./js/modal-hotel.js" type="module"></script>
-    <script src="./js/content-sliders.js"></script>
+    <script type="module" src="./js/aos-script.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/content-sliders.js"></script>
   </body>
 </html>
