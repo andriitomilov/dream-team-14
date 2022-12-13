@@ -15,10 +15,19 @@
 
 @import './logo';
 
-// sliders
+
+//content-sliders arrows
+@import './slider-arrows';
+
+// rest-slider - section "About our restaurant"
 @import './content-sliders';
+
+// dishes-slider - section "Details of our restaurant
+@import './dishes-slider'
+
 
 // decor for main
 @import './page-decor';
+
 
 

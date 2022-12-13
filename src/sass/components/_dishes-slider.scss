@@ -1,55 +1,51 @@
 // Контейнер-обгортка для слайдеру з винесеними стрілками
-.rest-slider-container {
-    position: absolute;
-    right: 0;
-    bottom: 20px;
-
-    @include tablet {
-        right: 60px;
-        bottom: 32px;
-    }
-
-    @include desktop {
-        right: 85px;
-        bottom: 50px;
+.dishes-slider-container {
+    @media screen and (max-width: 1023px) {
+        transform: translateX(26px);
     }
 }
 // Контейнер слайдеру Swiper, за класом якого ініціалізован слайдер
-.rest-slider {
-    width: 330px;
-    height: 245px;
-    
+.dishes-slider {
+    position: static;
+    width: 370px;
+    height: 270px;
+    margin-left: 0;
+    margin-right: 0;
+
+    @media screen and (max-width: 413px) {
+        width: 100%;
+    }
     
     @include tablet {
-        width: 428px;
-        height: 194px;
+        width: 662px;
     }
 
     @include desktop {
-        width: 548px;
-        height: 254px;
+        width: 877px;
     }
 
     // автоширина слайду
     &__slide {
         min-width: fit-content;
         object-fit: cover;
-        flex-shrink: 1;       
+        flex-shrink: 1;
     }
 }
 // Навігація окремого слайдеру, контейнер для стрілок
-.slider-nav.restaurant {
-    justify-content: flex-end;
+.slider-nav.dishes {
+    justify-content: flex-start;
     margin-top: 40px;
-    margin-right: 17px;
+    margin-bottom: 32px;
 
     @include tablet {
-        margin-top: 52px;
-        margin-right: 0;
+        right: 62px;
+        bottom: 32px;
+        margin-bottom: 0;
     }
 
     @include desktop {
-        margin-top: 56px;
-        margin-right: 0;
+        right: 93px;
+        bottom: 50px;
+        margin-top: 48px;
     }
 }
