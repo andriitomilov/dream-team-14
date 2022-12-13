@@ -8,12 +8,12 @@ const swiper = new Swiper ('.hero-slider', {
     },
 
     // Автовисота
-    autoHeight: true,
+    // autoHeight: true,
 
     // Перемикання при кліку на слайд
-    slideToClickedSlide: true,
+    // slideToClickedSlide: true,
     // Курсор перетягування
-    grabCursor: true,
+    // grabCursor: true,
 
     // Керування клавіатурою
     keyboard: {
@@ -33,6 +33,7 @@ const swiper = new Swiper ('.hero-slider', {
     centeredSlides: true,
 
     // Безкінечність
+    autoplay: true,
     loop: true,
 
     // Ефект перемикання слайдерів
@@ -45,8 +46,8 @@ const swiper = new Swiper ('.hero-slider', {
     //  },
 
     // Вмикання/вимикання перетягування на ПК
-    simulateTouch: true,
+    // simulateTouch: true,
     // Чутливість свайпу 
-    touchRatio: 1,
+    // touchRatio: 1,
 
 });
