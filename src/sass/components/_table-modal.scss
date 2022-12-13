@@ -12,6 +12,8 @@
     background: $color-bg-lemon;
     border-radius: 2px;
 
+    pointer-events: none;
+
     @include mobile {
         width: 414px;
     }
