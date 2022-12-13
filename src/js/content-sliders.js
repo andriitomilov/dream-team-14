@@ -112,6 +112,7 @@ var swiper = new Swiper ('.dishes-slider', {
 
 });
 
+
 // Ініціалізація Swiper hotel-slider
 var swiper = new Swiper ('.hotel-slider', {
 
@@ -168,3 +169,4 @@ var swiper = new Swiper ('.hotel-slider', {
         //touchRatio: 1,
     
     });
+

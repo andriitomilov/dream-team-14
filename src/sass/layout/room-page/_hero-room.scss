@@ -1,0 +1,99 @@
+.hero-room {
+  position: relative;
+  padding-top: 483px;
+  padding-bottom: 14px;
+
+  color: $color-white;
+
+  @include tablet {
+    padding-top: 468px;
+    padding-bottom: 20px;
+  }
+  @include desktop {
+    padding-top: 524px;
+    padding-bottom: 48px;
+  }
+}
+
+.hero-room__title {
+  margin-bottom: 14px;
+
+  font-family: $times-font;
+  @include font(28px, calc(32 / 28), null, 0.05em);
+
+  @include tablet {
+    margin-bottom: 26px;
+    @include font(36px, calc(41 / 36), null, null);
+  }
+}
+.text-upper {
+  text-transform: uppercase;
+}
+.hero-room__wrap {
+  max-width: 325px;
+  @include tablet {
+    max-width: 450px;
+  }
+}
+.hero-room__content-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-room__description {
+  margin-bottom: 17px;
+
+  @include font(12px, calc(15 / 12), 700, 0.02em);
+
+  @include tablet {
+    margin-bottom: 26px;
+    max-width: 400px;
+    @include font(16px, calc(20 / 16), null, null);
+  }
+}
+
+.hero-room__address {
+  background-color: transparent;
+  @include max-tablet {
+    position: absolute;
+    top: 65px;
+    right: 15px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.address__text--secondary {
+  color: rgba(229, 229, 229, 1);
+}
+
+.network__list__hero-room {
+  @include max-tablet {
+    display: block;
+
+    & .network__item:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+  @include tablet {
+    display: flex;
+    gap: 20px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.hero-room__btn {
+  @include tablet {
+    position: absolute;
+    bottom: 66px;
+    right: 47px;
+  }
+  @include desktop {
+    right: 85px;
+  }
+}
