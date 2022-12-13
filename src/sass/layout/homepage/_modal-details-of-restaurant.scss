@@ -13,7 +13,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     position: relative;
     overflow: visible;
   }
@@ -31,7 +31,8 @@
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
-  //   transition: opacity 250ms map-get($cubic, cubic)
+
+  transition: opacity $main-transition-duration;
 }
 
 .is-hidden {
@@ -41,6 +42,7 @@
 
 .modal {
   position: absolute;
+
   padding: 60px 15px;
   top: 50%;
   left: 50%;
@@ -50,9 +52,9 @@
   border-radius: 2px;
 
   transform: translate(-50%, -50%);
-  background-color: #fffdee;
+  background-color: $color-bg-lemon;
 
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     padding: 60px 60px;
     width: 712px;
     height: 522px;
@@ -63,7 +65,7 @@
   width: 414px;
   height: 780px;
 
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     width: 712px;
     height: 638px;
   }
@@ -83,23 +85,37 @@
 
 // Inputs
 
-input {
-  background-color: transparent;
+input,
+select {
+  padding-left: 12px;
+
   width: 384px;
   height: 54px;
-  border: 1px solid #c79002;
-  padding-left: 12px;
-  border-radius: 2px;
+
   font-family: 'Times New Roman', Times, serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.05em;
-  color: #808080;
 
-  @media screen and (min-width: 1024px) {
+  border-radius: 2px;
+  border: 1px solid $color-brown;
+  background-color: transparent;
+  color: $color-primary-text-modal;
+
+  transition: border-color $main-transition-duration;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $color-black;
+    border-color: $color-accent;
+  }
+
+  @include tablet {
     font-size: 24px;
     line-height: 1.16;
+
     width: 288px;
     height: 64px;
   }
@@ -111,7 +127,7 @@ input {
   flex-direction: column-reverse;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
@@ -122,7 +138,7 @@ input {
   display: flex;
   flex-wrap: wrap;
 
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     column-gap: 16px;
     row-gap: 28px;
   }
@@ -130,22 +146,25 @@ input {
 
 .form__label {
   margin-top: 8px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.21;
-  color: #c79002;
 
-  @media screen and (min-width: 1024px) {
+  color: $color-brown;
+
+  @include tablet {
     display: flex;
     align-items: center;
     justify-content: center;
+
     font-size: 16px;
     line-height: 1.25;
   }
 }
 
 .ordered {
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     order: 1;
   }
 }
@@ -157,14 +176,16 @@ input {
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+
   font-family: 'Times New Roman', Times, serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
   text-transform: uppercase;
-  color: #000000;
 
-  @media screen and (min-width: 1024px) {
+  color: $color-black;
+
+  @include tablet {
     font-size: 40px;
     line-height: 1.15;
   }
@@ -177,23 +198,29 @@ input {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: #ffffff;
+
   width: 384px;
   height: 64px;
-  background-color: #000000;
-  border: 1px solid #f3c653;
+
   border-radius: 2px;
+  color: $color-white;
+  background-color: $color-black;
+  border: 1px solid $color-accent;
+
+  transition: background-color $main-transition-duration,
+    color $main-transition-duration;
 
   &:hover,
   &:focus {
     cursor: pointer;
-    color: #000000;
-    background-color: #f3c653;
+    color: $color-black;
+    background-color: $color-accent;
   }
 
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     width: 592px;
     height: 64px;
+
     font-size: 24px;
     line-height: 1.2;
   }
@@ -201,30 +228,49 @@ input {
 
 .modal__button {
   position: absolute;
-  background-color: transparent;
-  border-color: transparent;
 
   width: 24px;
   height: 24px;
   top: 16px;
   right: 16px;
+
+  background-color: transparent;
+  border-color: transparent;
+
+  transition: fill $main-transition-duration;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: $color-accent;
+  }
 }
 
 .arrow-down-button {
   position: absolute;
-  background-color: transparent;
-  border-color: transparent;
+
   top: 15px;
   right: 15px;
-  fill: #c79002;
+
+  background-color: transparent;
+  border-color: transparent;
+  fill: $color-brown;
+  transition: fill $main-transition-duration;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: $color-accent;
+  }
 }
 
 .confirm-container {
   margin-top: 20px;
-  @media screen and (min-width: 1024px) {
-    margin-top: 40px;
+
+  @include tablet {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
   }
 }
