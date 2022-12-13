@@ -1,13 +1,17 @@
-.hero-room {
+.hero-room__container{
   position: relative;
-  //padding-top: 483px;
-  //padding-bottom: 14px;
+  padding-top: 483px;
+  padding-bottom: 14px;
 
   color: $color-white;
 
   @include tablet {
-    //padding-top: 468px;
-    //padding-bottom: 20px;
+    padding-top: 468px;
+    padding-bottom: 20px;
+  }
+  @include desktop {
+    padding-top: 524px;
+    padding-bottom: 48px;
   }
 }
 
@@ -27,7 +31,7 @@
 }
 .hero-room__wrap {
   max-width: 325px;
-   @include tablet {
+  @include tablet {
     max-width: 450px;
   }
 }
@@ -49,12 +53,15 @@
 }
 
 .hero-room__address {
-  z-index: 1001;
   background-color: transparent;
   @include max-tablet {
     position: absolute;
     top: 65px;
     right: 15px;
+  }
+
+  @include desktop {
+    display: none;
   }
 }
 
@@ -63,9 +70,30 @@
 }
 
 .network__list__hero-room {
-  display: block;
+  @include max-tablet {
+    display: block;
 
-  & .network__item:not(:last-child) {
-    margin-bottom: 8px;
+    & .network__item:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+  @include tablet {
+    display: flex;
+    gap: 20px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.hero-room__btn {
+  @include tablet {
+    position: absolute;
+    bottom: 66px;
+    right: 47px;
+  }
+  @include desktop {
+    right: 85px;
   }
 }
