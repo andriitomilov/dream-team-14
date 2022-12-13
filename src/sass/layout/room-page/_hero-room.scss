@@ -23,6 +23,10 @@
     padding-top: 524px;
     padding-bottom: 48px;
   }
+  @include desktop {
+    padding-top: 524px;
+    padding-bottom: 48px;
+  }
 }
 
 .hero-room__title {
@@ -93,6 +97,19 @@
 
   @include desktop {
     display: none;
+
+  }
+}
+
+.hero-room__btn {
+  @include tablet {
+    position: absolute;
+    bottom: 66px;
+    right: 47px;
+  }
+  @include desktop {
+    right: 85px;
+
   }
 }
 
