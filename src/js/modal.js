@@ -52,22 +52,5 @@ document.addEventListener('DOMContentLoaded', function () {
       overlay.classList.remove('active');
     });
   });
-
-  document.body.addEventListener(
-    'keyup',
-    function (e) {
-      var key = e.keyCode;
-
-      if (key == 27) {
-        document.querySelector('.modal.active').classList.remove('active');
-        document.querySelector('.overlay').classList.remove('active');
-      }
-    },
-    false
-  );
-
-  overlay.addEventListener('click', function () {
-    document.querySelector('.modal.active').classList.remove('active');
-    this.classList.remove('active');
-  });
+  
 });
