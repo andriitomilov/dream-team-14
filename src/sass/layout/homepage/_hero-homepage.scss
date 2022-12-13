@@ -46,9 +46,6 @@
   &__address {
     width: 210px;
     height: 47px;
-    border: 1px solid rgba(243, 198, 83, 0.7);
-    border-radius: 2px;
-    padding: 8px 3px 10px 4px;
     margin-bottom: 70px;
     margin-left: auto;
 
@@ -56,30 +53,47 @@
       position: absolute;
       left: 63;
       bottom: 58;
-      border: none;
       margin-bottom: 0;
     }
 
     @include desktop {
       left: 85;
       bottom: 0;
-      border: 1px solid rgba(243, 198, 83, 0.7);
-      border-radius: 2px;
     }
 
     &-link {
       display: flex;
       align-items: center;
       gap: 8px;
-    }
-
-    &-icon {
+      color: $color-primary-address-homepage;
       fill: $color-accent;
+      padding: 8px 3px 10px 4px;
+      border: 1px solid rgba(243, 198, 83, 0.7);
+      border-radius: 2px;
+      transition: color $main-transition-duration, fill $main-transition-duration, border-color $main-transition-duration;
+
+
+      &:hover,
+      &:focus {
+        color: $color-primary-subtitle-homepage;
+        fill: rgba(199, 144, 2, 0.7);
+        border-color: rgba(199, 144, 2, 0.7);
+      }
+
+      &--hidden {
+        @include tablet {
+          border: none;
+        }
+
+        @include desktop {
+          border: 1px solid rgba(243, 198, 83, 0.7);
+          border-radius: 2px;
+        }
+      }
     }
 
     &-text {
       @include font(12px, 1.25, null, 0.01em);
-      color: $color-primary-address-homepage;
     }
   }
 
@@ -147,10 +161,13 @@
     }
 
     &-icon {
-      display: block;
-      width: 24px;
-      height: 24px;
       fill: rgba(243, 198, 83, 0.7);
+      transition: fill $main-transition-duration;
+
+      &:hover,
+      &:focus {
+        fill: rgba(199, 144, 2, 0.7);
+      }
     }
   }
 
@@ -169,6 +186,7 @@
 
     &-btn {
       background: rgba(0, 0, 0, 0.4);
+      transition: background $main-transition-duration, border $main-transition-duration;
 
       &:hover,
       &:focus {
