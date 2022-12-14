@@ -38,19 +38,22 @@ document.addEventListener('DOMContentLoaded', function () {
         modalElem = document.querySelector(
           '.modal[data-modal="' + modalId + '"]'
         );
+      const scrollLockMethod = 'disableBodyScroll';
 
       modalElem.classList.add('active');
       overlay.classList.add('active');
+      bodyScrollLock[scrollLockMethod](document.body);
     });
   });
 
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
       var parentModal = this.closest('.modal');
+      const scrollLockMethod = 'enableBodyScroll';
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
+      bodyScrollLock[scrollLockMethod](document.body);
     });
   });
-  
 });
