@@ -19,6 +19,9 @@
   }
 
   &__address {
+    @extend %wrap;
+    padding: 8px 3px 8px 3px;
+    display: block;
     max-width: 210px;
 
     @include max-tablet {
@@ -32,6 +35,8 @@
       left: 47px;
       bottom: 69px;
       margin-bottom: 0;
+      padding-right: 12px;
+      padding-left: 10px;
     }
 
     @include desktop {
@@ -40,16 +45,13 @@
     }
 
     &-link {
+      color: $color-primary-address-homepage;
+      fill: $color-accent;
       display: flex;
       align-items: center;
       gap: 8px;
-      color: $color-primary-address-homepage;
-      fill: $color-accent;
-      padding: 8px 3px 8px 3px;
-      border: 1px solid rgba(243, 198, 83, 0.7);
-      border-radius: 2px;
       transition: color $main-transition-duration,
-        fill $main-transition-duration, border-color $main-transition-duration;
+        fill $main-transition-duration;
 
       &:hover,
       &:focus {
@@ -63,7 +65,7 @@
       @include font(12px, 1.25, null, 0.01em);
 
       @include tablet {
-        @include font(16px, calc(20 / 16), null, null);
+        @include font(16px, calc(20 / 16), null, 0.01em);
       }
     }
   }
