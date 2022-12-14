@@ -15,13 +15,13 @@
 }
 
 // Контейнер слайдеру Swiper, за класом якого ініціалізован слайдер
-.swiper-mini {
+.slider-mini {
     width: 284px;
-    height: 194px;
-      
+    margin-bottom: 20px;
 
     @media screen and (min-width: 458px) {
         width: 428px;
+        margin-bottom: 0px;
     }
     
     @include tablet {
@@ -30,9 +30,7 @@
 
     @include desktop {
         width: 548px;
-        height: 254px;
     }
-
 
     // автоширина слайду
     &__slide {
@@ -43,16 +41,13 @@
 }
 
 // Навігація слайдеру slider-mini, контейнер для стрілок
-.slider-nav.slider-mini {
+.slider-nav.slider-mini-nav {
     position: static;
     margin-top: 20px;
-    margin-bottom: 20px;
     justify-content: flex-start;
 
     @include tablet {
         margin-top: 32px;
-        margin-bottom: 0px;
-        justify-content: flex-end;
     }
 
     @include desktop {
@@ -60,11 +55,10 @@
     }
 }
 
-.tripleroom-slider-container .slider-mini {
+.slider-mini.tripleroom {
     justify-content: flex-end;
 
     @include tablet {
         justify-content: flex-start;
      }
-
 }

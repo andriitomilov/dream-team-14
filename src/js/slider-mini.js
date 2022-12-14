@@ -1,5 +1,5 @@
 // Ініціалізація Swiper doubleluxe-slider
-const swiper = new Swiper ('.swiper-mini', {
+const swiper = new Swiper ('.slider-mini', {
 
     // Стрілки
     navigation: {
@@ -26,10 +26,6 @@ const swiper = new Swiper ('.swiper-mini', {
         // spaceBetween - відступ між слайдами
         breakpoints: {
             320: {
-                slidesPerView: 1.3,
-                spaceBetween: 16,
-            },
-            414: {
                 slidesPerView: 'auto',
                 spaceBetween: 16,
             },
