@@ -1,0 +1,30 @@
+.wrap-overlay__restaurant {
+    background-image: $gradient-img-hero,
+        url('../images/restaurant-page/restaurant-mob/mob-restaurant-hero-1x.jpg');
+
+    @include retina2x {
+        background-image: $gradient-img-hero,
+            url('../images/restaurant-page/restaurant-mob/mob-restaurant-hero-2x.jpg');
+    }
+
+    @include mobile {
+        background-image: $gradient-img-hero,
+            url('../images/restaurant-page/restaurant-tab/tab-restaurant-hero-1x.jpg');
+
+        @include retina2x {
+            background-image: $gradient-img-hero,
+                url('../images/restaurant-page/restaurant-tab/tab-restaurant-hero-2x.jpg');
+        }
+    }
+
+    @include tablet {
+        background-image: $gradient-img-hero,
+            url('../images/restaurant-page/restaurant-desk/desk-restaurant-hero-1x.jpg');
+
+        @include retina2x {
+            background-image: $gradient-img-hero,
+                url('../images/restaurant-page/restaurant-desk/desk-restaurant-hero-2x.jpg');
+            ;
+        }
+    }
+}

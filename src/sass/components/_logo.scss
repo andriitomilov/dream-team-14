@@ -8,8 +8,15 @@
 
 // // logo mobile-darknes
 
-// .logo--brown {
-//     color: $color-primary-title-hotel-page;
+
+.logo--brown {
+    color: $color-primary-title-hotel-page;
+
+    @include tablet {
+        font-size: 69px;
+    }
+}
+
 
 //     @include tablet {
 //         font-size: 69px;
@@ -18,8 +25,14 @@
 
 // // logo mobile-white
 
-// .logo--white {
-//     color: $color-white;
+
+.logo--white {
+    color: $color-white;
+
+    @include tablet {
+        font-size: 69px;
+    }
+}
 
 //     @include tablet {
 //         font-size: 69px;
@@ -28,22 +41,26 @@
 
 // // logo mobile-footer 
 
-// .logo--footer {
-//     color: $color-accent;
+.logo--footer {
+    color: $color-accent;
 
-//     @include tablet {
-//         font-size: 69px;
-//     }
+    @include tablet {
+        font-size: 69px;
+    }
+}
+
+
 
 // }
 
 // // logo mobile-header 
 
-// .logo-header {
-//     font-size: 96px;
-//     color: $color-white;
+.logo-header {
+    font-size: 96px;
+    color: $color-white;
 
-//     @include tablet {
-//         font-size: 128px;
-//     }
-// }
+    @include tablet {
+        font-size: 128px;
+    }
+}
+

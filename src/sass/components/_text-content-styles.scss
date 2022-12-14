@@ -1,0 +1,60 @@
+// підзаголовок
+
+.subtitle {
+  font-family: $times-font;
+
+  @include font(20px, null, null, null);
+
+  color: $color-primary-subtitle-homepage;
+
+  @include tablet {
+    @include font(32px, 1.6, null, null);
+  }
+}
+
+// mimiho
+
+.title {
+  font-family: $film-font;
+  @include font(40px, 1.08, 700, 0.3em);
+
+  text-transform: uppercase;
+
+  @include tablet {
+    @include font(64px, null, null, null);
+  }
+}
+
+.title--primary {
+  color: $color-primary-title-hotel-page;
+}
+
+.title--secondary {
+  color: $color-white;
+}
+
+// текст
+
+.text-content {
+  @include font(12px, 1.25, 600, 0.02em);
+
+  @include tablet {
+    @include font(16px, null, null, null);
+  }
+}
+
+.text-content---primary {
+  color: $color-primary-text-homepage;
+}
+
+.text-content--secondary {
+  color: $color-secondary-text-homepage;
+}
+
+.text-content--light {
+  color: $color-primary-subtitle-homepage;
+}
+
+.text-content--brown {
+  color: $color-brown;
+}

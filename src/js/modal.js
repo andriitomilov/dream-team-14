@@ -56,5 +56,4 @@ document.addEventListener('DOMContentLoaded', function () {
       bodyScrollLock[scrollLockMethod](document.body);
     });
   });
-  
 });

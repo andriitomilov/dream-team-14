@@ -14,6 +14,9 @@
 
 @import './logo';
 
+//button
+@import './btn';
+
 //content-sliders arrows
 @import './slider-arrows';
 
@@ -25,3 +28,28 @@
 
 // decor for main
 @import './page-decor';
+
+// hero-slider
+@import './hero-slider';
+
+// hero-slider
+@import './_hotel-slider';
+
+// rooms-slider
+@import './rooms-slider';
+
+// kitchen-slider
+@import './_kitchen-slider.scss';
+
+@import './wrap-overlay';
+
+// slider-mini
+@import './slider-mini';
+
+// placeholder
+
+@import './placeholder';
+
+// text-content-styles
+@import './text-content-styles';
+

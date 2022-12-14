@@ -4,11 +4,12 @@ body {
   letter-spacing: 0.02em;
 
   color: $color-primary-text-menu;
-  background-color: #212121;
+  background-color: $color-bg-lemon;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 button {
   padding: 0;
@@ -36,6 +37,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+
+  z-index: 2;
 }
 
 .container {
@@ -57,4 +60,9 @@ img {
 }
 .link {
   text-decoration: none;
+}
+
+// Клас змінює напрямок для флекс-контейнерів
+.row-reverse {
+  flex-direction: row-reverse;
 }

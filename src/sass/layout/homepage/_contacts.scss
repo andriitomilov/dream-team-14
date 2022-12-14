@@ -1,11 +1,4 @@
-.list {
-  list-style-type: none;
-}
-.link {
-  text-decoration: none;
-}
 .contacts {
-  background: $color-bg-lemon;
 }
 .contacts__container {
   @media screen and (max-width: 1023px) {
@@ -90,12 +83,10 @@
   }
 }
 .contacts__wrap {
+  @extend %wrap;
   background: #ffffff;
-  border: 0.5px solid $color-accent;
   border-radius: 2px;
   padding: 9px 8px 7px 8px;
-  display: inline-flex;
-  align-items: center;
   gap: 12px;
   flex-wrap: wrap;
   @media screen and (max-width: 413px) {
@@ -110,10 +101,20 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
+  color: $color-primary-title-hotel-page;
+  transition: color $main-transition-duration;
+  @include desktop() {
+    color: $color-secondary-address-homepage;
+  }
 }
 .contacts__link--second {
+  color: $color-primary-title-hotel-page;
+  transition: color $main-transition-duration;
   @media screen and (max-width: 413px) {
     margin-left: 32px;
+  }
+  @include desktop() {
+    color: $color-secondary-address-homepage;
   }
 }
 .contacts__item {
@@ -167,51 +168,39 @@
   font-size: 14px;
   line-height: calc(17 / 14);
   letter-spacing: 0.02em;
-  color: $color-primary-title-hotel-page;
-  transition: color $main-transition-duration;
-  @include desktop() {
-    color: $color-secondary-address-homepage;
-  }
 }
-.contacts__link:hover .contacts__icon + .contacts__phone,
-.contacts__link:focus .contacts__icon + .contacts__phone {
-  color: $color-primary-subtitle-homepage;
-}
-.contacts__link--second:focus .contacts__phone,
-.contacts__link--second:hover .contacts__phone {
-  color: $color-primary-subtitle-homepage;
-}
+
 .address__wrap {
+  @extend %wrap;
   background: #ffffff;
-  border: 0.5px solid $color-accent;
-  border-radius: 2px;
   padding-top: 8px;
   padding-bottom: 7px;
   padding-left: 10px;
-  padding-right: 8px;
-  display: inline-flex;
-  align-items: center;
+  padding-right: 15px;
   gap: 10px;
+  @include tablet() {
+    padding-right: 8px;
+  }
 }
 .address__link {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-.address__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.02em;
   color: $color-primary-title-hotel-page;
   transition: color $main-transition-duration;
   @include desktop() {
     color: $color-secondary-address-homepage;
   }
 }
-.address__link:hover .address__icon + .address__text,
-.address__link:focus .address__icon + .address__text {
+.address__text {
+  @extend %address-text;
+}
+.address__link:hover,
+.address__link:focus,
+.contacts__link:hover,
+.contacts__link:focus,
+.contacts__link--second :hover,
+.contacts__link--second:focus {
   color: $color-primary-subtitle-homepage;
 }
 .picture-box {

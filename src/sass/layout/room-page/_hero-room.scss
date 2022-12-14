@@ -1,5 +1,13 @@
-.hero-room {
+.hero-room__container{
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
   position: relative;
+
+  height: 740px;
   padding-top: 483px;
   padding-bottom: 14px;
 
@@ -8,12 +16,21 @@
   @include tablet {
     padding-top: 468px;
     padding-bottom: 20px;
+
+    height: 720px;
+  }
+  @include desktop {
+    padding-top: 524px;
+    padding-bottom: 48px;
+  }
+  @include desktop {
+    padding-top: 524px;
+    padding-bottom: 48px;
   }
 }
 
 .hero-room__title {
   margin-bottom: 14px;
-
   font-family: $times-font;
   @include font(28px, calc(32 / 28), null, 0.05em);
 
@@ -27,7 +44,7 @@
 }
 .hero-room__wrap {
   max-width: 325px;
-   @include tablet {
+  @include tablet {
     max-width: 450px;
   }
 }
@@ -55,6 +72,10 @@
     top: 65px;
     right: 15px;
   }
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .address__text--secondary {
@@ -62,9 +83,47 @@
 }
 
 .network__list__hero-room {
-  display: block;
+  @include max-tablet {
+    display: block;
 
-  & .network__item:not(:last-child) {
-    margin-bottom: 8px;
+    & .network__item:not(:last-child) {
+      margin-bottom: 8px;
+    }
   }
+  @include tablet {
+    display: flex;
+    gap: 20px;
+  }
+
+  @include desktop {
+    display: none;
+
+  }
+}
+
+.hero-room__btn {
+  @include tablet {
+    position: absolute;
+    bottom: 66px;
+    right: 47px;
+  }
+  @include desktop {
+    right: 85px;
+
+  }
+}
+
+.hero-room__btn {
+  @include tablet {
+    position: absolute;
+    bottom: 66px;
+    right: 47px;
+  }
+  @include desktop {
+    right: 85px;
+  }
+}
+
+.z-10{
+    z-index: 10;
 }

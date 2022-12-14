@@ -1,8 +1,7 @@
-// Section
+// OVERLAY
 
-
-.container__details{
-  position: relative;
+.wrap-overlay__details-restaurant,
+.wrap-overlay__details-hotel {
   padding-top: 24px;
   padding-bottom: 40px;
 
@@ -11,219 +10,96 @@
     padding-bottom: 47px;
   }
 }
-.overlay-restaurant {
 
-  margin: 0 auto;
+.wrap-overlay__details-restaurant {
+  background-image: $gradient-img-hero,
+    url('../images/homepage/homepage-mob/mob-main-restaurant-details-1x.jpg');
 
-  max-width: 414px;
-  height: 735px;
-
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
-    url(../images/homepage/homepage-mob/mob-main-restaurant-details-1x.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../images/homepage/homepage-mob/mob-main-restaurant-details-2x.jpg);
+  @include retina2x {
+    background-image: $gradient-img-hero,
+      url('../images/homepage/homepage-mob/mob-main-restaurant-details-2x.jpg');
   }
 
-  @include tablet {
-    max-width: 1024px;
-    height: 620px;
+  @include mobile {
+    background-image: $gradient-img-hero,
+      url('../images/homepage/homepage-tab/tab-main-restaurant-details-1x.jpg');
 
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../images/homepage/homepage-tab/tab-main-restaurant-details-1x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/homepage/homepage-tab/tab-main-restaurant-details-2x.jpg);
+    @include retina2x {
+      background-image: $gradient-img-hero,
+        url('../images/homepage/homepage-tab/tab-main-restaurant-details-2x.jpg');
     }
-  }
-  @include desktop {
-    max-width: 1280px;
-    // height: 620px;
 
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../images/homepage/homepage-desk/desk-main-restaurant-details-1x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include tablet {
+      background-image: $gradient-img-hero,
+        url('../images/homepage/homepage-desk/desk-main-restaurant-details-1x.jpg');
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/homepage/homepage-desk/desk-main-restaurant-details-2x.jpg);
+      @include retina2x {
+        background-image: $gradient-img-hero,
+          url('../images/homepage/homepage-desk/desk-main-restaurant-details-2x.jpg');
+      }
     }
   }
 }
 
-.overlay-hotel {
-  margin: 0 auto;
+.wrap-overlay__details-hotel {
+  background-image: $gradient-img-hero,
+    url('../images/homepage/homepage-mob/mob-main-hotel-details-1x.jpg');
 
-  max-width: 414px;
-  height: 735px;
-
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
-    url(../images/homepage/homepage-mob/mob-main-hotel-details-1x.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 30% 100%;
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../images/homepage/homepage-mob/mob-main-hotel-details-2x.jpg);
+  @include retina2x {
+    background-image: $gradient-img-hero,
+      url('../images/homepage/homepage-mob/mob-main-hotel-details-2x.jpg');
   }
 
-  @include tablet {
-    max-width: 1024px;
-    height: 620px;
+  @include mobile {
+    background-image: $gradient-img-hero,
+      url('../images/homepage/homepage-tab/tab-main-hotel-details-1x.jpg');
 
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../images/homepage/homepage-tab/tab-main-hotel-details-1x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/homepage/homepage-tab/tab-main-hotel-details-2x.jpg);
+    @include retina2x {
+      background-image: $gradient-img-hero,
+        url('../images/homepage/homepage-tab/tab-main-hotel-details-2x.jpg');
     }
-  }
-  @include desktop {
-    max-width: 1280px;
-    height: 620px;
 
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../images/homepage/homepage-desk/desk-main-hotel-details-1x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include tablet {
+      background-image: $gradient-img-hero,
+        url('../images/homepage/homepage-desk/desk-main-hotel-details-1x.jpg');
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/homepage/homepage-desk/desk-main-hotel-details-2x.jpg);
+      @include retina2x {
+        background-image: $gradient-img-hero,
+          url('../images/homepage/homepage-desk/desk-main-hotel-details-2x.jpg');
+      }
     }
   }
 }
 
-
-
-// Slider
-
-.slider {
-  margin-left: 40px;
-  margin-right: 100px;
-  max-width: 274px;
-  height: 270px;
-
-  background-color: grey;
-
-  @include tablet {
-    margin: 0;
-    margin-left: 312px;
-  }
-}
-
-.slider-hotel {
-  margin-left: 100px;
-  margin-right: 40px;
-  max-width: 274px;
-  height: 270px;
-
-  background-color: grey;
-
-  @include tablet {
-    margin-right: 0;
-  }
-}
-
-// Logo
+// LOGO
 
 .details-restaurant__header {
   margin-bottom: 12px;
-
-  font-family: $film-font;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.07;
-  letter-spacing: 0.3em;
+  width: 127px;
 
   color: $color-white;
 
   @include tablet {
-    font-size: 64px;
-    line-height: 1.08;
+    width: 202px;
   }
 }
 
 // Text
 
-.details-restaurant__text {
-  margin-left: 125px;
+.details-restaurant__text,
+.details-restaurant__text--hotel {
   margin-bottom: 48px;
 
   @include tablet {
     margin-bottom: 40px;
-    margin-left: 263px;
+  }
+}
+
+.details-restaurant__text {
+  margin-left: 125px;
+
+  @include tablet {
+    margin-left: 231px;
   }
 }
 
@@ -232,14 +108,12 @@
   flex-direction: column;
   align-items: flex-end;
   margin-right: 124px;
-  margin-bottom: 48px;
 
   @include tablet {
-    margin-right: 197px;
-    margin-bottom: 40px;
+    margin-right: 231px;
   }
   @include desktop {
-    margin-right: 338px;
+    margin-right: 253px;
   }
 }
 
@@ -259,43 +133,40 @@
 }
 
 .details-restaurant__description {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  color: $color-secondary-text-homepage;
+  width: 244px;
 
   @include tablet {
     width: 610px;
-
-    font-size: 16px;
-    line-height: 1.25;
   }
 }
 
-// Flex-обгортка для позиціонування слайдеру та Buttons
+// Flex-обгортка для позиціонування слайдеру dishes-slider та Buttons
 .flex-wrap-restaurant {
   @media screen and (min-width: 1024px) {
     display: flex;
     flex-direction: row-reverse;
     gap: 29px;
-    align-items: center;
-  } 
+    align-items: flex-end;
+  }
 }
-// Buttons
 
+// Flex-обгортка для позиціонування слайдеру dishes-slider та Buttons
+.flex-wrap-rooms {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    gap: 32px;
+    align-items: flex-end;
+  }
+}
+// Buttons-sliders
 
 .description-hotel {
-  @include tablet {
-    width: 549px;
-  }
   @include tablet {
     width: 595px;
   }
 }
 
-// Buttons
-
-
+// BUTTONS
 
 .details-restaurant__buttons {
   display: flex;
@@ -303,32 +174,12 @@
   justify-content: center;
   flex-direction: column;
 
-  margin: 0 auto;
   row-gap: 16px;
 
   @include tablet {
-
-    margin-bottom: 50px;
+    margin-bottom: 56px;
     align-self: flex-end;
   }
-  @include desktop {
-    margin-bottom: 56px;
-
-  }
-}
-
-.details-restaurant__buttons--hotel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  // margin: 0 auto;
-  row-gap: 16px;
-}
-
-.details-restaurant__href {
-  color: $color-accent;
 }
 
 .details-restaurant__booking,
@@ -343,12 +194,15 @@
   font-weight: 700;
   line-height: 1.25;
 
+  z-index: 2;
+
   background-color: rgba(0, 0, 0, 0.4);
   border: 2px solid $color-white;
   border-radius: 25px;
   color: $color-accent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -357,10 +211,5 @@
     color: $color-accent;
     background-color: $color-white;
     border-color: $color-accent;
-
   }
-}
-
-.multiple-items {
-  margin-left: 240px;
 }
