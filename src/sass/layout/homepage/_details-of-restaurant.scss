@@ -162,9 +162,6 @@
 
 .description-hotel {
   @include tablet {
-    width: 549px;
-  }
-  @include tablet {
     width: 595px;
   }
 }
