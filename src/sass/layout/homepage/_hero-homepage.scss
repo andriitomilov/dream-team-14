@@ -62,10 +62,10 @@
     }
 
     &-text {
-      @include font(12px, 1.25, null, 0.01em);
+      @extend %address-text;
 
-      @include tablet {
-        @include font(16px, calc(20 / 16), null, 0.01em);
+      @include max-tablet {
+       @include font(12px, 1.25, null, 0.01em);
       }
     }
   }
