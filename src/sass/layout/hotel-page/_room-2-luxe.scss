@@ -1,16 +1,18 @@
 .hotel-room {
-    position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    &__container--position {
+        padding-top: 32px;
+        padding-bottom: 32px;
 
-    @include tablet {
-        padding-top: 62px;
-        padding-bottom: 104px;
-    }
+        @include tablet {
+            position: relative;
+            padding-top: 62px;
+            padding-bottom: 104px;
+        }
 
-    @include desktop {
-        padding-top: 72px;
-        padding-bottom: 112px;
+        @include desktop {
+            padding-top: 72px;
+            padding-bottom: 112px;
+        }
     }
 
     &__container {
@@ -83,13 +85,13 @@
 
         @include tablet {
             position: absolute;
-            top: -32px;
-            right: 112px;
+            top: -32;
+            right: 112;
             margin-bottom: 0;
         }
 
         @include desktop {
-            right: 180px;
+            right: 180;
         }
     }
 
@@ -127,17 +129,8 @@
     align-items: center;
     gap: 16px;
 
-
     &__btn {
-        width: 236px;
-        height: 48px;
-        @include font(null, 1.25, 700, null);
-        color: $color-accent;
         background-color: $color-black;
-        outline: transparent;
-        border: 2px solid $color-white;
-        border-radius: 25px;
-        cursor: pointer;
         transition: background-color $main-transition-duration, border-color $main-transition-duration;
 
         &:hover,
@@ -148,11 +141,14 @@
     }
 
     &__link {
-        display: inline-block;
-        @include font(null, 1.25, 700, null);
-        text-decoration: none;
-        color: $color-accent;
-        padding: 14px 65px;
+        background-color: $color-black;
+        transition: background-color $main-transition-duration, border-color $main-transition-duration;
+
+        &:hover,
+        &:focus {
+            background-color: $color-white;
+            border-color: $color-accent;
+        }
     }
 }
 
