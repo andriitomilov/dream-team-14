@@ -8,11 +8,11 @@
   background-position: center;
   background-size: cover;
 
-  @include mobile{
+  @include mobile {
     max-width: 1024px;
   }
 
-  @include tablet{
-   max-width: 1280px;
+  @include tablet {
+    max-width: 1280px;
   }
 }
