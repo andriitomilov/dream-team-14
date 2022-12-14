@@ -1,0 +1,2 @@
+new Swiper(".kitchen-slider",{navigation:{nextEl:"#button-next-kitchen",prevEl:"#button-prev-kitchen"},slideToClickedSlide:!0,grabCursor:!0,keyboard:{enabled:!0,onlyInViewport:!0},breakpoints:{320:{slidesPerView:1.3,spaceBetween:24},1024:{slidesPerView:2,spaceBetween:40}},watchOverflow:!0,centeredSlides:!1,loop:!0,simulateTouch:!0,touchRatio:1});
+//# sourceMappingURL=restaraunt-page.e2d896dd.js.map
