@@ -1,0 +1,267 @@
+.modal {
+    width: 100%;
+    padding: 60px 15px 60px 15px ;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50%);
+    z-index: 30;
+    opacity: 0;
+
+    background: $color-bg-lemon;
+    border-radius: 2px;
+
+    pointer-events: none;
+
+    @include mobile {
+        width: 414px;
+    }
+    
+    @include tablet {
+        width: 712px;
+        padding: 60px;
+    }
+   
+}
+
+.modal-title {
+    font-family: $times-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+
+    letter-spacing: 0.05em;
+
+
+    padding-bottom: 40px;
+    text-align: center;
+    
+    color: $color-black;
+}
+
+.modal-pre-title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+
+    letter-spacing: 0.05em;
+
+    color: $color-primary-text-modal;
+}
+
+.modal-input {
+    font-family: $times-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    letter-spacing: 0.05em;
+
+    color: $color-primary-text-modal;
+
+    width: 100%;
+    height: 54px;
+    margin-bottom: 8px;
+    padding: 17px 12px;
+
+    border: 1px solid $color-brown;
+    border-radius: 2px;
+
+    outline: none;
+
+    transition: $main-transition-duration;
+
+    &:hover ,
+    &:focus {
+        color: $color-black;
+        border: 1px solid $color-accent;
+}  
+
+    &::placeholder {
+        transition: $main-transition-duration;
+    }
+
+    &:hover::placeholder ,
+    &:focus::placeholder {
+         color: $color-black;
+} 
+}
+
+.modal-select {
+    width: 100%;
+    height: 54px;
+    padding: 16px 42px 16px 12px;
+
+    border: 1px solid $color-brown;
+    border-radius: 2px;
+
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+
+    transition: $main-transition-duration;
+    
+        font-family: $times-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: calc(23 / 20);
+        letter-spacing: 0.05em;
+
+        color: $color-primary-text-modal;
+        &:hover ,
+        &:focus {
+            color: $color-black;
+            border: 1px solid $color-accent;
+        }
+}
+
+.modal-select:hover  + .modal-select__icon ,
+.modal-select:focus  + .modal-select__icon {
+    fill: $color-accent;
+    
+}
+
+.select-wraper{
+    position: relative;
+
+    margin-bottom: 8px;
+    height: 54px;
+    
+}
+
+.modal-pre-wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    margin-bottom: 20px;
+}
+
+
+.modal-table__select ,
+.modal-table__input {
+    @media screen and (max-width:1023px){
+        display: flex;
+        flex-direction: column;
+        gap: 20px;  
+    }
+
+    @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+   }
+}
+
+.modal-table__wraper {
+    @media screen and (max-width:1023px){
+        display: flex;
+        flex-direction: column;
+        gap: 20px;  
+    }
+    @include tablet {
+        display: flex;
+        gap: 16px;
+       }
+    
+
+    margin-bottom: 40px;
+}
+
+.modal-select__icon {
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    
+    transform: translateY(-50%);
+
+    fill: $color-brown;
+
+    pointer-events: none;
+
+    transition: $main-transition-duration;
+
+}
+
+.modal-text {
+    font-family: $montserrat-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+
+    letter-spacing: 0.02em;
+
+    color: $color-brown;
+
+    cursor: pointer;
+}
+
+
+
+.modal-button {
+    width: 100%;
+    height: 64px;
+
+    background: $color-black;
+    color: $color-white;
+
+    border: 1px solid $color-accent;
+    border-radius: 2px;
+
+    cursor: pointer;
+
+    transition: $main-transition-duration;
+
+    &:hover , 
+    &:focus {
+        background: $color-accent;
+        color: $color-black;
+
+
+        border: 1px solid $color-accent;
+        border-radius: 2px;
+    }
+}
+
+.modal-button-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    
+}
+
+.button-close__icon {
+    stroke: $color-button-close;
+
+    transition: $main-transition-duration;
+
+    &:hover , 
+    &:focus {
+        stroke: $color-accent;
+    }
+}
+
+.modal-select__option {
+
+    font-family: $times-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    letter-spacing: 0.05em;
+
+    color: $color-primary-text-modal; 
+}
+

@@ -1,85 +1,99 @@
-
 <section class="details-restaurant page-decor page-decor--dark">
-  <div class="overlay-restaurant">
-
+  <div class="wrap-overlay wrap-overlay__details-restaurant">
     <div class="container container__details">
       <!-- Text -->
 
-    <div class="details-restaurant__text">
-      <h2 class="details-restaurant__header" lang="en">mimino</h2>
-      <h3 class="details-restaurant__subtitle">Ресторан</h3>
-      <p class="details-restaurant__description" lang="en">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit.
-      </p>
-    </div>
-    <!--Flex container dishes-slider + buttons-->
-    <div class="flex-wrap-restaurant">
-      <!--Container dishes-slider 270x270 ltr white arrows-->
-      <div class="dishes-slider-container">
-        <div class="dishes-slider swiper">
-          <!--Wrapper  slider-->
-          <div class="dishes-slider__wrapper swiper-wrapper">
-            <!--Slides slider about-restaurant-->
-            <div class="dishes-slider__slide swiper-slide">
-              <img
-                srcset="./images/homepage/homepage-desk/desk-main-restaurant-details-slider1-1x.jpg 1x,
-                ./images/homepage/homepage-desk/desk-main-restaurant-details-slider1-2x.jpg 2x"
-                src="./images/homepage/homepage-desk/desk-main-restaurant-details-slider1-1x.jpg" 
-                alt="Ресторанне блюдо, картинка 1"
-              >
+      <div class="details-restaurant__text">
+        <h2 class="details-restaurant__header" lang="en">mimino</h2>
+        <h3 class="details-restaurant__subtitle">Ресторан</h3>
+        <p class="details-restaurant__description" lang="en">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit.
+        </p>
+      </div>
+      <!--Flex container dishes-slider + buttons-->
+      <div class="flex-wrap-restaurant">
+        <!--Container dishes-slider 270x270 ltr white arrows-->
+        <div class="dishes-slider-container">
+          <div class="dishes-slider swiper">
+            <!--Wrapper  slider-->
+            <div class="dishes-slider__wrapper swiper-wrapper">
+              <!--Slides slider about-restaurant-->
+              <div class="dishes-slider__slide swiper-slide">
+                <img
+                  srcset="
+                    ./images/homepage/homepage-desk/desk-main-restaurant-details-slider1-1x.jpg 1x,
+                    ./images/homepage/homepage-desk/desk-main-restaurant-details-slider1-2x.jpg 2x
+                  "
+                  src="./images/homepage/homepage-desk/desk-main-restaurant-details-slider1-1x.jpg"
+                  alt="Ресторанне блюдо, картинка 1"
+                />
+              </div>
+              <div class="dishes-slider__slide swiper-slide">
+                <img
+                  srcset="
+                    ./images/homepage/homepage-desk/desk-main-restaurant-details-slider2-1x.jpg 1x,
+                    ./images/homepage/homepage-desk/desk-main-restaurant-details-slider2-2x.jpg 2x
+                  "
+                  src="./images/homepage/homepage-desk/desk-main-restaurant-details-slider2-1x.jpg"
+                  alt="Ресторанне блюдо, картинка 2"
+                />
+              </div>
+              <div class="dishes-slider__slide swiper-slide">
+                <img
+                  srcset="
+                    ./images/homepage/homepage-desk/desk-main-restaurant-details-slider3-1x.jpg 1x,
+                    ./images/homepage/homepage-desk/desk-main-restaurant-details-slider3-2x.jpg 2x
+                  "
+                  src="./images/homepage/homepage-desk/desk-main-restaurant-details-slider3-1x.jpg"
+                  alt="Ресторанне блюдо, картинка 3"
+                />
+              </div>
             </div>
-            <div class="dishes-slider__slide swiper-slide">
-              <img
-                srcset="./images/homepage/homepage-desk/desk-main-restaurant-details-slider2-1x.jpg 1x,
-                ./images/homepage/homepage-desk/desk-main-restaurant-details-slider2-2x.jpg 2x"
-                src="./images/homepage/homepage-desk/desk-main-restaurant-details-slider2-1x.jpg" 
-                alt="Ресторанне блюдо, картинка 2"
-              >
+          </div>
+          <!--Swiper buttons slider hero room-->
+          <div class="slider-nav dishes">
+            <div
+              id="button-prev-dishes"
+              class="swiper-button-prev slider-nav__btn-prev"
+            >
+              <svg class="slider-nav--white" width="32" height="32">
+                <use
+                  href="./images/icons/icons.svg#icon-arrow-left_32_32"
+                ></use>
+              </svg>
             </div>
-            <div class="dishes-slider__slide swiper-slide">
-              <img
-                srcset="./images/homepage/homepage-desk/desk-main-restaurant-details-slider3-1x.jpg 1x,
-                ./images/homepage/homepage-desk/desk-main-restaurant-details-slider3-2x.jpg 2x"
-                src="./images/homepage/homepage-desk/desk-main-restaurant-details-slider3-1x.jpg" 
-                alt="Ресторанне блюдо, картинка 3"
-              >
+            <div
+              id="button-next-dishes"
+              class="swiper-button-next slider-nav__btn-next"
+            >
+              <svg class="slider-nav--white" width="32" height="32">
+                <use
+                  href="./images/icons/icons.svg#icon-arrow-right_32_32"
+                ></use>
+              </svg>
             </div>
           </div>
         </div>
-        <!--Swiper buttons slider hero room-->
-        <div class="slider-nav dishes">
-          <div id="button-prev-dishes" class="swiper-button-prev slider-nav__btn-prev">
-            <svg class="slider-nav--white" width="32" height="32">
-              <use href="./images/icons/icons.svg#icon-arrow-left_32_32"></use>
-            </svg>
-          </div>
-          <div id="button-next-dishes"  class="swiper-button-next slider-nav__btn-next">
-            <svg class="slider-nav--white" width="32" height="32">
-              <use href="./images/icons/icons.svg#icon-arrow-right_32_32"></use>
-            </svg>
+        <!--End slider-->
+        <!-- Buttons -->
+
+        <div class="for-slider">
+          <div class="details-restaurant__buttons">
+            <buttton
+              data-modal="table"
+              type="button"
+              class="details-restaurant__booking js-open-modal"
+              >Забронювати столик</buttton
+            >
+            <buttton type="button" class="details-restaurant__demonstration"
+              ><a href="./restaraunt-page.html" class="details-restaurant__href"
+                >Переглянути меню</a
+              ></buttton
+            >
           </div>
         </div>
       </div>
-      <!--End slider-->
-      <!-- Buttons -->
-
-      <div class="for-slider">
-        <div class="details-restaurant__buttons ">
-          <buttton
-            data-modal="table"
-            type="button"
-            class="details-restaurant__booking js-open-modal"
-            >Забронювати столик</buttton
-          >
-          <buttton type="button" class=" details-restaurant__demonstration" 
-            ><a href="./restaraunt-page.html" class="details-restaurant__href"
-              >Переглянути меню</a
-            ></buttton
-          >
-
-        </div>
-      </div>
     </div>
+  </div>
 </section>
-

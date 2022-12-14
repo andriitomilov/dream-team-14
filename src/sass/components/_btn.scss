@@ -1,17 +1,19 @@
 // button desk/tab/mob
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #ffffff;
-    border-radius: 25px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
+
+  z-index: 2;
 }
 
 .btn--basic {
-    width: 236px;
-    height: 48px;
-    @include font(null, 1.25, 700, null);
-    color: #f3c653;
+  width: 236px;
+  height: 48px;
+  @include font(null, 1.25, 700, null);
+  color: #f3c653;
 }
