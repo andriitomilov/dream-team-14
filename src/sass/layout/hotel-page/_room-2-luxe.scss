@@ -2,15 +2,19 @@
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
+    height: 1050px;
+
 
     @include tablet {
         padding-top: 62px;
         padding-bottom: 104px;
+        height: 838px;
     }
 
     @include desktop {
         padding-top: 72px;
         padding-bottom: 112px;
+        height: 956px;
     }
 
     &__container {
@@ -116,7 +120,7 @@
         @include tablet {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-end;
         }
     }
 }
@@ -127,6 +131,13 @@
     align-items: center;
     gap: 16px;
 
+    @include tablet {
+        margin-bottom: 105px;
+    }
+    
+    @include desktop {
+        margin-bottom: 142px;
+    }
 
     &__btn {
         width: 236px;
@@ -153,23 +164,5 @@
         text-decoration: none;
         color: $color-accent;
         padding: 14px 65px;
-    }
-}
-
-// заглушка для слайдера 
-.hotel-room__slider-img {
-    width: 284px;
-    height: 194px;
-    background-color: gray;
-    margin-bottom: 72px;
-
-    @include tablet {
-        width: 428px;
-        margin-bottom: 0;
-    }
-
-    @include desktop {
-        width: 548px;
-        height: 254px;
     }
 }

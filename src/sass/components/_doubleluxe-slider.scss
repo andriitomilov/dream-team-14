@@ -1,0 +1,48 @@
+// Контейнер слайдеру Swiper, за класом якого ініціалізован слайдер
+.doubleluxe-slider {
+    width: 284px;
+    height: 194px;
+    margin-left: 0;
+
+    @media screen and (max-width: 458px) {
+        transform: translateX(-15px);
+    }
+
+    @media screen and (min-width: 458px) {
+        width: 428px;
+    }
+    
+    @include tablet {
+        width: 428px;
+    }
+
+    @include desktop {
+        width: 548px;
+        height: 254px;
+    }
+
+
+    // автоширина слайду
+    &__slide {
+        min-width: fit-content;
+        object-fit: cover;
+        flex-shrink: 1;       
+    }
+}
+// Навігація окремого слайдеру, контейнер для стрілок
+.slider-nav.doubleluxe {
+    position: static;
+    justify-content: flex-start;
+    margin-top: 47px;
+    margin-bottom: 20px;
+
+    @include tablet {
+        margin-top: 59px;
+        justify-content: flex-end;
+        margin-bottom: 0px;
+    }
+
+    @include desktop {
+        margin-top: 67px;
+    }
+}
