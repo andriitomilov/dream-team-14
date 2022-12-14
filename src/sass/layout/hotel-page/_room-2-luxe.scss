@@ -33,13 +33,9 @@
     }
 
     &__subtitle {
-        font-family: $times-font;
-        @include font(20px, 1.15, null, null);
-        color: $color-primary-subtitle-homepage;
         margin-bottom: 8px;
 
         @include tablet {
-            @include font(32px, 1.16, null, null);
             margin-bottom: 4px;
         }
     }
@@ -66,13 +62,11 @@
         }
     }
 
-    &__descript {
-        @include font(12px, 1.25, 600, null);
+    &__text-content {
         width: 258px;
         margin-bottom: 32px;
 
         @include tablet {
-            @include font(16px, 1.21, null, null);
             width: 439px;
             margin-bottom: 0;
         }
@@ -104,12 +98,10 @@
         border-radius: 2px;
     }
 
-    &__logo--brown {
-        color: $color-primary-title-hotel-page;
+    &__title--primary {
         margin-bottom: 32px;
 
         @include tablet {
-            @include font(64px, 1.1, null, null);
             margin-bottom: 62px;
         }
 
@@ -137,7 +129,7 @@
     @include tablet {
         margin-bottom: 105px;
     }
-    
+
     @include desktop {
         margin-bottom: 142px;
     }
@@ -166,6 +158,6 @@
     }
 }
 
-.btn-list__item{
+.btn-list__item {
     z-index: 2;
 }
