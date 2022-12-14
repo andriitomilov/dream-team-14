@@ -1,4 +1,4 @@
-.hero-hotel {
+.wrap-overlay__hotel {
     background-image: $gradient-img-hero,
         url('../images/hotel-page/hotel-mob/mob-hotel-hero-1x.jpg');
 
@@ -8,7 +8,7 @@
         ;
     }
 
-    @include tablet {
+    @include mobile {
         background-image: $gradient-img-hero,
             url('../images/hotel-page/hotel-tab/tab-hotel-hero-1x.jpg');
 
@@ -18,7 +18,7 @@
         }
     }
 
-    @include desktop {
+    @include tablet {
         background-image: $gradient-img-hero,
             url('../images/hotel-page/hotel-desk/desk-hotel-hero-1x.jpg');
 
