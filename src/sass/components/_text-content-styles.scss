@@ -39,8 +39,6 @@
 .text-content {
   @include font(12px, 1.25, 600, 0.02em);
 
-  color: $color-primary-text-homepage;
-
   @include tablet {
     @include font(16px, null, null, null);
   }
