@@ -1,6 +1,6 @@
 .hero {
   color: #ffffff;
-  
+
   &__container {
     position: relative;
 
@@ -198,17 +198,9 @@
   }
 }
 
-.hero-homepage__overlay{
-  margin: 0 auto;
-
-  max-width: 414px;
-  height: fit-content;
-
+.wrap-overlay__homepage {
   background-image: $gradient-img-hero,
     url('../images/homepage/homepage-mob/mob-main-hero-1x.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
   @include retina2x {
     background-image: $gradient-img-hero,
@@ -216,8 +208,6 @@
   }
 
   @include mobile {
-    max-width: 1024px;
-
     background-image: $gradient-img-hero,
       url('../images/homepage/homepage-tab/tab-main-hero-1x.jpg');
 
@@ -227,11 +217,8 @@
     }
 
     @include tablet {
-      max-width: 1280px;
-      
       background-image: $gradient-img-hero,
         url('../images/homepage/homepage-desk/desk-main-hero-1x.jpg');
-      
 
       @include retina2x {
         background-image: $gradient-img-hero,

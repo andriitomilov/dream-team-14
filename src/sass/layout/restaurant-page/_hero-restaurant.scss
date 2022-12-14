@@ -1,4 +1,4 @@
-.hero-restaurant {
+.wrap-overlay__restaurant {
     background-image: $gradient-img-hero,
         url('../images/restaurant-page/restaurant-mob/mob-restaurant-hero-1x.jpg');
 
@@ -7,7 +7,7 @@
             url('../images/restaurant-page/restaurant-mob/mob-restaurant-hero-2x.jpg');
     }
 
-    @include tablet {
+    @include mobile {
         background-image: $gradient-img-hero,
             url('../images/restaurant-page/restaurant-tab/tab-restaurant-hero-1x.jpg');
 
@@ -17,7 +17,7 @@
         }
     }
 
-    @include desktop {
+    @include tablet {
         background-image: $gradient-img-hero,
             url('../images/restaurant-page/restaurant-desk/desk-restaurant-hero-1x.jpg');
 
