@@ -58,3 +58,8 @@ img {
 .link {
   text-decoration: none;
 }
+
+// Клас змінює напрямок для флекс-контейнерів
+.row-reverse {
+  flex-direction: row-reverse;
+}

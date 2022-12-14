@@ -1,15 +1,13 @@
-let swiper = new Swiper ('.doubleluxe-slider', {
+// Ініціалізація Swiper doubleluxe-slider
+const swiper = new Swiper ('.swiper-mini', {
 
     // Стрілки
     navigation: {
-        nextEl: '#button-next-doubleluxe',
-        prevEl: '#button-prev-doubleluxe'
+        nextEl: '.swiper-button-next-mini',
+        prevEl: '.swiper-button-prev-mini'
     },
 
-    // З якого слайду починається показ
-    initialSlide: 1,
-    
-        // Перемикання при кліку на слайд
+       // Перемикання при кліку на слайд
         slideToClickedSlide: true,
         // Курсор перетягування
         grabCursor: true,

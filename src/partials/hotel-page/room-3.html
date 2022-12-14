@@ -44,12 +44,104 @@
         />
       </picture>
     </div>
-
-    <div class="hotel-room__wrapper">
-      <!-- заглушка слайдер -->
-      <div class="hotel-room__slider hotel-room__slider--side">
-        <div class="hotel-room__slider-img"></div>
+    <!--Flex container tripleroom-slider + buttons-->
+    <div class="hotel-room__wrapper row-reverse">
+      <!-- Container slider + slider-navigation -->
+      <div class="tripleroom-slider-container">
+        <!--Container slider about-kitchen ltr black arrows-->
+        <div class="swiper swiper-mini slider-right">
+          <!--Wrapper  slider-->
+          <div class="swiper-mini__wrapper swiper-wrapper">
+            <!--Slides slider about-kitchen-->
+            <div class="swiper-mini__slide swiper-slide">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                  ./images/hotel-page/hotel-desk/desk-hotel-slider1-1x.jpg 1x,
+                  ./images/hotel-page/hotel-desk/desk-hotel-slider1-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                  ./images/hotel-page/hotel-tab/tab-hotel-slider1-1x.jpg 1x,
+                  ./images/hotel-page/hotel-tab/tab-hotel-slider1-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                  ./images/hotel-page/hotel-mob/mob-hotel-slider1-1x.jpg 1x,
+                  ./images/hotel-page/hotel-mob/mob-hotel-slider1-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/hotel-page/hotel-mob/mob-hotel-slider1-1x.jpg"
+                  alt="Двомісний номер люкс, картинка 1"
+                  width=""
+                  height=""
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="swiper-mini__slide swiper-slide">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                  ./images/hotel-page/hotel-desk/desk-hotel-slider2-1x.jpg 1x,
+                  ./images/hotel-page/hotel-desk/desk-hotel-slider2-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                  ./images/hotel-page/hotel-tab/tab-hotel-slider2-1x.jpg 1x,
+                  ./images/hotel-page/hotel-tab/tab-hotel-slider2-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                  ./images/hotel-page/hotel-mob/mob-hotel-slider2-1x.jpg 1x,
+                  ./images/hotel-page/hotel-mob/mob-hotel-slider2-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/hotel-page/hotel-mob/mob-hotel-slider2-1x.jpg"
+                  alt="Двомісний номер люкс, картинка 2"
+                  width=""
+                  height=""
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+  
+        <!--Swiper buttons slider kitchen-slider-->
+  
+        <div class="slider-nav slider-mini">
+          <div class="swiper-button-prev-mini slider-nav__btn-prev">
+            <svg class="slider-nav--black" width="32" height="32">
+              <use href="./images/icons/icons.svg#icon-arrow-left_32_32"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next-mini slider-nav__btn-next">
+            <svg class="slider-nav--black" width="32" height="32">
+              <use href="./images/icons/icons.svg#icon-arrow-right_32_32"></use>
+            </svg>
+          </div>
+        </div>
       </div>
+      <!--End slider-->
 
       <ul class="btn-list hotel-room__btn">
         <li class="btn-list__item">
