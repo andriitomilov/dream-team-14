@@ -1,0 +1,30 @@
+.wrap-overlay__hotel {
+    background-image: $gradient-img-hero,
+        url('../images/hotel-page/hotel-mob/mob-hotel-hero-1x.jpg');
+
+    @include retina2x {
+        background-image: $gradient-img-hero,
+            url('../images/hotel-page/hotel-mob/mob-hotel-hero-2x.jpg');
+        ;
+    }
+
+    @include mobile {
+        background-image: $gradient-img-hero,
+            url('../images/hotel-page/hotel-tab/tab-hotel-hero-1x.jpg');
+
+        @include retina2x {
+            background-image: $gradient-img-hero,
+                url('../images/hotel-page/hotel-tab/tab-hotel-hero-2x.jpg');
+        }
+    }
+
+    @include tablet {
+        background-image: $gradient-img-hero,
+            url('../images/hotel-page/hotel-desk/desk-hotel-hero-1x.jpg');
+
+        @include retina2x {
+            background-image: $gradient-img-hero,
+                url('../images/hotel-page/hotel-desk/desk-hotel-hero-2x.jpg');
+        }
+    }
+}
