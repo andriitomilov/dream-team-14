@@ -1,0 +1,55 @@
+// Контейнер-обгортка для слайдеру з винесеними стрілками
+.kitchen-slider-container {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+
+    @include tablet {
+        right: 60px;
+        bottom: 32px;
+    }
+
+    @include desktop {
+        right: 85px;
+        bottom: 50px;
+    }
+}
+// Контейнер слайдеру Swiper, за класом якого ініціалізован слайдер
+.kitchen-slider {
+    width: 330px;
+    height: 245px;
+    
+    
+    @include tablet {
+        width: 428px;
+        height: 194px;
+    }
+
+    @include desktop {
+        width: 548px;
+        height: 254px;
+    }
+
+    // автоширина слайду
+    &__slide {
+        min-width: fit-content;
+        object-fit: cover;
+        flex-shrink: 1;       
+    }
+}
+// Навігація окремого слайдеру, контейнер для стрілок
+.slider-nav.kitchen {
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-right: 17px;
+
+    @include tablet {
+        margin-top: 52px;
+        margin-right: 0;
+    }
+
+    @include desktop {
+        margin-top: 56px;
+        margin-right: 0;
+    }
+}
