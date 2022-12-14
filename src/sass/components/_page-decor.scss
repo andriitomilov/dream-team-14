@@ -1,6 +1,6 @@
 .page-decor {
   position: relative;
-
+  
   &:before,
   &:after {
     content: '';
@@ -10,6 +10,7 @@
     position: absolute;
     height: 100%;
     top: 0;
+    z-index: -1;
   }
   &:before {
     

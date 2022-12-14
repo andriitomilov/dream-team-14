@@ -1,148 +1,143 @@
-.amenities{
-    padding-top: 32px;
-    padding-bottom: 32px;
-    @include tablet{
-        padding-top: 48px;
+.amenities {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include tablet {
+    padding-top: 48px;
     padding-bottom: 40px;
-    }
-    @include desktop{
-        padding-top: 48px;
+  }
+  @include desktop {
+    padding-top: 48px;
     padding-bottom: 48px;
-    }
-    }
-    .amenities__title{
-        margin-bottom: 32px;
-    }
-.amenities__sectionname{
-    margin-bottom: 16px;
-    font-family: $times-font;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 1.16;
-    
-    text-transform: uppercase;
-    
-    color: $color-black;
-    
+  }
+}
+.amenities__title {
+  margin-bottom: 32px;
+}
+.amenities__sectionname {
+  margin-bottom: 16px;
+  font-family: $times-font;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.16;
+
+  text-transform: uppercase;
+
+  color: $color-black;
 }
 .amenities__item {
-   &:not(:last-child){
-     margin-bottom: 32px;
-   }
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
-.amenities__sectionname__text{
-    font-weight: 700;
-    line-height: 1.25;
-    
-    color: $color-primary-text-menu; 
-    @include tablet{
-        width: 757px;
-    }
+.amenities__sectionname__text {
+  font-weight: 700;
+  line-height: 1.25;
+
+  color: $color-primary-text-menu;
+  @include tablet {
+    width: 757px;
+  }
 }
-.amenities__name{
-margin-bottom: 16px;
-font-family: $times-font;
-font-weight: 700;
-font-size: 24px;
-line-height: 1.17;
+.amenities__name {
+  margin-bottom: 16px;
+  font-family: $times-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
 
-text-transform: uppercase;
+  text-transform: uppercase;
 
-
-color: $color-black;
+  color: $color-black;
 }
-.amenities__text{
-    font-weight: 700;
-line-height: 1.25;
+.amenities__text {
+  font-weight: 700;
+  line-height: 1.25;
 
-color: $color-primary-text-menu;
-@include tablet {
+  color: $color-primary-text-menu;
+  @include tablet {
     width: 400px;
+  }
 }
-
-}
-.amenities__group{
-@include tablet {
+.amenities__group {
+  @include tablet {
     display: flex;
     gap: 80px;
-}
-@include desktop {
+  }
+  @include desktop {
     display: flex;
     gap: 159px;
+  }
 }
-}
-.amenities__button{
-   
-background-color: $color-black;
-border: 1px solid $color-accent;
-border-radius: 25px;
-margin-top: 32px;
-margin-bottom: 20px;
-@media screen and (max-width: 413px) {
-    max-width: 384px;  
+.amenities__button {
+  background-color: $color-black;
+  border: 1px solid $color-accent;
+  border-radius: 25px;
+  margin-top: 32px;
+  margin-bottom: 20px;
+  @media screen and (max-width: 413px) {
+    max-width: 384px;
     width: auto;
-}
-@include tablet{
+  }
+  @include tablet {
     margin-top: 40px;
-margin-bottom: 32px;
-width: 434px;
+    margin-bottom: 32px;
+    width: 434px;
 
-display: flex;
-margin-left: auto;
-align-items: center;
-justify-content: center;
-}
-@include desktop{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  @include desktop {
     margin-top: 40px;
-margin-bottom: 32px;
-width: 434px;
+    margin-bottom: 32px;
+    width: 434px;
 
-display: flex;
-margin-left: auto;
-align-items: center;
-justify-content: center;
-}
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+  }
 
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $color-white;
 
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-text-transform: uppercase;
-color: $color-white;
+  width: 384px;
+  height: 64px;
 
-width: 384px;
-height: 64px;
-   
-cursor: pointer;
+  cursor: pointer;
 
-transition:  background-color,  color;
+  transition: background-color, color;
 
-&:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $color-accent;
     color: $color-black;
   }
 }
-.amenities__link{
-    display: flex;
-     align-items: center;
-     justify-content: center;
+.amenities__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  line-height: 1.25;
 
-line-height: 1.25;
-
-color: $color-brown;
-@include tablet{
+  color: $color-brown;
+  @include tablet {
     justify-content: flex-end;
-}
-@include desktop{
+  }
+  @include desktop {
     justify-content: flex-end;
-}
-&:hover, &:focus {
+  }
+  &:hover,
+  &:focus {
     color: $color-accent;
     fill: $color-accent;
+  }
 }
-}
-.amenities__icon{
-fill: currentColor;
-
+.amenities__icon {
+  fill: currentColor;
 }
