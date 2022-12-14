@@ -138,7 +138,7 @@
         border: 2px solid $color-white;
         border-radius: 25px;
         cursor: pointer;
-        transition: $main-transition-duration;
+        transition: background-color $main-transition-duration, border-color $main-transition-duration;
 
         &:hover,
         &:focus {
