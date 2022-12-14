@@ -76,17 +76,10 @@
 .details-restaurant__header {
   margin-bottom: 12px;
   width: 127px;
-  font-family: $film-font;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.07;
-  letter-spacing: 0.3em;
 
   color: $color-white;
 
   @include tablet {
-    font-size: 64px;
-    line-height: 1.08;
     width: 202px;
   }
 }
@@ -140,16 +133,10 @@
 }
 
 .details-restaurant__description {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  color: $color-secondary-text-homepage;
   width: 244px;
+
   @include tablet {
     width: 610px;
-
-    font-size: 16px;
-    line-height: 1.25;
   }
 }
 
