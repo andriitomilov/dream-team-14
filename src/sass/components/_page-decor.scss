@@ -35,3 +35,11 @@
     }
   }
 }
+
+.page-decor--dark {
+  &:before {
+  
+      border-left: 1px solid rgba(122, 122, 122, 0.4);
+      border-right: 1px solid rgba(122, 122, 122, 0.4);
+}
+}

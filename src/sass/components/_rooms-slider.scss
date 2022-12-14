@@ -1,20 +1,14 @@
 // Контейнер-обгортка для слайдеру з винесеними стрілками
-.dishes-slider-container {
+.rooms-slider-container {
     @media screen and (max-width: 1023px) {
-        transform: translateX(30px);
-    }
-
-    @include tablet {
-        transform: translateX(10px);
+        transform: translateX(-22px);
     }
 }
 // Контейнер слайдеру Swiper, за класом якого ініціалізован слайдер
-.dishes-slider {
+.rooms-slider {
     position: static;
     width: 370px;
     height: 270px;
-    margin-left: 0;
-    margin-right: 0;
 
     @media screen and (max-width: 413px) {
         width: 100%;
@@ -25,7 +19,7 @@
     }
 
     @include desktop {
-        width: 877px;
+        width: 874px;
     }
 
     // автоширина слайду
@@ -36,10 +30,11 @@
     }
 }
 // Навігація окремого слайдеру, контейнер для стрілок
-.slider-nav.dishes {
-    justify-content: flex-start;
+.slider-nav.rooms {
+    justify-content: flex-end;
     margin-top: 46px;
     margin-bottom: 32px;
+    margin-left: 5px;
 
     @include tablet {
         right: 62px;
