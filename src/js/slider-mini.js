@@ -2,8 +2,8 @@
 const swiper = new Swiper('.slider-mini', {
   // Стрілки
   navigation: {
-    nextEl: '.swiper-button-prev-mini',
-    prevEl: '.swiper-button-next-mini ',
+    nextEl: '.swiper-button-next-mini',
+    prevEl: '.swiper-button-prev-mini ',
   },
 
   // Перемикання при кліку на слайд
