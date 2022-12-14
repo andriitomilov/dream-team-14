@@ -5,7 +5,8 @@
       <div class="modal-table__input">
         <div class="modal-field">
           <label class="modal-label">
-            <input 
+            <input
+            name="name" 
             class="modal-input" 
             type="text" 
             placeholder="Ваше ім’я"/>
@@ -15,11 +16,14 @@
         <div class="modal-field">
           <label class="modal-label">
             <input
+              name="tel"
               class="modal-input"
               type="tel"
               placeholder="+38 (___) ___-__-__"
               minlength="13"
+              maxlength="13"
               title="+38 (___) ___-__-__"
+              pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
             />
             <span class="modal-text"> Номер телефону</span>
           </label>
@@ -49,10 +53,12 @@
         <div class="modal-field">
           <label class="modal-label">
             <div class="select-wraper">
-              <select class="modal-select" name="date">
-                <option value="">Сьогодні</option>
-                <option value="">Завтра</option>
-                <option value="">Післязавтра</option>
+              <select 
+              class="modal-select" 
+              name="date">
+                <option value="today">Сьогодні</option>
+                <option value="tomorrow">Завтра</option>
+                <option value="after tomorrow">Післязавтра</option>
               </select>
               <svg class="modal-select__icon" width="24" height="24">
                 <use
