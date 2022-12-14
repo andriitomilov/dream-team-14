@@ -26,11 +26,11 @@
         justify-content: flex-start;
 
         @include tablet {
-            left: 112px;
+            left: 112;
         }
 
         @include desktop {
-            left: 180px;
+            left: 180;
         }
     }
 
