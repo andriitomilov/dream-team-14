@@ -1,10 +1,14 @@
 .about-hotel {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   &__container {
     padding-top: 16px;
     padding-bottom: 20px;
     position: relative;
-    height: 1191px;
+    
+
+    @include mobile {
+      height: 1191px;
+    }
 
     @include tablet {
       padding-top: 129px;

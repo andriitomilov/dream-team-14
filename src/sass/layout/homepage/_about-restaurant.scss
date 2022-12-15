@@ -1,11 +1,15 @@
 .about-restaurant {
-    overflow-x: hidden;
+    // overflow-x: hidden;
   
     &__container {
       padding-top: 16px;
       padding-bottom: 20px;
       position: relative;
+
+
+      @include mobile {
       height: 1191px;
+    }
   
       @include tablet {
         padding-top: 129px;
