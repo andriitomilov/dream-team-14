@@ -95,16 +95,14 @@
     &__box {
       display: flex;
       align-items: center;
-      // justify-content: center;   
       
       @include max-mobile {
         flex-direction: column-reverse;
          gap: 32px;
       }
+      
       @include mobile {
-
-        gap: 20px;
-    
+        gap: 20px;   
       }
   
       @include tablet {

@@ -1,10 +1,8 @@
 .about-hotel {
-  // overflow-x: hidden;
   &__container {
     padding-top: 16px;
     padding-bottom: 20px;
     position: relative;
-    
 
     @include mobile {
       height: 1191px;
@@ -101,7 +99,15 @@
   &__box {
     display: flex;
     align-items: center;
-    gap: 20px;
+
+    @include max-mobile {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    @include mobile {
+      gap: 20px;
+    }
 
     @include tablet {
       justify-content: end;
@@ -119,7 +125,10 @@
 .hotel-slider {
   margin-top: 32px;
   margin-bottom: 0;
-  width: 330px;
+
+  @include max-tablet {
+    max-width: 330px;
+  }
 
   @include tablet {
     position: absolute;
