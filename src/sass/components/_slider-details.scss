@@ -24,9 +24,9 @@
         width: 100%;
     }
 
-    @media screen and (min-width: 482px) {
-        width: 452px;
-    }
+    // @media screen and (min-width: 482px) {
+    //     width: 452px;
+    // }
 
     @include tablet {
         width: 662px;

@@ -110,9 +110,9 @@
     margin-bottom: 0;
     width: 330px;
 
-    @media screen and (min-width: 510px) {
-      width: 540px;
-  }
+  //   @media screen and (min-width: 510px) {
+  //     width: 540px;
+  // }
 
     @include tablet {
       position: absolute;

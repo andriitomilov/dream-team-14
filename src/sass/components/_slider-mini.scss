@@ -19,10 +19,10 @@
     width: 284px;
     margin-bottom: 20px;
 
-    @media screen and (min-width: 458px) {
-        width: 428px;
-        margin-bottom: 0px;
-    }
+    // @media screen and (min-width: 458px) {
+    //     width: 428px;
+    //     margin-bottom: 0px;
+    // }
     
     @include tablet {
         width: 428px;
