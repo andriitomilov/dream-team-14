@@ -1,0 +1,2 @@
+new Swiper(".slider-mini",{navigation:{nextEl:".swiper-button-next-mini",prevEl:".swiper-button-prev-mini "},slideToClickedSlide:!0,grabCursor:!0,keyboard:{enabled:!0,onlyInViewport:!0},breakpoints:{320:{slidesPerView:"auto",spaceBetween:16},458:{slidesPerView:2,spaceBetween:40}},watchOverflow:!0,centeredSlides:!1,loop:!0,simulateTouch:!0,touchRatio:1});
+//# sourceMappingURL=hotel-page.89129408.js.map
