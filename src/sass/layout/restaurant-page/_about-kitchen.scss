@@ -1,140 +1,134 @@
 .about-kitchen {
-  
-    &__container {
-      padding-top: 16px;
-      padding-bottom: 20px;
-      position: relative;
-      height: 1191px;
-  
-      @include tablet {
-        padding-top: 129px;
-        padding-bottom: 72px;
-        height: 1238px;
-      }
-  
-      @include desktop {
-        padding-top: 120px;
-        padding-bottom: 0px;
-        height: 1275px;
-      }
-    }
-  
-    &__subtitle {
-      margin-bottom: 12px;
-  
-      @include tablet {
-        margin-bottom: 4px;
-      }
-    }
-  
-    &__name {
-      margin-bottom: 12px;
-  
-      @include tablet {
-        margin-bottom: 24px;
-
-      }
-
-    }
-  
-    &__description {
-      max-width: 258px;
-
-      margin-bottom: 28px;
-  
-      @include tablet {
-        max-width: 439px;
-
-        margin-bottom: 142px;
-      }
-  
-      @include desktop {
-        max-width: 518px;
-
-        margin-bottom: 162px;       
-      }
-    }
-  
-    &__img {
-      margin-left: auto;
-
-      margin-bottom: 32px;
-
-      box-shadow: $box-shadow-secondary;
-  
-      @include tablet {
-        position: absolute;
-        top: -33px;
-        right: 112px;
-        box-shadow: $box-shadow-primary;
-      }
-  
-      @include desktop {
-        right: 180px;
-      }
-    }
-  
-    &__picture {
-      box-shadow: $box-shadow-secondary;
-  
-      @include tablet {
-        box-shadow: $box-shadow-primary;
-      }
-    }
-  
-    &__text {
-      max-width: 163px;
-  
-      @include tablet {
-        max-width: 312px;
-
-      }
-    }
-  
-    &__box {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-  
-      @include tablet {
-        margin-top: 0;
-        gap: 48px;
-        margin-bottom: 0;
-      }
-  
-      @include desktop {
-        gap: 32px;
-      }
-    }
-  }
-
-  .kitchen-slider {
-    margin-top: 32px;
-    margin-bottom: 0;
-    width: 330px;
-
-    @media screen and (min-width: 510px) {
-      width: 540px;
-    }
-    
+  &__container {
+    padding-top: 16px;
+    padding-bottom: 20px;
+    position: relative;
+    height: 1191px;
 
     @include tablet {
-      position: absolute;
-      bottom: 32px;
-      right: 60px;
-      width: 428px;
+      padding-top: 129px;
+      padding-bottom: 72px;
+      height: 1238px;
     }
 
     @include desktop {
-      width: 530px;
+      padding-top: 120px;
+      padding-bottom: 0px;
+      height: 1275px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 12px;
+
+    @include tablet {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 12px;
+
+    @include tablet {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__description {
+    max-width: 258px;
+
+    margin-bottom: 28px;
+
+    @include tablet {
+      max-width: 439px;
+
+      margin-bottom: 142px;
     }
 
-    & .slider-mini-nav {
-      justify-content: flex-end;
-      margin-right: 15px;
+    @include desktop {
+      max-width: 518px;
 
-      @include tablet {
-        margin-right: 0;
-      }
+      margin-bottom: 162px;
     }
+  }
+
+  &__img {
+    margin-left: auto;
+
+    margin-bottom: 32px;
+
+    box-shadow: $box-shadow-secondary;
+
+    @include tablet {
+      position: absolute;
+      top: -33px;
+      right: 112px;
+      box-shadow: $box-shadow-primary;
+    }
+
+    @include desktop {
+      right: 180px;
+    }
+  }
+
+  &__picture {
+    box-shadow: $box-shadow-secondary;
+
+    @include tablet {
+      box-shadow: $box-shadow-primary;
+    }
+  }
+
+  &__text {
+    max-width: 163px;
+
+    @include tablet {
+      max-width: 312px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include tablet {
+      margin-top: 0;
+      gap: 48px;
+      margin-bottom: 0;
+    }
+
+    @include desktop {
+      gap: 32px;
+    }
+  }
+}
+
+.kitchen-slider {
+  margin-top: 32px;
+  margin-bottom: 0;
+
+  @include max-tablet {
+    max-width: 330px;
+  }
+
+  @include tablet() {
+    position: absolute;
+    bottom: 32px;
+    right: 60px;
+    width: 428px;
+  }
+
+  @include desktop() {
+    width: 530px;
+  }
+
+  & .slider-mini-nav {
+    justify-content: flex-end;
+    margin-right: 15px;
+
+    @include tablet {
+      margin-right: 0;
+    }
+  }
 }
