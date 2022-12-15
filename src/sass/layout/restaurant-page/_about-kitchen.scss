@@ -107,3 +107,34 @@
       }
     }
   }
+
+  .kitchen-slider {
+    margin-top: 32px;
+    margin-bottom: 0;
+    width: 330px;
+
+    @media screen and (min-width: 510px) {
+      width: 540px;
+    }
+    
+
+    @include tablet {
+      position: absolute;
+      bottom: 32px;
+      right: 60px;
+      width: 428px;
+    }
+
+    @include desktop {
+      width: 530px;
+    }
+
+    & .slider-mini-nav {
+      justify-content: flex-end;
+      margin-right: 15px;
+
+      @include tablet {
+        margin-right: 0;
+      }
+    }
+}

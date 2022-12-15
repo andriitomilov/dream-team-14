@@ -110,3 +110,35 @@
     }
   }
 }
+
+.hotel-slider {
+  margin-top: 32px;
+  margin-bottom: 0;
+  width: 330px;
+
+  @include tablet {
+    position: absolute;
+    margin-top: 0;
+    bottom: 32px;
+    width: 428px;
+  }
+
+  @include desktop {
+    width: 530px;
+    bottom: 50px;
+    left: 85px;
+  }
+
+  & .slider-mini-nav {
+    justify-content: flex-end;
+    margin-right: 15px;
+
+    @include tablet {
+      margin-right: 0;
+    }
+
+    @include desktop {
+      margin-top: 40px;
+    }
+  }
+}
