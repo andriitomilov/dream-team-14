@@ -20,6 +20,10 @@
     width: 374px;
     margin-bottom: 32px;
 
+    @media screen and (max-width: 404px) {
+        width: 100%;
+    }
+
     @media screen and (min-width: 482px) {
         width: 452px;
     }

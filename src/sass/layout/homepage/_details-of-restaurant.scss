@@ -163,15 +163,20 @@
 
   @include desktop {
     gap: 32px;
+    margin-right: -34px;
   }
 }
 
-// Flex-обгортка для позиціонування слайдеру dishes-slider та Buttons
+// Flex-обгортка для позиціонування слайдеру rooms-slider та Buttons
 .flex-wrap-rooms {
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     display: flex;
     gap: 32px;
     align-items: flex-end;
+  }
+
+  @include desktop {
+    margin-left: -33px;
   }
 }
 // Buttons-sliders
