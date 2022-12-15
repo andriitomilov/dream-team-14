@@ -29,8 +29,9 @@
           /src/images/homepage/about-hotel/hotel-interior-mob-2x.jpg 2x
         "
         media="(min-width: 414px)"
-      />    
+      />
       <img
+        data-aos="fade-right"
         class="about-hotel__img"
         src="/src/images/homepage/about-hotel/hotel-interior-desktop.jpg"
         alt="Ліжко"
@@ -42,7 +43,7 @@
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
-      <picture data-aos="fade-left">
+      <picture>
         <source
           srcset="
             /src/images/homepage/about-hotel/hotel-interior2-desktop.jpg    1x,
@@ -63,8 +64,9 @@
             /src/images/homepage/about-hotel/hotel-interior2-mob-2x.jpg 2x
           "
           media="(min-width: 414px)"
-        />      
+        />
         <img
+          data-aos="fade-left"
           class="about-hotel__picture"
           src="/src/images/homepage/about-hotel/hotel-interior2-desktop.jpg"
           alt="Лоббі готелю"
@@ -76,120 +78,128 @@
     <div dir="rtl" class="swiper slider-mini slider-left hotel-slider">
       <!--Wrapper  slider-->
       <div class="slider-mini__wrapper swiper-wrapper">
-          <!--Slides slider about-restaurant-->
-          <div class="slider-mini__slide swiper-slide">
-              <picture>
-                  <source
-                    media="(min-width: 1280px)"
-                    srcset="./images/slider-main-mod/slider-mod-mob/mob-slider-mod14-1x.jpg 1x,
-                    ./images/slider-main-mod/slider-mod-mob/mob-slider-mod14-2x.jpg 2x
-                    "
-                    type="image/jpg"
-                  />
-                  <source
-                    media="(min-width: 1024px)"
-                    srcset="./images/slider-main-mod/slider-mod-tab/tab-slider-mod14-1x.jpg 1x,
-                    ./images/slider-main-mod/slider-mod-tab/tab-slider-mod14-2x.jpg 2x
-                    "
-                    type="image/jpg"
-                  />
-                  <source
-                    media="(max-width: 1023px)"
-                    srcset="./images/slider-main-mod/slider-mod-mob/mob-slider-mod14-1x.jpg 1x,
-                    ./images/slider-main-mod/slider-mod-mob/mob-slider-mod14-2x.jpg 2x
-                    "
-                    type="image/jpg"
-                  />
-                  <img
-                    src="./images/slider-main-mod/slider-mod-mob/mob-slider-mod14-1x.jpg"
-                    alt="Готель, картинка 1"
-                    width=""
-                    height=""
-                    loading="lazy"
-                  />
-              </picture>
-          </div>
-          <div class="slider-mini__slide swiper-slide">
-              <picture>
-                  <source
-                    media="(min-width: 1280px)"
-                    srcset="./images/slider-main-mod/slider-mod-mob/mob-slider-mod10-1x.jpg 1x,
-                    ./images/slider-main-mod/slider-mod-mob/mob-slider-mod10-2x.jpg 2x
-                    "
-                    type="image/jpg"
-                  />
-                  <source
-                    media="(min-width: 1024px)"
-                    srcset="./images/slider-main-mod/slider-mod-tab/tab-slider-mod10-1x.jpg 1x,
-                    ./images/slider-main-mod/slider-mod-tab/tab-slider-mod10-2x.jpg 2x
-                    "
-                    type="image/jpg"
-                  />
-                  <source
-                    media="(max-width: 1023px)"
-                    srcset="./images/slider-main-mod/slider-mod-mob/mob-slider-mod10-1x.jpg 1x,
-                    ./images/slider-main-mod/slider-mod-mob/mob-slider-mod10-2x.jpg 2x
-                    "
-                    type="image/jpg"
-                  />
-                  <img
-                    src="./images/slider-main-mod/slider-mod-mob/mob-slider-mod10-1x.jpg"
-                    alt="Готель, картинка 2"
-                    width=""
-                    height=""
-                    loading="lazy"
-                  />
-              </picture>
-          </div>
-          <div class="slider-mini__slide swiper-slide">
-              <picture>
-                  <source
-                    media="(min-width: 1280px)"
-                    srcset="./images/slider-main-mod/slider-mod-mob/mob-slider-mod11-1x.jpg 1x,
-                    ./images/slider-main-mod/slider-mod-mob/mob-slider-mod11-2x.jpg 2x
-                    "
-                    type="image/jpg"
-                  />
-                  <source
-                    media="(min-width: 1024px)"
-                    srcset="./images/slider-main-mod/slider-mod-tab/tab-slider-mod11-1x.jpg 1x,
-                    ./images/slider-main-mod/slider-mod-tab/tab-slider-mod11-2x.jpg 2x
-                    "
-                    type="image/jpg"
-                  />
-                  <source
-                    media="(max-width: 1023px)"
-                    srcset="./images/slider-main-mod/slider-mod-mob/mob-slider-mod11-1x.jpg 1x,
-                    ./images/slider-main-mod/slider-mod-mob/mob-slider-mod11-2x.jpg 2x
-                    "
-                    type="image/jpg"
-                  />
-                  <img
-                    src="./images/slider-main-mod/slider-mod-mob/mob-slider-mod11-1x.jpg"
-                    alt="Готель, картинка 3"
-                    width=""
-                    height=""
-                    loading="lazy"
-                  />
-              </picture>
-          </div>
+        <!--Slides slider about-restaurant-->
+        <div class="slider-mini__slide swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/slider-main-mod/slider-mod-mob/mob-slider-mod14-1x.jpg 1x,
+                ./images/slider-main-mod/slider-mod-mob/mob-slider-mod14-2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="
+                ./images/slider-main-mod/slider-mod-tab/tab-slider-mod14-1x.jpg 1x,
+                ./images/slider-main-mod/slider-mod-tab/tab-slider-mod14-2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 1023px)"
+              srcset="
+                ./images/slider-main-mod/slider-mod-mob/mob-slider-mod14-1x.jpg 1x,
+                ./images/slider-main-mod/slider-mod-mob/mob-slider-mod14-2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="./images/slider-main-mod/slider-mod-mob/mob-slider-mod14-1x.jpg"
+              alt="Готель, картинка 1"
+              width=""
+              height=""
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="slider-mini__slide swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/slider-main-mod/slider-mod-mob/mob-slider-mod10-1x.jpg 1x,
+                ./images/slider-main-mod/slider-mod-mob/mob-slider-mod10-2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="
+                ./images/slider-main-mod/slider-mod-tab/tab-slider-mod10-1x.jpg 1x,
+                ./images/slider-main-mod/slider-mod-tab/tab-slider-mod10-2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 1023px)"
+              srcset="
+                ./images/slider-main-mod/slider-mod-mob/mob-slider-mod10-1x.jpg 1x,
+                ./images/slider-main-mod/slider-mod-mob/mob-slider-mod10-2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="./images/slider-main-mod/slider-mod-mob/mob-slider-mod10-1x.jpg"
+              alt="Готель, картинка 2"
+              width=""
+              height=""
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="slider-mini__slide swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/slider-main-mod/slider-mod-mob/mob-slider-mod11-1x.jpg 1x,
+                ./images/slider-main-mod/slider-mod-mob/mob-slider-mod11-2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="
+                ./images/slider-main-mod/slider-mod-tab/tab-slider-mod11-1x.jpg 1x,
+                ./images/slider-main-mod/slider-mod-tab/tab-slider-mod11-2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 1023px)"
+              srcset="
+                ./images/slider-main-mod/slider-mod-mob/mob-slider-mod11-1x.jpg 1x,
+                ./images/slider-main-mod/slider-mod-mob/mob-slider-mod11-2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="./images/slider-main-mod/slider-mod-mob/mob-slider-mod11-1x.jpg"
+              alt="Готель, картинка 3"
+              width=""
+              height=""
+              loading="lazy"
+            />
+          </picture>
+        </div>
       </div>
 
       <!--Swiper buttons hotel-slider-->
       <div class="slider-nav slider-mini-nav">
         <div class="swiper-button-prev-mini slider-nav__btn-prev">
           <svg class="slider-nav--black" width="32" height="32">
-              <use href="./images/icons/icons.svg#icon-arrow-right_32_32"></use>
+            <use href="./images/icons/icons.svg#icon-arrow-right_32_32"></use>
           </svg>
         </div>
         <div class="swiper-button-next-mini slider-nav__btn-next">
           <svg class="slider-nav--black" width="32" height="32">
-              <use href="./images/icons/icons.svg#icon-arrow-left_32_32"></use>
+            <use href="./images/icons/icons.svg#icon-arrow-left_32_32"></use>
           </svg>
         </div>
       </div>
     </div>
     <!--End slider-->
-
   </div>
 </section>
