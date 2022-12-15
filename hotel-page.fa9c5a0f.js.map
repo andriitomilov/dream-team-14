@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,IAAIC,KAAK,CACPC,MAAM,EACNC,OAAQ,gBACRC,SAAU","sources":["src/js/aos-script.js"],"sourcesContent":["AOS.init({\n  once: false,\n  easing: 'ease-in-cubic',\n  duration: 450,\n});\n"],"names":["AOS","init","once","easing","duration"],"version":3,"file":"hotel-page.fa9c5a0f.js.map"}
