@@ -26,10 +26,12 @@
     
     @include tablet {
         width: 428px;
+        margin-bottom: 0;
     }
 
     @include desktop {
         width: 548px;
+
     }
 
     // автоширина слайду

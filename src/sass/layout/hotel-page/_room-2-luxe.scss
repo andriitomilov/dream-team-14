@@ -8,13 +8,13 @@
 
     @include tablet {
         padding-top: 62px;
-        padding-bottom: 104px;
+        padding-bottom: 40px;
         height: 838px;
     }
 
     @include desktop {
         padding-top: 72px;
-        padding-bottom: 112px;
+        padding-bottom: 40px;
         height: 956px;
 
     }
@@ -115,6 +115,11 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
+            margin-bottom: 32px;
+        }
+
+        @include tablet {
+            margin-bottom: 40px;
         }
     }
 }

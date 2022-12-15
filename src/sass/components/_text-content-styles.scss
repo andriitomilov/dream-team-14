@@ -8,7 +8,7 @@
   color: $color-primary-subtitle-homepage;
 
   @include tablet {
-    @include font(32px, 1.6, null, null);
+    @include font(32px, 1.16, null, null);
   }
 }
 
