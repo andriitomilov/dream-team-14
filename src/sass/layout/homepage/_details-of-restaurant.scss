@@ -7,7 +7,6 @@
 
   @include tablet {
     padding-top: 48px;
-    padding-bottom: 47px;
   }
 }
 
@@ -155,11 +154,15 @@
 
 // Flex-обгортка для позиціонування слайдеру dishes-slider та Buttons
 .flex-wrap-restaurant {
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     display: flex;
     flex-direction: row-reverse;
     gap: 29px;
     align-items: flex-end;
+  }
+
+  @include desktop {
+    gap: 32px;
   }
 }
 
