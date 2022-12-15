@@ -1,4 +1,4 @@
-.hero-room__container{
+.hero-room__container {
   background: linear-gradient(
     180deg,
     #000000 0%,
@@ -7,9 +7,14 @@
   );
   position: relative;
 
-  height: 740px;
-  padding-top: 483px;
+  // height: 740px;
+  padding-top: 250px; 
   padding-bottom: 14px;
+
+  @include mobile {
+    height: 740px;
+    padding-top: 483px; 
+  }
 
   color: $color-white;
 
@@ -18,10 +23,6 @@
     padding-bottom: 20px;
 
     height: 720px;
-  }
-  @include desktop {
-    padding-top: 524px;
-    padding-bottom: 48px;
   }
   @include desktop {
     padding-top: 524px;
@@ -97,19 +98,6 @@
 
   @include desktop {
     display: none;
-
-  }
-}
-
-.hero-room__btn {
-  @include tablet {
-    position: absolute;
-    bottom: 66px;
-    right: 47px;
-  }
-  @include desktop {
-    right: 85px;
-
   }
 }
 
@@ -124,6 +112,20 @@
   }
 }
 
-.z-10{
-    z-index: 10;
+.hero-room__btn {
+  @include tablet {
+    position: absolute;
+    bottom: 66px;
+    right: 47px;
+  }
+  @include desktop {
+    right: 85px;
+  }
+}
+
+.z-10 {
+  z-index: 10;
+  @include max-mobile {
+    display: none;
+  }
 }
