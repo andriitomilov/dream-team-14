@@ -1,4 +1,7 @@
 .about-hotel {
+  @include max-mobile {
+    text-align: center;
+  }
   &__container {
     padding-top: 16px;
     padding-bottom: 20px;
@@ -22,9 +25,11 @@
   }
 
   &__subtitle {
-    text-align: end;
-
     margin-bottom: 12px;
+
+    @include mobile {
+      text-align: end;
+    }
 
     @include tablet {
       margin-bottom: 4px;
@@ -32,9 +37,11 @@
   }
 
   &__name {
-    text-align: end;
-
     margin-bottom: 12px;
+
+    @include mobile {
+      text-align: end;
+    }
 
     @include tablet {
       margin-bottom: 24px;
@@ -42,10 +49,13 @@
   }
 
   &__description {
-    max-width: 258px;
-
-    margin-left: auto;
     margin-bottom: 28px;
+
+    @include mobile {
+      max-width: 258px;
+
+      margin-left: auto;
+    }
 
     @include tablet {
       max-width: 439px;
@@ -89,7 +99,11 @@
   }
 
   &__text {
-    max-width: 163px;
+    
+
+    @include mobile {
+      max-width: 163px;
+    }
 
     @include tablet {
       max-width: 312px;

@@ -1,5 +1,7 @@
 .about-restaurant {
-    // overflow-x: hidden;
+    @include max-mobile{
+      text-align: center;
+    }
   
     &__container {
       padding-top: 16px;
@@ -41,10 +43,12 @@
     }
   
     &__description {
-      max-width: 258px;
+      
 
       margin-bottom: 28px;
-  
+      @include mobile {
+        max-width: 258px;
+      }
       @include tablet {
         max-width: 439px;
 
@@ -85,7 +89,11 @@
     }
   
     &__text {
-      max-width: 163px;
+      
+
+      @include mobile {
+        max-width: 163px;
+      }
   
       @include tablet {
         max-width: 312px;
