@@ -8,11 +8,13 @@
         height: 1050px;
 
 
+
         @include tablet {
             padding-top: 62px;
             padding-bottom: 104px;
             height: 838px;
         }
+
 
         @include desktop {
             padding-top: 72px;
@@ -117,6 +119,11 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
+            margin-bottom: 32px;
+        }
+
+        @include tablet {
+            margin-bottom: 40px;
         }
     }
 }

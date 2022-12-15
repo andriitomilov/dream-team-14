@@ -18,24 +18,17 @@
   }
 }
 .contacts__logo {
-  font-family: $film-font;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0.3em;
-  color: $color-primary-title-hotel-page;
-  display: block;
-  @media screen and (max-width: 1023px) {
-    font-size: 40px;
-    line-height: calc(43 / 40);
+  
+  @include max-mobile() {
+    text-align: center;
+  }
+  @include max-tablet() {
     margin-bottom: 12px;
   }
   @include tablet() {
-    font-size: 64px;
-    line-height: calc(69 / 64);
     margin-bottom: 8px;
   }
   @include desktop() {
-    color: $color-secondary-address-homepage;
     margin-bottom: 16px;
   }
 }
@@ -50,6 +43,9 @@
   @media screen and (max-width: 323px) {
     font-size: 15px;
   }
+  @include max-mobile() {
+    text-align: center;
+  } 
   @include tablet() {
     margin-bottom: 52px;
   }

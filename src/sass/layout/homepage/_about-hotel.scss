@@ -1,10 +1,15 @@
 .about-hotel {
-  overflow-x: hidden;
+  @include max-mobile {
+    text-align: center;
+  }
   &__container {
     padding-top: 16px;
     padding-bottom: 20px;
     position: relative;
-    height: 1191px;
+
+    @include mobile {
+      height: 1191px;
+    }
 
     @include tablet {
       padding-top: 129px;
@@ -20,9 +25,11 @@
   }
 
   &__subtitle {
-    text-align: end;
-
     margin-bottom: 12px;
+
+    @include mobile {
+      text-align: end;
+    }
 
     @include tablet {
       margin-bottom: 4px;
@@ -30,9 +37,11 @@
   }
 
   &__name {
-    text-align: end;
-
     margin-bottom: 12px;
+
+    @include mobile {
+      text-align: end;
+    }
 
     @include tablet {
       margin-bottom: 24px;
@@ -40,10 +49,13 @@
   }
 
   &__description {
-    max-width: 258px;
-
-    margin-left: auto;
     margin-bottom: 28px;
+
+    @include mobile {
+      max-width: 258px;
+
+      margin-left: auto;
+    }
 
     @include tablet {
       max-width: 439px;
@@ -87,7 +99,11 @@
   }
 
   &__text {
-    max-width: 163px;
+    
+
+    @include mobile {
+      max-width: 163px;
+    }
 
     @include tablet {
       max-width: 312px;
@@ -97,7 +113,15 @@
   &__box {
     display: flex;
     align-items: center;
-    gap: 20px;
+
+    @include max-mobile {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    @include mobile {
+      gap: 20px;
+    }
 
     @include tablet {
       justify-content: end;
@@ -115,7 +139,10 @@
 .hotel-slider {
   margin-top: 32px;
   margin-bottom: 0;
-  width: 330px;
+
+  @include max-tablet {
+    max-width: 330px;
+  }
 
   @include tablet {
     position: absolute;
