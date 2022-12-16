@@ -123,6 +123,10 @@ table {
   line-height: 1.2;
 
   letter-spacing: 0.02em;
+
+  @media screen and (min-width: 1279px) {
+     min-width: 175px;
+  }
 }
 
 .menu-price {
