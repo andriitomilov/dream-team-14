@@ -140,9 +140,14 @@
   margin-top: 32px;
   margin-bottom: 0;
 
-  @include max-tablet {
-    max-width: 330px;
-  }
+  @include max-mobile {
+      max-width: 330px;
+    }
+    
+    @include mobile {
+      width: 330px;
+      left: -15px;
+    }
 
   @include tablet {
     position: absolute;

@@ -128,9 +128,14 @@
   .restaurant-slider {
     margin-top: 32px;
     margin-bottom: 0;
-    
-    @include max-tablet {
+
+    @include max-mobile {
       max-width: 330px;
+    }
+    
+    @include mobile {
+      width: 330px;
+      right: -15px;
     }
     @include tablet {
       position: absolute;
