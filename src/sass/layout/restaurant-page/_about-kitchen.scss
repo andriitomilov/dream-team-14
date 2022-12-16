@@ -1,4 +1,7 @@
 .about-kitchen {
+  @include max-mobile() {
+    text-align: center;
+  }
   &__container {
     padding-top: 16px;
     padding-bottom: 20px;
@@ -34,10 +37,11 @@
   }
 
   &__description {
-    max-width: 258px;
-
     margin-bottom: 28px;
 
+    @include mobile {
+      max-width: 258px;
+    }
     @include tablet {
       max-width: 439px;
 
@@ -79,7 +83,9 @@
   }
 
   &__text {
-    max-width: 163px;
+    @include mobile {
+      max-width: 163px;
+    }
 
     @include tablet {
       max-width: 312px;
@@ -90,6 +96,11 @@
     display: flex;
     align-items: center;
     gap: 20px;
+
+    @include max-mobile() {
+      flex-direction: column-reverse;
+      gap: 32px;
+    }
 
     @include tablet {
       margin-top: 0;
