@@ -9,6 +9,10 @@
         flex-direction: column;
         align-items: flex-end;
         margin-left: auto;
+
+        @include max-mobile {
+            align-items: center;
+        }
     }
 
     &__container--side {
@@ -24,6 +28,9 @@
 
     &__picture--side {
         justify-content: flex-start;
+        @include max-mobile {
+            justify-content: center;
+        }
 
         @include tablet {
             left: 112;

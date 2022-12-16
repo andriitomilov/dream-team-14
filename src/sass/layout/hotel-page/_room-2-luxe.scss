@@ -1,172 +1,178 @@
 .hotel-room {
-
-
-    &__container--position {
-        position: relative;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        height: 1050px;
-
-
-
-        @include tablet {
-            padding-top: 62px;
-            padding-bottom: 104px;
-            height: 838px;
-        }
-
-
-        @include desktop {
-            padding-top: 72px;
-            padding-bottom: 112px;
-            height: 956px;
-        }
-    }
-
-    &__container {
-        @include tablet {
-            display: flex;
-            gap: 26px;
-            margin-bottom: 176px;
-        }
-
-        @include desktop {
-            gap: 48px;
-            margin-bottom: 188px;
-        }
-    }
-
-    &__subtitle {
-        margin-bottom: 8px;
-
-        @include tablet {
-            margin-bottom: 4px;
-        }
-    }
-
-    &__title {
-        font-family: $times-font;
-        @include font(24px, 1.16, null, 0.05em);
-        text-transform: uppercase;
-        color: $color-black;
-        margin-bottom: 12px;
-
-        @include tablet {
-            @include font(30px, 1.13, null, 0.05em);
-            margin-bottom: 16px;
-        }
-
-        @include desktop {
-            @include font(36px, 1.15, null, 0.05em);
-            margin-bottom: 24px;
-        }
-
-        span {
-            text-transform: lowercase;
-        }
-    }
-
-    &__text-content {
-        width: 258px;
-        margin-bottom: 32px;
-
-        @include tablet {
-            width: 439px;
-            margin-bottom: 0;
-        }
-
-        @include desktop {
-            width: 400px;
-        }
-    }
-
-    &__picture {
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: 32px;
-
-        @include tablet {
-            position: absolute;
-            top: -32;
-            right: 112;
-            margin-bottom: 0;
-        }
-
-        @include desktop {
-            right: 180;
-        }
-    }
-
-    &__picture-img {
-        box-shadow: $box-shadow-secondary;
-        border-radius: 2px;
-    }
-
-    &__title--primary {
-        margin-bottom: 32px;
-
-        @include tablet {
-            margin-bottom: 62px;
-        }
-
-        @include desktop {
-            margin-bottom: 72px;
-        }
-    }
-
-    &__wrapper {
-        @include tablet {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            margin-bottom: 32px;
-        }
-
-        @include tablet {
-            margin-bottom: 40px;
-        }
-    }
-}
-
-.btn-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-
+  @include max-mobile {
+    text-align: center;
+  }
+  &__container--position {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    height: 1050px;
 
     @include tablet {
-        margin-bottom: 105px;
+      padding-top: 62px;
+      padding-bottom: 104px;
+      height: 838px;
     }
 
     @include desktop {
-        margin-bottom: 142px;
+      padding-top: 72px;
+      padding-bottom: 112px;
+      height: 956px;
+    }
+  }
+
+  &__container {
+    @include tablet {
+      display: flex;
+      gap: 26px;
+      margin-bottom: 176px;
     }
 
+    @include desktop {
+      gap: 48px;
+      margin-bottom: 188px;
+    }
+  }
 
-    &__btn {
-        background-color: $color-black;
-        transition: background-color $main-transition-duration, border-color $main-transition-duration;
+  &__subtitle {
+    margin-bottom: 8px;
 
-        &:hover,
-        &:focus {
-            background-color: $color-white;
-            border-color: $color-accent;
-        }
+    @include tablet {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__title {
+    font-family: $times-font;
+    @include font(24px, 1.16, null, 0.05em);
+    text-transform: uppercase;
+    color: $color-black;
+    margin-bottom: 12px;
+
+    @include tablet {
+      @include font(30px, 1.13, null, 0.05em);
+      margin-bottom: 16px;
     }
 
-    &__link {
-        background-color: $color-black;
-        transition: background-color $main-transition-duration, border-color $main-transition-duration;
-
-        &:hover,
-        &:focus {
-            background-color: $color-white;
-            border-color: $color-accent;
-        }
+    @include desktop {
+      @include font(36px, 1.15, null, 0.05em);
+      margin-bottom: 24px;
     }
+
+    span {
+      text-transform: lowercase;
+    }
+  }
+
+  &__text-content {
+    
+    margin-bottom: 32px;
+
+    @include mobile {
+      width: 258px;
+    }
+
+    @include tablet {
+      width: 439px;
+      margin-bottom: 0;
+    }
+
+    @include desktop {
+      width: 400px;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+
+    @include max-mobile {
+      justify-content: center;
+    }
+
+    @include tablet {
+      position: absolute;
+      top: -32;
+      right: 112;
+      margin-bottom: 0;
+    }
+
+    @include desktop {
+      right: 180;
+    }
+  }
+
+  &__picture-img {
+    box-shadow: $box-shadow-secondary;
+    border-radius: 2px;
+  }
+
+  &__title--primary {
+    margin-bottom: 32px;
+
+    @include tablet {
+      margin-bottom: 62px;
+    }
+
+    @include desktop {
+      margin-bottom: 72px;
+    }
+  }
+
+  &__wrapper {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 32px;
+    }
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.btn-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @include tablet {
+    margin-bottom: 105px;
+  }
+
+  @include desktop {
+    margin-bottom: 142px;
+  }
+
+  &__btn {
+    background-color: $color-black;
+    transition: background-color $main-transition-duration,
+      border-color $main-transition-duration;
+
+    &:hover,
+    &:focus {
+      background-color: $color-white;
+      border-color: $color-accent;
+    }
+  }
+
+  &__link {
+    background-color: $color-black;
+    transition: background-color $main-transition-duration,
+      border-color $main-transition-duration;
+
+    &:hover,
+    &:focus {
+      background-color: $color-white;
+      border-color: $color-accent;
+    }
+  }
 }
 
 .btn-list__item {
-    z-index: 2;
+  z-index: 2;
 }
