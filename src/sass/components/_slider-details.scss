@@ -1,56 +1,64 @@
 .slider-left {
-    margin-left: 0;
+  margin-left: 0;
 
-    @media screen and (max-width: 458px) {
-        transform: translateX(-15px);
-    }
+  @include max-tablet() {
+    margin-left: -15px;
+  }
+
+  @media screen and (max-width: 458px) {
+    transform: translateX(-15px);
+  }
 }
 
 .slider-right {
-    margin-right: 0;
+  margin-right: 0;
 
-    @media screen and (max-width: 458px) {
-        transform: translateX(15px);
-    }
+  @include max-tablet() {
+    margin-right: -15px;
+  }
+
+  @media screen and (max-width: 458px) {
+    transform: translateX(15px);
+  }
 }
 
 // Контейнер слайдеру Swiper, за класом якого ініціалізован слайдер
 .slider-details {
-    position: static;
-    width: 374px;
-    margin-bottom: 32px;
+  position: static;
+  width: 374px;
+  margin-bottom: 32px;
 
-    @media screen and (max-width: 404px) {
-        width: 100%;
-    }
+  @media screen and (max-width: 404px) {
+    width: 100%;
+  }
 
-    // @media screen and (min-width: 482px) {
-    //     width: 452px;
-    // }
+  // @media screen and (min-width: 482px) {
+  //     width: 452px;
+  // }
 
-    @include tablet {
-        width: 662px;
-        margin-bottom: 0px;
-    }
+  @include tablet {
+    width: 662px;
+    margin-bottom: 0px;
+  }
 
-    @include desktop {
-        width: 874px;
-    }
+  @include desktop {
+    width: 874px;
+  }
 
-    // автоширина слайду
-    &__slide {
-        min-width: fit-content;
-        object-fit: cover;
-        flex-shrink: 1;
-    }
+  // автоширина слайду
+  &__slide {
+    min-width: fit-content;
+    object-fit: cover;
+    flex-shrink: 1;
+  }
 }
 // Навігація окремого слайдеру, контейнер для стрілок
 .slider-nav.slider-details-nav {
-    position: static;
-    margin-top: 20px;
-    justify-content: flex-start;
+  position: static;
+  margin-top: 20px;
+  justify-content: flex-start;
 
-    @include tablet {
-        margin-top: 24px;
-    }
+  @include tablet {
+    margin-top: 24px;
+  }
 }
